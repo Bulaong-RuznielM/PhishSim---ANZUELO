@@ -1,0 +1,354 @@
+[gd_scene load_steps=7 format=3 uid="uid://dw3cw6bi88ke8"]
+
+[ext_resource type="Script" path="res://SCENES/upgrades.gd" id="1_6ijm7"]
+[ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="1_xqs5l"]
+[ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="3_hk8wp"]
+[ext_resource type="Script" path="res://SCENES/upgrade_info.gd" id="4_01yj0"]
+[ext_resource type="FontFile" uid="uid://2t3fwfyco16d" path="res://FONTS/super-pixel-font/SuperPixel-m2L8j.ttf" id="5_h1rse"]
+
+[sub_resource type="Theme" id="Theme_wnala"]
+Label/fonts/font = null
+
+[node name="UPGRADES" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6ijm7")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(580, 324)
+
+[node name="MainWindow" type="Sprite2D" parent="."]
+position = Vector2(580, 324)
+scale = Vector2(0.598958, 0.601852)
+texture = ExtResource("1_xqs5l")
+
+[node name="EXIT" type="Button" parent="."]
+modulate = Color(1, 0, 0, 1)
+self_modulate = Color(1, 0, 0, 1)
+top_level = true
+layout_mode = 0
+offset_left = 1112.0
+offset_top = -2.0
+offset_right = 1155.0
+offset_bottom = 43.0
+text = "X"
+
+[node name="Upgrade shop" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Upgrade shop"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 47.0
+offset_right = 499.0
+offset_bottom = 628.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Upgrade shop/ScrollContainer"]
+layout_mode = 2
+theme_override_constants/separation = 26
+
+[node name="Upgrade_1" type="TextureRect" parent="Upgrade shop/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("3_hk8wp")
+
+[node name="Label" type="Label" parent="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_1"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 2.0
+offset_right = 431.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "LESS INTRUSIVE"
+horizontal_alignment = 1
+
+[node name="UpButton_1" type="Button" parent="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_1"]
+layout_mode = 0
+offset_left = 124.0
+offset_top = 59.0
+offset_right = 281.0
+offset_bottom = 102.0
+theme_override_font_sizes/font_size = 25
+text = "U P G R A D E"
+
+[node name="Upgrade_2" type="TextureRect" parent="Upgrade shop/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("3_hk8wp")
+
+[node name="Label" type="Label" parent="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_2"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 2.0
+offset_right = 431.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "PHISHING VACCINE"
+horizontal_alignment = 1
+
+[node name="UpButton_2" type="Button" parent="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_2"]
+layout_mode = 0
+offset_left = 124.0
+offset_top = 59.0
+offset_right = 281.0
+offset_bottom = 102.0
+theme_override_font_sizes/font_size = 25
+text = "U P G R A D E"
+
+[node name="Upgrade_3" type="TextureRect" parent="Upgrade shop/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("3_hk8wp")
+
+[node name="Label" type="Label" parent="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_3"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 2.0
+offset_right = 431.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "UPGRADE PLACEHOLDER"
+
+[node name="UpButton_3" type="Button" parent="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_3"]
+layout_mode = 0
+offset_left = 124.0
+offset_top = 59.0
+offset_right = 281.0
+offset_bottom = 102.0
+theme_override_font_sizes/font_size = 25
+text = "U P G R A D E"
+
+[node name="Upgrade_4" type="TextureRect" parent="Upgrade shop/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("3_hk8wp")
+
+[node name="Label" type="Label" parent="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_4"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 2.0
+offset_right = 431.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "UPGRADE PLACEHOLDER"
+
+[node name="UpButton_4" type="Button" parent="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_4"]
+layout_mode = 0
+offset_left = 124.0
+offset_top = 59.0
+offset_right = 281.0
+offset_bottom = 102.0
+theme_override_font_sizes/font_size = 25
+text = "U P G R A D E"
+
+[node name="Upgrade_5" type="TextureRect" parent="Upgrade shop/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("3_hk8wp")
+
+[node name="Label" type="Label" parent="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_5"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 2.0
+offset_right = 431.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "UPGRADE PLACEHOLDER"
+
+[node name="UpButton_5" type="Button" parent="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_5"]
+layout_mode = 0
+offset_left = 124.0
+offset_top = 59.0
+offset_right = 281.0
+offset_bottom = 102.0
+theme_override_font_sizes/font_size = 25
+text = "U P G R A D E"
+
+[node name="Upgrade_6" type="TextureRect" parent="Upgrade shop/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("3_hk8wp")
+
+[node name="Label" type="Label" parent="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_6"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 2.0
+offset_right = 431.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "UPGRADE PLACEHOLDER"
+
+[node name="UpButton_6" type="Button" parent="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_6"]
+layout_mode = 0
+offset_left = 124.0
+offset_top = 59.0
+offset_right = 281.0
+offset_bottom = 102.0
+theme_override_font_sizes/font_size = 25
+text = "U P G R A D E"
+
+[node name="Upgrade_7" type="TextureRect" parent="Upgrade shop/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("3_hk8wp")
+
+[node name="Label" type="Label" parent="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_7"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 2.0
+offset_right = 431.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "UPGRADE PLACEHOLDER"
+
+[node name="UpButton_7" type="Button" parent="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_7"]
+layout_mode = 0
+offset_left = 124.0
+offset_top = 59.0
+offset_right = 281.0
+offset_bottom = 102.0
+theme_override_font_sizes/font_size = 25
+text = "U P G R A D E"
+
+[node name="Upgrade_8" type="TextureRect" parent="Upgrade shop/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("3_hk8wp")
+
+[node name="Label" type="Label" parent="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_8"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 2.0
+offset_right = 431.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "UPGRADE PLACEHOLDER"
+
+[node name="UpButton_8" type="Button" parent="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_8"]
+layout_mode = 0
+offset_left = 124.0
+offset_top = 59.0
+offset_right = 281.0
+offset_bottom = 102.0
+theme_override_font_sizes/font_size = 25
+text = "U P G R A D E"
+
+[node name="Upgrade_9" type="TextureRect" parent="Upgrade shop/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("3_hk8wp")
+
+[node name="Label" type="Label" parent="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_9"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 2.0
+offset_right = 431.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "UPGRADE PLACEHOLDER"
+
+[node name="UpButton_9" type="Button" parent="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_9"]
+layout_mode = 0
+offset_left = 124.0
+offset_top = 59.0
+offset_right = 281.0
+offset_bottom = 102.0
+theme_override_font_sizes/font_size = 25
+text = "U P G R A D E"
+
+[node name="UpgradeInfo" type="Control" parent="Upgrade shop"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("4_01yj0")
+
+[node name="UpgradeInfo" type="Label" parent="Upgrade shop/UpgradeInfo"]
+layout_mode = 0
+offset_left = 560.0
+offset_top = 64.0
+offset_right = 1107.0
+offset_bottom = 141.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_h1rse")
+theme_override_font_sizes/font_size = 56
+text = "UPGRADE INFO:"
+
+[node name="Upgrade_Info_1" type="Label" parent="Upgrade shop/UpgradeInfo"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+offset_left = 528.0
+offset_top = 184.0
+offset_right = 1128.0
+offset_bottom = 605.0
+theme = SubResource("Theme_wnala")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+text = "Pop-up Ads: Now Less Intrusive
+
+Enjoy a more seamless browsing experience with our latest update. Pop-up ads will now appear one at a time and stay on screen for only 20 seconds. No more overwhelming pop-ups."
+vertical_alignment = 3
+autowrap_mode = 2
+justification_flags = 235
+
+[node name="Upgrade_Info_2" type="Label" parent="Upgrade shop/UpgradeInfo"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 528.0
+offset_top = 120.0
+offset_right = 1128.0
+offset_bottom = 541.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+text = "Phishing Vaccine: 
+
+Grants immunity to certain types of phishing attacks for a limited time."
+vertical_alignment = 1
+autowrap_mode = 2
+justification_flags = 235
+
+[node name="Upgrade_Info_3" type="Label" parent="Upgrade shop/UpgradeInfo"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 528.0
+offset_top = 120.0
+offset_right = 1128.0
+offset_bottom = 541.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+text = "PLACEHOLDER"
+vertical_alignment = 1
+autowrap_mode = 2
+justification_flags = 235
+
+[connection signal="pressed" from="EXIT" to="." method="_on_exit_pressed"]
+[connection signal="mouse_entered" from="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_1" to="Upgrade shop/UpgradeInfo" method="_on_upgrade_1_mouse_entered"]
+[connection signal="mouse_exited" from="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_1" to="Upgrade shop/UpgradeInfo" method="_on_upgrade_1_mouse_exited"]
+[connection signal="mouse_entered" from="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_1/UpButton_1" to="Upgrade shop/UpgradeInfo" method="_on_up_button_1_mouse_entered"]
+[connection signal="mouse_exited" from="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_1/UpButton_1" to="Upgrade shop/UpgradeInfo" method="_on_up_button_1_mouse_exited"]
+[connection signal="mouse_entered" from="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_2" to="Upgrade shop/UpgradeInfo" method="_on_upgrade_2_mouse_entered"]
+[connection signal="mouse_exited" from="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_2" to="Upgrade shop/UpgradeInfo" method="_on_upgrade_2_mouse_exited"]
+[connection signal="mouse_entered" from="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_2/UpButton_2" to="Upgrade shop/UpgradeInfo" method="_on_up_button_2_mouse_entered"]
+[connection signal="mouse_exited" from="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_2/UpButton_2" to="Upgrade shop/UpgradeInfo" method="_on_up_button_2_mouse_exited"]

@@ -1,0 +1,78 @@
+[gd_scene load_steps=5 format=3 uid="uid://36cck8vjhq2g"]
+
+[ext_resource type="Script" path="res://Scripts/menu.gd" id="1_6arju"]
+[ext_resource type="Texture2D" uid="uid://c1csaw3svf5p5" path="res://ASSETS/PhishSimMainMenu.jpg" id="2_cxdst"]
+[ext_resource type="AudioStream" uid="uid://be3yl4dyabcsm" path="res://AUDIO/01. Constant Moderato.wav" id="3_3j6cc"]
+[ext_resource type="Theme" uid="uid://c6ncn661cxk5i" path="res://THEMES/WhiteMenu.tres" id="3_utdvc"]
+
+[node name="MENU" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2.79411, 2.38554)
+script = ExtResource("1_6arju")
+
+[node name="MainMenuBackground" type="Sprite2D" parent="."]
+position = Vector2(5.72633, -2.93435)
+scale = Vector2(0.268771, 0.244802)
+texture = ExtResource("2_cxdst")
+
+[node name="GameTitle" type="Label" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -135.642
+offset_top = -96.4144
+offset_right = 134.358
+offset_bottom = -17.4144
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.768592, 0.636299, 0, 1)
+theme_override_font_sizes/font_size = 58
+text = "PhishSim"
+
+[node name="MainMenuMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_3j6cc")
+autoplay = true
+
+[node name="Control" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PLAY" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -62.9475
+offset_top = -8.26262
+offset_right = 19.0525
+offset_bottom = 36.7374
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_utdvc")
+text = "PLAY"
+
+[node name="EXIT" type="Button" parent="Control"]
+layout_mode = 2
+offset_left = -34.358
+offset_top = 68.7475
+offset_right = 30.642
+offset_bottom = 102.748
+theme = ExtResource("3_utdvc")
+text = "QUIT"
+
+[connection signal="finished" from="MainMenuMusic" to="." method="_on_main_menu_music_finished"]
+[connection signal="pressed" from="Control/PLAY" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Control/EXIT" to="." method="_on_exit_pressed"]
