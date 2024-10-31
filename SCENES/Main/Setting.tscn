@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dkntrq2rkak5n"]
 
-[ext_resource type="Script" path="res://Scripts/setting.gd" id="1_56c16"]
-[ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="1_nvhvf"]
+[ext_resource type="Script" path="res://Scripts/setting.gd" id="1_vmq18"]
+[ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="2_4b714"]
 
 [node name="Settings" type="Control"]
 layout_mode = 3
@@ -10,12 +10,12 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_56c16")
+script = ExtResource("1_vmq18")
 
 [node name="WindowsBorder-Copy" type="Sprite2D" parent="."]
 position = Vector2(576, 324)
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("1_nvhvf")
+texture = ExtResource("2_4b714")
 
 [node name="EXIT_SETTING" type="Button" parent="."]
 layout_mode = 0

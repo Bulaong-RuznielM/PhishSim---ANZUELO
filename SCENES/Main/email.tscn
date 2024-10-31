@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://c4ctfk1d3w8t4"]
 
-[ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="1_a8pg3"]
-[ext_resource type="Script" path="res://Scripts/email.gd" id="1_veqcs"]
+[ext_resource type="Script" path="res://Scripts/email.gd" id="1_giimi"]
+[ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="2_t5b7v"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -10,17 +10,24 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_veqcs")
+script = ExtResource("1_giimi")
 
 [node name="WindowsBorder-Copy" type="Sprite2D" parent="."]
 position = Vector2(576, 324)
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("1_a8pg3")
+texture = ExtResource("2_t5b7v")
 
 [node name="Exit" type="Button" parent="."]
 layout_mode = 0
 offset_left = 1112.0
 offset_right = 1152.0
 offset_bottom = 40.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 69.0
+offset_right = 1149.0
+offset_bottom = 443.0
 
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

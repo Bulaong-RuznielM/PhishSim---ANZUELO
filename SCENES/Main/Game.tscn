@@ -1,13 +1,13 @@
 [gd_scene load_steps=9 format=3 uid="uid://0r27r2r5msub"]
 
-[ext_resource type="Texture2D" uid="uid://brttk0nyik33q" path="res://ASSETS/windows/MAIN START.jpg" id="1_0yt1l"]
-[ext_resource type="Texture2D" uid="uid://dcmppo5daehm3" path="res://ASSETS/miscellaneous/BACKGROUND.jpg" id="1_wxer0"]
-[ext_resource type="Script" path="res://Scripts/windows_buttons.gd" id="2_j8kg2"]
-[ext_resource type="Texture2D" uid="uid://uaide1why5oe" path="res://ASSETS/icons/windows_border - Copy (3) - Copy - Copy.png" id="2_nfcwh"]
-[ext_resource type="Texture2D" uid="uid://b74t45ak3kdrt" path="res://ASSETS/icons/windows_border - Copy (2) - Copy - Copy.png" id="4_bcqxm"]
-[ext_resource type="FontFile" uid="uid://2t3fwfyco16d" path="res://FONTS/super-pixel-font/SuperPixel-m2L8j.ttf" id="5_jwpu0"]
-[ext_resource type="Texture2D" uid="uid://bnu6c215f35s5" path="res://ASSETS/icons/windows_border - Copy (5) - Copy - Copy.png" id="5_rhhcc"]
-[ext_resource type="Texture2D" uid="uid://cejuqdp0jpmsr" path="res://ASSETS/icons/windows_border - Copy (4) - Copy - Copy.png" id="6_4256l"]
+[ext_resource type="Texture2D" uid="uid://dcmppo5daehm3" path="res://ASSETS/miscellaneous/BACKGROUND.jpg" id="1_lyl00"]
+[ext_resource type="Texture2D" uid="uid://brttk0nyik33q" path="res://ASSETS/windows/MAIN START.jpg" id="2_fq1uo"]
+[ext_resource type="Script" path="res://Scripts/windows_buttons.gd" id="3_qnqtk"]
+[ext_resource type="Texture2D" uid="uid://uaide1why5oe" path="res://ASSETS/icons/windows_border - Copy (3) - Copy - Copy.png" id="4_vpjab"]
+[ext_resource type="Texture2D" uid="uid://b74t45ak3kdrt" path="res://ASSETS/icons/windows_border - Copy (2) - Copy - Copy.png" id="5_qisv7"]
+[ext_resource type="Texture2D" uid="uid://bnu6c215f35s5" path="res://ASSETS/icons/windows_border - Copy (5) - Copy - Copy.png" id="6_qfmiy"]
+[ext_resource type="Texture2D" uid="uid://cejuqdp0jpmsr" path="res://ASSETS/icons/windows_border - Copy (4) - Copy - Copy.png" id="7_smah1"]
+[ext_resource type="FontFile" uid="uid://2t3fwfyco16d" path="res://FONTS/super-pixel-font/SuperPixel-m2L8j.ttf" id="8_gqawu"]
 
 [node name="MainScreen" type="Node2D"]
 
@@ -17,12 +17,12 @@ show_behind_parent = true
 light_mask = 0
 position = Vector2(-3.99991, 104)
 scale = Vector2(0.722656, 0.71875)
-texture = ExtResource("1_wxer0")
+texture = ExtResource("1_lyl00")
 
 [node name="MainWindow" type="Sprite2D" parent="."]
 position = Vector2(-6, -1)
 scale = Vector2(0.574479, 0.560185)
-texture = ExtResource("1_0yt1l")
+texture = ExtResource("2_fq1uo")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
@@ -31,7 +31,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("2_j8kg2")
+script = ExtResource("3_qnqtk")
 
 [node name="UPGRADES" type="Button" parent="WindowsButtons"]
 layout_mode = 0
@@ -40,7 +40,7 @@ offset_top = -217.0
 offset_right = -364.0
 offset_bottom = -76.0
 scale = Vector2(0.686383, 0.66872)
-icon = ExtResource("2_nfcwh")
+icon = ExtResource("4_vpjab")
 
 [node name="TASKS" type="Button" parent="WindowsButtons"]
 layout_mode = 0
@@ -49,7 +49,7 @@ offset_top = -114.0
 offset_right = -365.0
 offset_bottom = 27.0
 scale = Vector2(0.716955, 0.676655)
-icon = ExtResource("4_bcqxm")
+icon = ExtResource("5_qisv7")
 
 [node name="EMAIL" type="Button" parent="WindowsButtons"]
 layout_mode = 0
@@ -58,7 +58,7 @@ offset_top = -8.0
 offset_right = -367.0
 offset_bottom = 133.0
 scale = Vector2(0.736425, 0.742107)
-icon = ExtResource("5_rhhcc")
+icon = ExtResource("6_qfmiy")
 
 [node name="SETTINGS" type="Button" parent="WindowsButtons"]
 layout_mode = 0
@@ -67,7 +67,7 @@ offset_top = 88.0
 offset_right = 513.0
 offset_bottom = 229.0
 scale = Vector2(0.758283, 0.724612)
-icon = ExtResource("6_4256l")
+icon = ExtResource("7_smah1")
 
 [node name="DevText" type="Label" parent="."]
 offset_left = -320.0
@@ -75,7 +75,7 @@ offset_top = -264.0
 offset_right = 400.0
 offset_bottom = 183.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("5_jwpu0")
+theme_override_fonts/font = ExtResource("8_gqawu")
 theme_override_font_sizes/font_size = 31
 text = "Everything in the game right now is temporary. No design/feature is final
 

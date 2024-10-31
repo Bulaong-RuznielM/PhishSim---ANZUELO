@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://jlc10skc3u2v"]
 
-[ext_resource type="Script" path="res://Scripts/task.gd" id="1_54dnw"]
-[ext_resource type="Texture2D" uid="uid://cj4e6holtfmvj" path="res://ASSETS/Task/windows_border - Copy - Copy.png" id="1_vwlgo"]
-[ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="3_u0mcb"]
-[ext_resource type="Script" path="res://Scripts/task_ui.gd" id="3_y76gx"]
-[ext_resource type="Script" path="res://Scripts/show_task_1.gd" id="5_7tegm"]
+[ext_resource type="Script" path="res://Scripts/task.gd" id="1_1kidr"]
+[ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="2_x7i3i"]
+[ext_resource type="Script" path="res://Scripts/task_ui.gd" id="3_a5d60"]
+[ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="4_yq8du"]
+[ext_resource type="Script" path="res://Scripts/show_task_1.gd" id="5_yynko"]
 
 [node name="TASKS" type="Control"]
 layout_mode = 3
@@ -13,31 +13,26 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_54dnw")
+script = ExtResource("1_1kidr")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(577, 327)
-scale = Vector2(0.600521, 0.599306)
-texture = ExtResource("1_vwlgo")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(579, 323)
+[node name="WindowsBorder-Copy" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_x7i3i")
 
 [node name="Button" type="Button" parent="."]
 modulate = Color(1, 0, 0, 1)
 self_modulate = Color(1, 0, 0, 1)
 layout_mode = 0
-offset_left = 1117.0
-offset_top = 2.0
-offset_right = 1156.0
-offset_bottom = 47.0
-text = "X"
+offset_left = 1112.0
+offset_right = 1152.0
+offset_bottom = 40.0
 
 [node name="TaskUI" type="Control" parent="."]
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("3_y76gx")
+script = ExtResource("3_a5d60")
 
 [node name="ScrollContainer" type="ScrollContainer" parent="TaskUI"]
 layout_mode = 0
@@ -55,7 +50,7 @@ theme_override_constants/separation = 14
 
 [node name="Task_1" type="TextureRect" parent="TaskUI/ScrollContainer/HBoxContainer"]
 layout_mode = 2
-texture = ExtResource("3_u0mcb")
+texture = ExtResource("4_yq8du")
 
 [node name="Label" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_1"]
 layout_mode = 0
@@ -93,7 +88,7 @@ text = "Close all the incoming Pop-Ups"
 unique_name_in_owner = true
 visible = false
 layout_mode = 2
-texture = ExtResource("3_u0mcb")
+texture = ExtResource("4_yq8du")
 
 [node name="Label" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_2"]
 layout_mode = 0
@@ -131,7 +126,7 @@ text = "Coming Soon"
 unique_name_in_owner = true
 visible = false
 layout_mode = 2
-texture = ExtResource("3_u0mcb")
+texture = ExtResource("4_yq8du")
 
 [node name="Label" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_3"]
 layout_mode = 0
@@ -169,7 +164,7 @@ text = "Coming Soon"
 unique_name_in_owner = true
 visible = false
 layout_mode = 2
-texture = ExtResource("3_u0mcb")
+texture = ExtResource("4_yq8du")
 
 [node name="Label" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_4"]
 layout_mode = 0
@@ -207,7 +202,7 @@ text = "Coming Soon"
 unique_name_in_owner = true
 visible = false
 layout_mode = 2
-texture = ExtResource("3_u0mcb")
+texture = ExtResource("4_yq8du")
 
 [node name="Label" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_5"]
 layout_mode = 0
@@ -245,7 +240,7 @@ text = "Coming Soon"
 unique_name_in_owner = true
 visible = false
 layout_mode = 2
-texture = ExtResource("3_u0mcb")
+texture = ExtResource("4_yq8du")
 
 [node name="Label" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_6"]
 layout_mode = 0
@@ -283,7 +278,7 @@ text = "Coming Soon"
 unique_name_in_owner = true
 visible = false
 layout_mode = 2
-texture = ExtResource("3_u0mcb")
+texture = ExtResource("4_yq8du")
 
 [node name="Label" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_7"]
 layout_mode = 0
@@ -321,7 +316,7 @@ text = "Coming Soon"
 unique_name_in_owner = true
 visible = false
 layout_mode = 2
-texture = ExtResource("3_u0mcb")
+texture = ExtResource("4_yq8du")
 
 [node name="Label" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_8"]
 layout_mode = 0
@@ -363,7 +358,7 @@ offset_right = 366.0
 offset_bottom = 115.0
 theme_override_font_sizes/font_size = 33
 text = "Show Task 2 (DEBUG)"
-script = ExtResource("5_7tegm")
+script = ExtResource("5_yynko")
 
 [node name="HideTask_2" type="Button" parent="."]
 layout_mode = 0
@@ -373,7 +368,7 @@ offset_right = 738.0
 offset_bottom = 115.0
 theme_override_font_sizes/font_size = 33
 text = "Hide Task 2 (DEBUG)"
-script = ExtResource("5_7tegm")
+script = ExtResource("5_yynko")
 
 [node name="ShowAllTasks" type="Button" parent="."]
 layout_mode = 0

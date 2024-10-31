@@ -1,21 +1,211 @@
 {
+	"Resolution" : [
+		[1280, 720],
+		[1600, 900],
+		[1920, 1080],
+		[2560, 1440],
+		[3840, 2160],
+		[5120, 2880],
+		[7680, 4320],
+		[15360, 8640]
+	],
+	"ResolutionScal" : [
+		[1280, 720],
+		[1600, 900],
+		[1920, 1080],
+		[2560, 1440],
+		[3840, 2160],
+		[5120, 2880],
+		[7680, 4320],
+		[15360, 8640]
+	],
 	"English": {
 		"menu" : {
 			"play" : "PLAY",
 			"quit" : "QUIT",
-		}
+		},
+		"icons" : {
+			"task" : "Task",
+			"upgrade" : "Upgrade",
+			"email" : "Email",
+			"setting" : "Settings"
+		},
 		"task" : {
-			"play" : "PLAY",
-			"quit" : "QUIT",
-		}
+			"accept" : "ACCEPT",
+			"task1" : {
+				"title" : "Task 1",
+				"description" : "Close all the incominig Pop-Ups"
+			},
+			"task2" : {
+				"title" : "Task 2",
+				"description" : "Coming Soon"
+			},
+			"task3" : {
+				"title" : "Task 3",
+				"description" : "Coming Soon"
+			},
+			"task4" : {
+				"title" : "Task 4",
+				"description" : "Coming Soon"
+			},
+			"task5" : {
+				"title" : "Task 5",
+				"description" : "Coming Soon"
+			},
+			"task6" : {
+				"title" : "Task 6",
+				"description" : "Coming Soon"
+			},
+			"task7" : {
+				"title" : "Task 7",
+				"description" : "Coming Soon"
+			},
+			"task8" : {
+				"title" : "Task 8",
+				"description" : "Coming Soon"
+			}
+		},
 		"upgrade" : {
-			
-		}
+			"upgardeinfo" : "upgrade info:",
+			"upgrade" : "upgrade",
+			"card1" : {
+				"title" : "",
+				"headline" : "",
+				"description" : "Coming Soon"
+			},
+			"card2" : {
+				"title" : "",
+				"headline" : "",
+				"description" : "Coming Soon"
+			},
+			"card3" : {
+				"title" : "",
+				"headline" : "",
+				"description" : "Coming Soon"
+			},
+			"card4" : {
+				"title" : "",
+				"headline" : "",
+				"description" : "Coming Soon"
+			},
+			"card5" : {
+				"title" : "",
+				"headline" : "",
+				"description" : "Coming Soon"
+			},
+			"card6" : {
+				"title" : "",
+				"headline" : "",
+				"description" : "Coming Soon"
+			},
+			"card7" : {
+				"title" : "",
+				"headline" : "",
+				"description" : "Coming Soon"
+			},
+			"card8" : {
+				"title" : "",
+				"headline" : "",
+				"description" : "Coming Soon"
+			},
+		},
 		"email" : {
-			
-		}
+			"card1" : {
+				"sender" : "Example Inc",
+				"title" : "Wellcome to Example.com",
+				"text" : "Example Domain
+				\nThis domain is for use in illustrative examples in documents. You may use this domain in literature without prior coordination or asking for permission.
+				\n\nMore information..."
+			},
+			"card2": {
+				"sender": "TechNews Today",
+				"title": "Daily Technology Update",
+				"text": "Stay informed on the latest advancements in technology!
+				 \nFrom AI breakthroughs to gadget releases, we're here to keep you in the loop.
+				\n\nRead the full story..."
+			},
+			"card3": {
+				"sender": "HealthTips Weekly",
+				"title": "Top Tips for a Healthier Lifestyle",
+				"text": "Simple habits can make a big difference! 
+				\nFrom balanced nutrition to regular exercise, discover easy ways to boost your well-being.
+				\n\nLearn more..."
+			},
+			"card4": {
+				"sender": "Adventure Awaits",
+				"title": "Explore the Wonders of Nature",
+				"text": "Discover beautiful travel destinations and nature trails!
+				\nUncover the best spots for your next adventure and start planning today.
+				\n\nExplore now..."
+			},
+			"card5": {
+				"sender": "Finance Plus",
+				"title": "Your Weekly Financial Digest",
+				"text": "Want to stay on top of your finances?
+				\nWe bring you insights, tips, and strategies to help you achieve your financial goals.
+				\n\nGet started..."
+			},
+			"card6": {
+				"sender": "CookBook",
+				"title": "Recipe of the Week: Classic Lasagna",
+				"text": "This classic lasagna recipe is perfect for family gatherings!
+				\nLayered with rich flavors, it's sure to be a crowd-pleaser.
+				\n\nCheck the recipe..."
+			},
+			"card7": {
+				"sender": "FitLife Journal",
+				"title": "5 Easy Home Workouts",
+				"text": "No gym? No problem! 
+				\nThese simple exercises can help you stay fit and active from the comfort of your home.
+				\n\nStart today..."
+			},
+			"card8": {
+				"sender": "Mindful Moments",
+				"title": "Daily Mindfulness Practices",
+				"text": "Take a moment for yourself with daily mindfulness tips.
+				\nBring calmness and clarity to your day, one step at a time.
+				\n\nRead more..."
+			}
+		},
 		"setting" : {
-			
+			"graphics" : {
+				"tile" : "Graphics Settings",
+				"resolution" : "Resolution",
+				"resolutionscal" : "Resolution Scaling",
+				"fullscreenmode" : "Fullscreen Mode"
+			},
+			"audio" : {
+				"title" : "Audio Settings",
+				"mastervolume" : "Master Volume",
+				"musicvolume" : "Music Volume",
+				"soundeffectsvolume" : "Sound Effects Volume"
+			},
+			"gameplay" : {
+				"title" : "Gameplay Settings",
+				"language" : "language",
+				"languages" : [
+					"Arabic", 
+					"Czech", 
+					"Danish", 
+					"Dutch", 
+					"English", 
+					"French", 
+					"German", 
+					"Italian", 
+					"Japanese", 
+					"Korean", 
+					"Norwegian", 
+					"Polish", 
+					"Portuguese", 
+					"Russian", 
+					"Simplified Chinese", 
+					"Spanish", 
+					"Swedish", 
+					"Thai", 
+					"Traditional Chinese", 
+					"Turkish"
+				]
+			}
 		}
 	}
 }

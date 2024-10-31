@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bcjdmh7jeni"]
 
-[ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="1_5vkvd"]
-[ext_resource type="Script" path="res://SCENES/TASK SCENES/task_1.gd" id="1_xvvx4"]
+[ext_resource type="Script" path="res://Scripts/task_1.gd" id="1_imwvx"]
+[ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="2_nhx6b"]
 
 [sub_resource type="Curve2D" id="Curve2D_pcmdc"]
 _data = {
@@ -10,11 +10,11 @@ _data = {
 point_count = 6
 
 [node name="Task_1" type="Node2D"]
-script = ExtResource("1_xvvx4")
+script = ExtResource("1_imwvx")
 
 [node name="MainWindow" type="Sprite2D" parent="."]
 scale = Vector2(0.598958, 0.596296)
-texture = ExtResource("1_5vkvd")
+texture = ExtResource("2_nhx6b")
 
 [node name="Button" type="Button" parent="."]
 anchors_preset = 8

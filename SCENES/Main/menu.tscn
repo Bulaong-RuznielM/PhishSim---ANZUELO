@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://36cck8vjhq2g"]
 
-[ext_resource type="Script" path="res://Scripts/menu.gd" id="1_6arju"]
-[ext_resource type="Texture2D" uid="uid://c1csaw3svf5p5" path="res://ASSETS/miscellaneous/PhishSimMainMenu.jpg" id="2_cxdst"]
-[ext_resource type="AudioStream" uid="uid://be3yl4dyabcsm" path="res://AUDIO/01. Constant Moderato.wav" id="3_3j6cc"]
-[ext_resource type="Theme" uid="uid://c6ncn661cxk5i" path="res://THEMES/WhiteMenu.tres" id="3_utdvc"]
+[ext_resource type="Script" path="res://Scripts/menu.gd" id="1_inpl2"]
+[ext_resource type="Texture2D" uid="uid://c1csaw3svf5p5" path="res://ASSETS/miscellaneous/PhishSimMainMenu.jpg" id="2_6kmuu"]
+[ext_resource type="AudioStream" uid="uid://be3yl4dyabcsm" path="res://AUDIO/01. Constant Moderato.wav" id="3_gqtdr"]
+[ext_resource type="Theme" uid="uid://c6ncn661cxk5i" path="res://THEMES/WhiteMenu.tres" id="4_d7t88"]
 
 [node name="MENU" type="Control"]
 layout_mode = 3
@@ -15,12 +15,12 @@ anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(2.79411, 2.38554)
-script = ExtResource("1_6arju")
+script = ExtResource("1_inpl2")
 
 [node name="MainMenuBackground" type="Sprite2D" parent="."]
 position = Vector2(5.72633, -2.93435)
 scale = Vector2(0.268771, 0.244802)
-texture = ExtResource("2_cxdst")
+texture = ExtResource("2_6kmuu")
 
 [node name="GameTitle" type="Label" parent="."]
 visible = false
@@ -40,7 +40,7 @@ theme_override_font_sizes/font_size = 58
 text = "PhishSim"
 
 [node name="MainMenuMusic" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("3_3j6cc")
+stream = ExtResource("3_gqtdr")
 autoplay = true
 
 [node name="Control" type="Control" parent="."]
@@ -61,7 +61,7 @@ offset_right = 19.0525
 offset_bottom = 36.7374
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("3_utdvc")
+theme = ExtResource("4_d7t88")
 text = "PLAY"
 
 [node name="EXIT" type="Button" parent="Control"]
@@ -70,7 +70,7 @@ offset_left = -34.358
 offset_top = 68.7475
 offset_right = 30.642
 offset_bottom = 102.748
-theme = ExtResource("3_utdvc")
+theme = ExtResource("4_d7t88")
 text = "QUIT"
 
 [connection signal="finished" from="MainMenuMusic" to="." method="_on_main_menu_music_finished"]
