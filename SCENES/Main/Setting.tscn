@@ -34,9 +34,9 @@ layout_mode = 2
 
 [node name="GraphicsSettingsLabel" type="Label" parent="GridContainer/DummyLabel"]
 layout_mode = 0
-offset_left = 40.0
+offset_left = 24.0
 offset_top = 100.0
-offset_right = 175.0
+offset_right = 159.0
 offset_bottom = 123.0
 text = "Graphics Settings"
 
@@ -77,10 +77,10 @@ layout_mode = 2
 
 [node name="AudioSettingsLabel" type="Label" parent="GridContainer/DummyLabel"]
 layout_mode = 0
-offset_left = 4.0
-offset_top = 216.0
-offset_right = 116.0
-offset_bottom = 239.0
+offset_left = 24.0
+offset_top = 239.0
+offset_right = 136.0
+offset_bottom = 262.0
 text = "Audio Settings"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="GridContainer/DummyLabel/AudioSettingsLabel"]
@@ -121,10 +121,10 @@ layout_mode = 2
 
 [node name="GameplaySettingsLabel" type="Label" parent="GridContainer/DummyLabel"]
 layout_mode = 0
-offset_left = 3.0
-offset_top = 316.0
-offset_right = 147.0
-offset_bottom = 339.0
+offset_left = 24.0
+offset_top = 376.0
+offset_right = 168.0
+offset_bottom = 399.0
 text = "Gameplay Settings"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="GridContainer/DummyLabel/GameplaySettingsLabel"]

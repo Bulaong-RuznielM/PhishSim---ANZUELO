@@ -1,7 +1,7 @@
 extends Control
 
 func _on_task_1_pressed() -> void:
-	get_tree().change_scene_to_file("res://SCENES/TASK SCENES/Task_1.tscn")
+	get_tree().change_scene_to_file("res://SCENES/Sub/Task_1.tscn")
 
 
 

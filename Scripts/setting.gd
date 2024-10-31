@@ -1,7 +1,7 @@
 extends Control
 
-var settings_file_path = "res://Scripts/setting.json"
-var language_file_path = "res://Scripts/Language.json"
+var settings_file_path = "res://Scripts/Data/setting.json"
+var language_file_path = "res://Scripts/Data/Language.json"
 
 func _ready():
 	setup_language_options()

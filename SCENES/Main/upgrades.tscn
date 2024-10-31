@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://dw3cw6bi88ke8"]
 
-[ext_resource type="Script" path="res://Scripts/upgrades.gd" id="1_o8vhi"]
-[ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="2_7qvi6"]
-[ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="3_hhns0"]
-[ext_resource type="Script" path="res://Scripts/upgrade_info.gd" id="4_fu7yx"]
-[ext_resource type="FontFile" uid="uid://2t3fwfyco16d" path="res://FONTS/super-pixel-font/SuperPixel-m2L8j.ttf" id="5_jxnwa"]
+[ext_resource type="Script" path="res://Scripts/upgrades.gd" id="1_6fcv3"]
+[ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="2_je02j"]
+[ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="3_0new6"]
+[ext_resource type="Script" path="res://Scripts/upgrade_info.gd" id="4_rjq78"]
+[ext_resource type="FontFile" uid="uid://2t3fwfyco16d" path="res://FONTS/super-pixel-font/SuperPixel-m2L8j.ttf" id="5_l0ups"]
 
 [sub_resource type="Theme" id="Theme_wnala"]
 Label/fonts/font = null
@@ -16,7 +16,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_o8vhi")
+script = ExtResource("1_6fcv3")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(580, 324)
@@ -24,7 +24,7 @@ position = Vector2(580, 324)
 [node name="MainWindow" type="Sprite2D" parent="."]
 position = Vector2(580, 324)
 scale = Vector2(0.598958, 0.601852)
-texture = ExtResource("2_7qvi6")
+texture = ExtResource("2_je02j")
 
 [node name="EXIT" type="Button" parent="."]
 modulate = Color(1, 0, 0, 1)
@@ -55,7 +55,7 @@ theme_override_constants/separation = 26
 
 [node name="Upgrade_1" type="TextureRect" parent="Upgrade shop/ScrollContainer/VBoxContainer"]
 layout_mode = 2
-texture = ExtResource("3_hhns0")
+texture = ExtResource("3_0new6")
 
 [node name="Label" type="Label" parent="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_1"]
 layout_mode = 0
@@ -80,7 +80,7 @@ text = "U P G R A D E"
 
 [node name="Upgrade_2" type="TextureRect" parent="Upgrade shop/ScrollContainer/VBoxContainer"]
 layout_mode = 2
-texture = ExtResource("3_hhns0")
+texture = ExtResource("3_0new6")
 
 [node name="Label" type="Label" parent="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_2"]
 layout_mode = 0
@@ -105,7 +105,7 @@ text = "U P G R A D E"
 
 [node name="Upgrade_3" type="TextureRect" parent="Upgrade shop/ScrollContainer/VBoxContainer"]
 layout_mode = 2
-texture = ExtResource("3_hhns0")
+texture = ExtResource("3_0new6")
 
 [node name="Label" type="Label" parent="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_3"]
 layout_mode = 0
@@ -129,7 +129,7 @@ text = "U P G R A D E"
 
 [node name="Upgrade_4" type="TextureRect" parent="Upgrade shop/ScrollContainer/VBoxContainer"]
 layout_mode = 2
-texture = ExtResource("3_hhns0")
+texture = ExtResource("3_0new6")
 
 [node name="Label" type="Label" parent="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_4"]
 layout_mode = 0
@@ -153,7 +153,7 @@ text = "U P G R A D E"
 
 [node name="Upgrade_5" type="TextureRect" parent="Upgrade shop/ScrollContainer/VBoxContainer"]
 layout_mode = 2
-texture = ExtResource("3_hhns0")
+texture = ExtResource("3_0new6")
 
 [node name="Label" type="Label" parent="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_5"]
 layout_mode = 0
@@ -177,7 +177,7 @@ text = "U P G R A D E"
 
 [node name="Upgrade_6" type="TextureRect" parent="Upgrade shop/ScrollContainer/VBoxContainer"]
 layout_mode = 2
-texture = ExtResource("3_hhns0")
+texture = ExtResource("3_0new6")
 
 [node name="Label" type="Label" parent="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_6"]
 layout_mode = 0
@@ -201,7 +201,7 @@ text = "U P G R A D E"
 
 [node name="Upgrade_7" type="TextureRect" parent="Upgrade shop/ScrollContainer/VBoxContainer"]
 layout_mode = 2
-texture = ExtResource("3_hhns0")
+texture = ExtResource("3_0new6")
 
 [node name="Label" type="Label" parent="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_7"]
 layout_mode = 0
@@ -225,7 +225,7 @@ text = "U P G R A D E"
 
 [node name="Upgrade_8" type="TextureRect" parent="Upgrade shop/ScrollContainer/VBoxContainer"]
 layout_mode = 2
-texture = ExtResource("3_hhns0")
+texture = ExtResource("3_0new6")
 
 [node name="Label" type="Label" parent="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_8"]
 layout_mode = 0
@@ -249,7 +249,7 @@ text = "U P G R A D E"
 
 [node name="Upgrade_9" type="TextureRect" parent="Upgrade shop/ScrollContainer/VBoxContainer"]
 layout_mode = 2
-texture = ExtResource("3_hhns0")
+texture = ExtResource("3_0new6")
 
 [node name="Label" type="Label" parent="Upgrade shop/ScrollContainer/VBoxContainer/Upgrade_9"]
 layout_mode = 0
@@ -275,7 +275,7 @@ text = "U P G R A D E"
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("4_fu7yx")
+script = ExtResource("4_rjq78")
 
 [node name="UpgradeInfo" type="Label" parent="Upgrade shop/UpgradeInfo"]
 layout_mode = 0
@@ -286,7 +286,7 @@ offset_bottom = 141.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("5_jxnwa")
+theme_override_fonts/font = ExtResource("5_l0ups")
 theme_override_font_sizes/font_size = 56
 text = "UPGRADE INFO:"
 
