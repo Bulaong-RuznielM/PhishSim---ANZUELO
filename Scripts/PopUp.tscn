@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://dde0hkhqryv55"]
+
+[ext_resource type="Texture2D" uid="uid://brfgb3l042m5g" path="res://ASSETS/Upgrade/not_press.png" id="1_df7sf"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_df7sf")

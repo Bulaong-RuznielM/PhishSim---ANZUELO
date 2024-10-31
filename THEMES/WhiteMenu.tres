@@ -1,18 +1,12 @@
-[gd_resource type="Theme" load_steps=7 format=3 uid="uid://c6ncn661cxk5i"]
-
-[ext_resource type="Texture2D" uid="uid://wk7ux0kt7y3e" path="res://ASSETS/Grey/Default/button_rectangle_depth_gloss.png" id="1_h0wql"]
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://c6ncn661cxk5i"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_muplx"]
-texture = ExtResource("1_h0wql")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yyp82"]
-texture = ExtResource("1_h0wql")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8smm4"]
-texture = ExtResource("1_h0wql")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cvepc"]
-texture = ExtResource("1_h0wql")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wug4f"]
 content_margin_left = 4.0

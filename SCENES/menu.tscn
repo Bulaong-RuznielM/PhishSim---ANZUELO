@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://36cck8vjhq2g"]
 
 [ext_resource type="Script" path="res://Scripts/menu.gd" id="1_6arju"]
-[ext_resource type="Texture2D" uid="uid://c1csaw3svf5p5" path="res://ASSETS/PhishSimMainMenu.jpg" id="2_cxdst"]
+[ext_resource type="Texture2D" uid="uid://c1csaw3svf5p5" path="res://ASSETS/miscellaneous/PhishSimMainMenu.jpg" id="2_cxdst"]
 [ext_resource type="AudioStream" uid="uid://be3yl4dyabcsm" path="res://AUDIO/01. Constant Moderato.wav" id="3_3j6cc"]
 [ext_resource type="Theme" uid="uid://c6ncn661cxk5i" path="res://THEMES/WhiteMenu.tres" id="3_utdvc"]
 

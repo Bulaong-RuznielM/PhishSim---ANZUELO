@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://dw3cw6bi88ke8"]
 
-[ext_resource type="Script" path="res://SCENES/upgrades.gd" id="1_6ijm7"]
+[ext_resource type="Script" path="res://Scripts/upgrades.gd" id="1_6ijm7"]
 [ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="1_xqs5l"]
 [ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="3_hk8wp"]
-[ext_resource type="Script" path="res://SCENES/upgrade_info.gd" id="4_01yj0"]
+[ext_resource type="Script" path="res://Scripts/upgrade_info.gd" id="4_01yj0"]
 [ext_resource type="FontFile" uid="uid://2t3fwfyco16d" path="res://FONTS/super-pixel-font/SuperPixel-m2L8j.ttf" id="5_h1rse"]
 
 [sub_resource type="Theme" id="Theme_wnala"]

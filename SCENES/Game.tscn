@@ -1,8 +1,8 @@
 [gd_scene load_steps=9 format=3 uid="uid://0r27r2r5msub"]
 
-[ext_resource type="Texture2D" uid="uid://brttk0nyik33q" path="res://ASSETS/MAIN START.jpg" id="1_0yt1l"]
-[ext_resource type="Texture2D" uid="uid://dcmppo5daehm3" path="res://ASSETS/BACKGROUND.jpg" id="1_wxer0"]
-[ext_resource type="Script" path="res://SCENES/windows_buttons.gd" id="2_j8kg2"]
+[ext_resource type="Texture2D" uid="uid://brttk0nyik33q" path="res://ASSETS/windows/MAIN START.jpg" id="1_0yt1l"]
+[ext_resource type="Texture2D" uid="uid://dcmppo5daehm3" path="res://ASSETS/miscellaneous/BACKGROUND.jpg" id="1_wxer0"]
+[ext_resource type="Script" path="res://Scripts/windows_buttons.gd" id="2_j8kg2"]
 [ext_resource type="Texture2D" uid="uid://uaide1why5oe" path="res://ASSETS/icons/windows_border - Copy (3) - Copy - Copy.png" id="2_nfcwh"]
 [ext_resource type="Texture2D" uid="uid://b74t45ak3kdrt" path="res://ASSETS/icons/windows_border - Copy (2) - Copy - Copy.png" id="4_bcqxm"]
 [ext_resource type="FontFile" uid="uid://2t3fwfyco16d" path="res://FONTS/super-pixel-font/SuperPixel-m2L8j.ttf" id="5_jwpu0"]
@@ -83,9 +83,13 @@ text = "Everything in the game right now is temporary. No design/feature is fina
 
 Features that are working:. 
 A. Upgrades
-B. Task"
+B. Task
+c. Email (nothing)
+d. setting"
 vertical_alignment = 1
 autowrap_mode = 2
 
 [connection signal="pressed" from="WindowsButtons/UPGRADES" to="WindowsButtons" method="_on_button_pressed"]
 [connection signal="pressed" from="WindowsButtons/TASKS" to="WindowsButtons" method="_on_tasks_pressed"]
+[connection signal="pressed" from="WindowsButtons/EMAIL" to="WindowsButtons" method="_on_email_pressed"]
+[connection signal="pressed" from="WindowsButtons/SETTINGS" to="WindowsButtons" method="_on_settings_pressed"]

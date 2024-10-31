@@ -1,0 +1,152 @@
+[gd_scene load_steps=3 format=3 uid="uid://dkntrq2rkak5n"]
+
+[ext_resource type="Script" path="res://Scripts/setting.gd" id="1_56c16"]
+[ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="1_nvhvf"]
+
+[node name="Settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_56c16")
+
+[node name="WindowsBorder-Copy" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_nvhvf")
+
+[node name="EXIT_SETTING" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1112.0
+offset_right = 1152.0
+offset_bottom = 40.0
+
+[node name="GridContainer" type="GridContainer" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="DummyLabel" type="Label" parent="GridContainer"]
+layout_mode = 2
+
+[node name="GraphicsSettingsLabel" type="Label" parent="GridContainer/DummyLabel"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 100.0
+offset_right = 175.0
+offset_bottom = 123.0
+text = "Graphics Settings"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GridContainer/DummyLabel/GraphicsSettingsLabel"]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 23.0
+offset_right = 210.0
+offset_bottom = 105.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer"]
+layout_mode = 2
+
+[node name="ResolutionLabel" type="Label" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Resolution"
+
+[node name="ResolutionScalingLabel" type="Label" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Resolution Scaling"
+
+[node name="FullscreenModeLabel" type="Label" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Fullscreen Mode"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 9
+
+[node name="ResolutionOptionButton" type="OptionButton" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+
+[node name="ResolutionScalingOptionButton" type="OptionButton" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+
+[node name="FullscreenModeCheckButton" type="CheckButton" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+
+[node name="AudioSettingsLabel" type="Label" parent="GridContainer/DummyLabel"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 216.0
+offset_right = 116.0
+offset_bottom = 239.0
+text = "Audio Settings"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GridContainer/DummyLabel/AudioSettingsLabel"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 23.0
+offset_right = 427.0
+offset_bottom = 100.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GridContainer/DummyLabel/AudioSettingsLabel/HBoxContainer"]
+layout_mode = 2
+
+[node name="MasterVolumeLabel" type="Label" parent="GridContainer/DummyLabel/AudioSettingsLabel/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Master Volume"
+
+[node name="MusicVolumeLabel" type="Label" parent="GridContainer/DummyLabel/AudioSettingsLabel/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Music Volume"
+
+[node name="SoundEffectsVolumeLabel" type="Label" parent="GridContainer/DummyLabel/AudioSettingsLabel/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Sound Effects Volume"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="GridContainer/DummyLabel/AudioSettingsLabel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 14
+
+[node name="MasterVolumeHSlider" type="HSlider" parent="GridContainer/DummyLabel/AudioSettingsLabel/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+
+[node name="MusicVolumeHSlider" type="HSlider" parent="GridContainer/DummyLabel/AudioSettingsLabel/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+
+[node name="SoundEffectsVolumeHSlider" type="HSlider" parent="GridContainer/DummyLabel/AudioSettingsLabel/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+
+[node name="GameplaySettingsLabel" type="Label" parent="GridContainer/DummyLabel"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 316.0
+offset_right = 147.0
+offset_bottom = 339.0
+text = "Gameplay Settings"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GridContainer/DummyLabel/GameplaySettingsLabel"]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 20.0
+offset_right = 132.0
+offset_bottom = 60.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GridContainer/DummyLabel/GameplaySettingsLabel/HBoxContainer"]
+layout_mode = 2
+
+[node name="LanguageLabel" type="Label" parent="GridContainer/DummyLabel/GameplaySettingsLabel/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Language"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="GridContainer/DummyLabel/GameplaySettingsLabel/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 9
+
+[node name="LanguageSelectionOptionButton" type="OptionButton" parent="GridContainer/DummyLabel/GameplaySettingsLabel/HBoxContainer/VBoxContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[connection signal="pressed" from="EXIT_SETTING" to="." method="_on_exit_setting_pressed"]

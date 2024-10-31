@@ -1,0 +1,21 @@
+{
+	"English": {
+		"menu" : {
+			"play" : "PLAY",
+			"quit" : "QUIT",
+		}
+		"task" : {
+			"play" : "PLAY",
+			"quit" : "QUIT",
+		}
+		"upgrade" : {
+			
+		}
+		"email" : {
+			
+		}
+		"setting" : {
+			
+		}
+	}
+}
