@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=3 uid="uid://bcjdmh7jeni"]
+
+[ext_resource type="Script" path="res://Scripts/task_1.gd" id="1_imwvx"]
+[ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="2_nhx6b"]
+
+[sub_resource type="Curve2D" id="Curve2D_pcmdc"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 264, 144, 0, 0, 0, 0, 576, 144, 0, 0, 0, 0, 896, 144, 0, 0, 0, 0, 896, 488, 0, 0, 0, 0, 264, 480, 0, 0, 0, 0, 264, 144)
+}
+point_count = 6
+
+[node name="Task_1" type="Node2D"]
+script = ExtResource("1_imwvx")
+
+[node name="MainWindow" type="Sprite2D" parent="."]
+scale = Vector2(0.598958, 0.596296)
+texture = ExtResource("2_nhx6b")
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 296.0
+offset_top = -320.0
+offset_right = 571.0
+offset_bottom = -267.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 32
+text = "Go back to TASKS"
+metadata/_edit_use_anchors_ = true
+
+[node name="PopUpPath" type="Path2D" parent="."]
+position = Vector2(-616, -312)
+curve = SubResource("Curve2D_pcmdc")
+
+[node name="PopUpSpawnLocation" type="PathFollow2D" parent="PopUpPath"]
+unique_name_in_owner = true
+position = Vector2(264, 144)
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

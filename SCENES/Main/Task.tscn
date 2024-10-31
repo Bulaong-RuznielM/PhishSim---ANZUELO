@@ -1,0 +1,396 @@
+[gd_scene load_steps=6 format=3 uid="uid://jlc10skc3u2v"]
+
+[ext_resource type="Script" path="res://Scripts/task.gd" id="1_1kidr"]
+[ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="2_x7i3i"]
+[ext_resource type="Script" path="res://Scripts/task_ui.gd" id="3_a5d60"]
+[ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="4_yq8du"]
+[ext_resource type="Script" path="res://Scripts/show_task_1.gd" id="5_yynko"]
+
+[node name="TASKS" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1kidr")
+
+[node name="WindowsBorder-Copy" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_x7i3i")
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 0, 0, 1)
+self_modulate = Color(1, 0, 0, 1)
+layout_mode = 0
+offset_left = 1112.0
+offset_right = 1152.0
+offset_bottom = 40.0
+
+[node name="TaskUI" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_a5d60")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TaskUI"]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 150.0
+offset_right = 1139.0
+offset_bottom = 550.0
+scale = Vector2(1.00527, 0.998044)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TaskUI/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 14
+
+[node name="Task_1" type="TextureRect" parent="TaskUI/ScrollContainer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("4_yq8du")
+
+[node name="Label" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_1"]
+layout_mode = 0
+offset_left = 98.481
+offset_top = 29.0568
+offset_right = 195.481
+offset_bottom = 69.0568
+scale = Vector2(2.4886, 3.27344)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 29
+text = "TASK 1"
+
+[node name="Task_1" type="Button" parent="TaskUI/ScrollContainer/HBoxContainer/Task_1"]
+layout_mode = 0
+offset_left = 150.208
+offset_top = 296.58
+offset_right = 217.208
+offset_bottom = 327.58
+scale = Vector2(1.83755, 2.1351)
+text = "ACCEPT"
+
+[node name="Label2" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_1"]
+layout_mode = 0
+offset_left = 25.8637
+offset_top = 207.406
+offset_right = 485.864
+offset_bottom = 251.406
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 26
+text = "Close all the incoming Pop-Ups"
+
+[node name="Task_2" type="TextureRect" parent="TaskUI/ScrollContainer/HBoxContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+texture = ExtResource("4_yq8du")
+
+[node name="Label" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_2"]
+layout_mode = 0
+offset_left = 98.481
+offset_top = 29.0568
+offset_right = 195.481
+offset_bottom = 69.0568
+scale = Vector2(2.4886, 3.27344)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 29
+text = "TASK 2"
+
+[node name="Task_2" type="Button" parent="TaskUI/ScrollContainer/HBoxContainer/Task_2"]
+layout_mode = 0
+offset_left = 150.208
+offset_top = 296.58
+offset_right = 217.208
+offset_bottom = 327.58
+scale = Vector2(1.83755, 2.1351)
+text = "ACCEPT"
+
+[node name="ComingSoon" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_2"]
+layout_mode = 0
+offset_left = 9.53083
+offset_top = 178.349
+offset_right = 427.531
+offset_bottom = 269.349
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 66
+text = "Coming Soon"
+
+[node name="Task_3" type="TextureRect" parent="TaskUI/ScrollContainer/HBoxContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+texture = ExtResource("4_yq8du")
+
+[node name="Label" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_3"]
+layout_mode = 0
+offset_left = 98.481
+offset_top = 29.0568
+offset_right = 195.481
+offset_bottom = 69.0568
+scale = Vector2(2.4886, 3.27344)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 29
+text = "TASK 3"
+
+[node name="Task_3" type="Button" parent="TaskUI/ScrollContainer/HBoxContainer/Task_3"]
+layout_mode = 0
+offset_left = 150.208
+offset_top = 296.58
+offset_right = 217.208
+offset_bottom = 327.58
+scale = Vector2(1.83755, 2.1351)
+text = "ACCEPT"
+
+[node name="ComingSoon" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_3"]
+layout_mode = 0
+offset_left = 9.53083
+offset_top = 178.349
+offset_right = 427.531
+offset_bottom = 269.349
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 66
+text = "Coming Soon"
+
+[node name="Task_4" type="TextureRect" parent="TaskUI/ScrollContainer/HBoxContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+texture = ExtResource("4_yq8du")
+
+[node name="Label" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_4"]
+layout_mode = 0
+offset_left = 98.481
+offset_top = 29.0568
+offset_right = 195.481
+offset_bottom = 69.0568
+scale = Vector2(2.4886, 3.27344)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 29
+text = "TASK 4"
+
+[node name="Task_4" type="Button" parent="TaskUI/ScrollContainer/HBoxContainer/Task_4"]
+layout_mode = 0
+offset_left = 150.208
+offset_top = 296.58
+offset_right = 217.208
+offset_bottom = 327.58
+scale = Vector2(1.83755, 2.1351)
+text = "ACCEPT"
+
+[node name="ComingSoon" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_4"]
+layout_mode = 0
+offset_left = 9.53083
+offset_top = 178.349
+offset_right = 427.531
+offset_bottom = 269.349
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 66
+text = "Coming Soon"
+
+[node name="Task_5" type="TextureRect" parent="TaskUI/ScrollContainer/HBoxContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+texture = ExtResource("4_yq8du")
+
+[node name="Label" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_5"]
+layout_mode = 0
+offset_left = 98.481
+offset_top = 29.0568
+offset_right = 195.481
+offset_bottom = 69.0568
+scale = Vector2(2.4886, 3.27344)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 29
+text = "TASK 5"
+
+[node name="Task_5" type="Button" parent="TaskUI/ScrollContainer/HBoxContainer/Task_5"]
+layout_mode = 0
+offset_left = 150.208
+offset_top = 296.58
+offset_right = 217.208
+offset_bottom = 327.58
+scale = Vector2(1.83755, 2.1351)
+text = "ACCEPT"
+
+[node name="ComingSoon" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_5"]
+layout_mode = 0
+offset_left = 9.53083
+offset_top = 178.349
+offset_right = 427.531
+offset_bottom = 269.349
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 66
+text = "Coming Soon"
+
+[node name="Task_6" type="TextureRect" parent="TaskUI/ScrollContainer/HBoxContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+texture = ExtResource("4_yq8du")
+
+[node name="Label" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_6"]
+layout_mode = 0
+offset_left = 98.481
+offset_top = 29.0568
+offset_right = 195.481
+offset_bottom = 69.0568
+scale = Vector2(2.4886, 3.27344)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 29
+text = "TASK 6"
+
+[node name="Task_6" type="Button" parent="TaskUI/ScrollContainer/HBoxContainer/Task_6"]
+layout_mode = 0
+offset_left = 150.208
+offset_top = 296.58
+offset_right = 217.208
+offset_bottom = 327.58
+scale = Vector2(1.83755, 2.1351)
+text = "ACCEPT"
+
+[node name="ComingSoon" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_6"]
+layout_mode = 0
+offset_left = 9.53083
+offset_top = 178.349
+offset_right = 427.531
+offset_bottom = 269.349
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 66
+text = "Coming Soon"
+
+[node name="Task_7" type="TextureRect" parent="TaskUI/ScrollContainer/HBoxContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+texture = ExtResource("4_yq8du")
+
+[node name="Label" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_7"]
+layout_mode = 0
+offset_left = 98.481
+offset_top = 29.0568
+offset_right = 195.481
+offset_bottom = 69.0568
+scale = Vector2(2.4886, 3.27344)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 29
+text = "TASK 7"
+
+[node name="Task_7" type="Button" parent="TaskUI/ScrollContainer/HBoxContainer/Task_7"]
+layout_mode = 0
+offset_left = 150.208
+offset_top = 296.58
+offset_right = 217.208
+offset_bottom = 327.58
+scale = Vector2(1.83755, 2.1351)
+text = "ACCEPT"
+
+[node name="ComingSoon" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_7"]
+layout_mode = 0
+offset_left = 9.53083
+offset_top = 178.349
+offset_right = 427.531
+offset_bottom = 269.349
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 66
+text = "Coming Soon"
+
+[node name="Task_8" type="TextureRect" parent="TaskUI/ScrollContainer/HBoxContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+texture = ExtResource("4_yq8du")
+
+[node name="Label" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_8"]
+layout_mode = 0
+offset_left = 98.481
+offset_top = 29.0568
+offset_right = 195.481
+offset_bottom = 69.0568
+scale = Vector2(2.4886, 3.27344)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 29
+text = "TASK 8"
+
+[node name="Task_8" type="Button" parent="TaskUI/ScrollContainer/HBoxContainer/Task_8"]
+layout_mode = 0
+offset_left = 150.208
+offset_top = 296.58
+offset_right = 217.208
+offset_bottom = 327.58
+scale = Vector2(1.83755, 2.1351)
+text = "ACCEPT"
+
+[node name="ComingSoon" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_8"]
+layout_mode = 0
+offset_left = 9.53083
+offset_top = 178.349
+offset_right = 427.531
+offset_bottom = 269.349
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 66
+text = "Coming Soon"
+
+[node name="ShowTask_2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 61.0
+offset_right = 366.0
+offset_bottom = 115.0
+theme_override_font_sizes/font_size = 33
+text = "Show Task 2 (DEBUG)"
+script = ExtResource("5_yynko")
+
+[node name="HideTask_2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 393.0
+offset_top = 61.0
+offset_right = 738.0
+offset_bottom = 115.0
+theme_override_font_sizes/font_size = 33
+text = "Hide Task 2 (DEBUG)"
+script = ExtResource("5_yynko")
+
+[node name="ShowAllTasks" type="Button" parent="."]
+layout_mode = 0
+offset_left = 764.0
+offset_top = 57.0
+offset_right = 1104.0
+offset_bottom = 109.0
+theme_override_font_sizes/font_size = 31
+text = "Show All Tasks (DEBUG)"
+
+[node name="HideAllTasks" type="Button" parent="."]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 556.0
+offset_right = 536.0
+offset_bottom = 628.0
+theme_override_font_sizes/font_size = 40
+text = "Hide All Tasks (DEBUG)"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="TaskUI/ScrollContainer/HBoxContainer/Task_1/Task_1" to="TaskUI" method="_on_task_1_pressed"]
+[connection signal="pressed" from="ShowTask_2" to="TaskUI" method="_on_show_task_2_pressed"]
+[connection signal="pressed" from="HideTask_2" to="TaskUI" method="_on_hide_task_2_pressed"]
+[connection signal="pressed" from="ShowAllTasks" to="TaskUI" method="_on_show_all_tasks_pressed"]
+[connection signal="pressed" from="HideAllTasks" to="TaskUI" method="_on_hide_all_tasks_pressed"]
