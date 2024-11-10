@@ -47,32 +47,32 @@ offset_top = 23.0
 offset_right = 210.0
 offset_bottom = 105.0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer"]
+[node name="GraphicsSettings" type="VBoxContainer" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer"]
 layout_mode = 2
 
-[node name="ResolutionLabel" type="Label" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer/VBoxContainer"]
+[node name="ResolutionLabel" type="Label" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer/GraphicsSettings"]
 layout_mode = 2
 text = "Resolution"
 
-[node name="ResolutionScalingLabel" type="Label" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer/VBoxContainer"]
+[node name="ResolutionScalingLabel" type="Label" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer/GraphicsSettings"]
 layout_mode = 2
 text = "Resolution Scaling"
 
-[node name="FullscreenModeLabel" type="Label" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer/VBoxContainer"]
+[node name="FullscreenModeLabel" type="Label" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer/GraphicsSettings"]
 layout_mode = 2
 text = "Fullscreen Mode"
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer"]
+[node name="GraphicsSettingsOptions" type="VBoxContainer" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer"]
 layout_mode = 2
 theme_override_constants/separation = 9
 
-[node name="ResolutionOptionButton" type="OptionButton" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer/VBoxContainer2"]
+[node name="ResolutionOptionButton" type="OptionButton" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer/GraphicsSettingsOptions"]
 layout_mode = 2
 
-[node name="ResolutionScalingOptionButton" type="OptionButton" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer/VBoxContainer2"]
+[node name="ResolutionScalingOptionButton" type="OptionButton" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer/GraphicsSettingsOptions"]
 layout_mode = 2
 
-[node name="FullscreenModeCheckButton" type="CheckButton" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer/VBoxContainer2"]
+[node name="FullscreenModeCheckButton" type="CheckButton" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer/GraphicsSettingsOptions"]
 layout_mode = 2
 
 [node name="AudioSettingsLabel" type="Label" parent="GridContainer/DummyLabel"]

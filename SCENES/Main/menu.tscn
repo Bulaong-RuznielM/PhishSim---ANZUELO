@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://36cck8vjhq2g"]
+[gd_scene load_steps=4 format=3 uid="uid://36cck8vjhq2g"]
 
 [ext_resource type="Script" path="res://Scripts/menu.gd" id="1_hv4x7"]
 [ext_resource type="Texture2D" uid="uid://c1csaw3svf5p5" path="res://ASSETS/miscellaneous/PhishSimMainMenu.jpg" id="2_6avso"]
 [ext_resource type="AudioStream" uid="uid://be3yl4dyabcsm" path="res://AUDIO/01. Constant Moderato.wav" id="3_alns1"]
-[ext_resource type="Theme" uid="uid://c6ncn661cxk5i" path="res://THEMES/WhiteMenu.tres" id="4_3w7gq"]
 
 [node name="MENU" type="Control"]
 layout_mode = 3
@@ -61,7 +60,6 @@ offset_right = 19.0525
 offset_bottom = 36.7374
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("4_3w7gq")
 text = "PLAY"
 
 [node name="EXIT" type="Button" parent="Control"]
@@ -70,7 +68,6 @@ offset_left = -34.358
 offset_top = 68.7475
 offset_right = 30.642
 offset_bottom = 102.748
-theme = ExtResource("4_3w7gq")
 text = "QUIT"
 
 [connection signal="finished" from="MainMenuMusic" to="." method="_on_main_menu_music_finished"]
