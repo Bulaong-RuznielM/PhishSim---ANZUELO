@@ -1,24 +1,4 @@
 {
-	"Resolution" : [
-		[1280, 720],
-		[1600, 900],
-		[1920, 1080],
-		[2560, 1440],
-		[3840, 2160],
-		[5120, 2880],
-		[7680, 4320],
-		[15360, 8640]
-	],
-	"ResolutionScal" : [
-		[1280, 720],
-		[1600, 900],
-		[1920, 1080],
-		[2560, 1440],
-		[3840, 2160],
-		[5120, 2880],
-		[7680, 4320],
-		[15360, 8640]
-	],
 	"English": {
 		"menu" : {
 			"play" : "PLAY",
@@ -32,82 +12,101 @@
 		},
 		"task" : {
 			"accept" : "ACCEPT",
-			"task1" : {
-				"title" : "Task 1",
+			"card0" : {
+				"title" : "Hustle on the Internet",
 				"description" : "Close all the incominig Pop-Ups"
 			},
-			"task2" : {
-				"title" : "Task 2",
+			"card1" : {
+				"title" : "Install Application",
 				"description" : "Coming Soon"
 			},
-			"task3" : {
-				"title" : "Task 3",
+			"card2" : {
+				"title" : "Clean Pc",
 				"description" : "Coming Soon"
 			},
-			"task4" : {
-				"title" : "Task 4",
+			"card3" : {
+				"title" : "Send Email/Text",
 				"description" : "Coming Soon"
 			},
-			"task5" : {
-				"title" : "Task 5",
+			"card4" : {
+				"title" : "Call",
 				"description" : "Coming Soon"
 			},
-			"task6" : {
-				"title" : "Task 6",
+			"card5" : {
+				"title" : "Browse Social Media",
 				"description" : "Coming Soon"
 			},
-			"task7" : {
-				"title" : "Task 7",
+			"card6" : {
+				"title" : "Browse the Internet",
 				"description" : "Coming Soon"
 			},
-			"task8" : {
-				"title" : "Task 8",
+			"card7" : {
+				"title" : "Post on Socials",
+				"description" : "Coming Soon"
+			},
+			"card8" : {
+				"title" : "Explore Outside",
+				"description" : "Coming Soon"
+			},
+			"card9" : {
+				"title" : "Bank Loan",
 				"description" : "Coming Soon"
 			}
 		},
 		"upgrade" : {
 			"upgardeinfo" : "upgrade info:",
 			"upgrade" : "upgrade",
+			"card0" : {
+				"title" : "Efficiency",
+				"headline" : "asda",
+				"description" : "Coming Soon"
+			},
 			"card1" : {
-				"title" : "",
-				"headline" : "",
+				"title" : "Health",
+				"headline" : "aaaaaad",
 				"description" : "Coming Soon"
 			},
 			"card2" : {
-				"title" : "",
-				"headline" : "",
+				"title" : "Pc Upgrade",
+				"headline" : "adddddd",
 				"description" : "Coming Soon"
 			},
 			"card3" : {
-				"title" : "",
-				"headline" : "",
+				"title" : "Mine Crypto",
+				"headline" : "Be able to Mine Crypto",
 				"description" : "Coming Soon"
 			},
 			"card4" : {
-				"title" : "",
-				"headline" : "",
+				"title" : "Different OS",
+				"headline" : "gaaaaaaaaa",
 				"description" : "Coming Soon"
 			},
 			"card5" : {
-				"title" : "",
-				"headline" : "",
+				"title" : "Anti-Virus",
+				"headline" : "hhhh",
 				"description" : "Coming Soon"
 			},
 			"card6" : {
-				"title" : "",
-				"headline" : "",
+				"title" : "VPN",
+				"headline" : "aaaaaa",
 				"description" : "Coming Soon"
 			},
 			"card7" : {
-				"title" : "",
-				"headline" : "",
+				"title" : "Different Bank",
+				"headline" : "hhh",
 				"description" : "Coming Soon"
 			},
 			"card8" : {
-				"title" : "",
-				"headline" : "",
+				"title" : "Different Bank",
+				"headline" : "hasdhh",
 				"description" : "Coming Soon"
 			},
+			"card9" : {
+				"title" : "Different Bank",
+				"headline" : "hghjhh",
+				"description" : "Coming Soon"
+			},
+			
 		},
 		"email" : {
 			"card1" : {

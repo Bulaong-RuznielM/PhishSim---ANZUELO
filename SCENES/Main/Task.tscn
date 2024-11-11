@@ -16,17 +16,16 @@ grow_vertical = 2
 script = ExtResource("1_1kidr")
 
 [node name="WindowsBorder-Copy" type="Sprite2D" parent="."]
-position = Vector2(576, 324)
-scale = Vector2(0.6, 0.6)
+position = Vector2(960, 540)
 texture = ExtResource("2_x7i3i")
 
 [node name="Button" type="Button" parent="."]
 modulate = Color(1, 0, 0, 1)
 self_modulate = Color(1, 0, 0, 1)
 layout_mode = 0
-offset_left = 1112.0
-offset_right = 1152.0
-offset_bottom = 40.0
+offset_left = 1852.0
+offset_right = 1920.0
+offset_bottom = 67.0
 
 [node name="TaskUI" type="Control" parent="."]
 anchors_preset = 0
@@ -36,10 +35,10 @@ script = ExtResource("3_a5d60")
 
 [node name="ScrollContainer" type="ScrollContainer" parent="TaskUI"]
 layout_mode = 0
-offset_left = 17.0
-offset_top = 150.0
-offset_right = 1139.0
-offset_bottom = 550.0
+offset_left = 43.0
+offset_top = 238.0
+offset_right = 1871.0
+offset_bottom = 949.0
 scale = Vector2(1.00527, 0.998044)
 
 [node name="HBoxContainer" type="HBoxContainer" parent="TaskUI/ScrollContainer"]
@@ -381,10 +380,10 @@ text = "Show All Tasks (DEBUG)"
 
 [node name="HideAllTasks" type="Button" parent="."]
 layout_mode = 0
-offset_left = 23.0
-offset_top = 556.0
-offset_right = 536.0
-offset_bottom = 628.0
+offset_left = 40.0
+offset_top = 977.0
+offset_right = 553.0
+offset_bottom = 1049.0
 theme_override_font_sizes/font_size = 40
 text = "Hide All Tasks (DEBUG)"
 

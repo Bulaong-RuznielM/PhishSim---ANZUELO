@@ -13,15 +13,14 @@ grow_vertical = 2
 script = ExtResource("1_vmq18")
 
 [node name="WindowsBorder-Copy" type="Sprite2D" parent="."]
-position = Vector2(576, 324)
-scale = Vector2(0.6, 0.6)
+position = Vector2(960, 540)
 texture = ExtResource("2_4b714")
 
 [node name="EXIT_SETTING" type="Button" parent="."]
 layout_mode = 0
-offset_left = 1112.0
-offset_right = 1152.0
-offset_bottom = 40.0
+offset_left = 1852.0
+offset_right = 1920.0
+offset_bottom = 67.0
 
 [node name="GridContainer" type="GridContainer" parent="."]
 modulate = Color(0, 0, 0, 1)
