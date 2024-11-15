@@ -69,6 +69,14 @@ offset_bottom = 229.0
 scale = Vector2(0.758283, 0.724612)
 icon = ExtResource("7_smah1")
 
+[node name="quit" type="Button" parent="WindowsButtons"]
+layout_mode = 0
+offset_left = -530.0
+offset_top = 363.0
+offset_right = -393.0
+offset_bottom = 394.0
+text = "go back to menu"
+
 [node name="DevText" type="Label" parent="."]
 offset_left = -320.0
 offset_top = -264.0
@@ -89,7 +97,8 @@ d. setting"
 vertical_alignment = 1
 autowrap_mode = 2
 
-[connection signal="pressed" from="WindowsButtons/UPGRADES" to="WindowsButtons" method="_on_button_pressed"]
+[connection signal="pressed" from="WindowsButtons/UPGRADES" to="WindowsButtons" method="_on_upgrades_pressed"]
 [connection signal="pressed" from="WindowsButtons/TASKS" to="WindowsButtons" method="_on_tasks_pressed"]
 [connection signal="pressed" from="WindowsButtons/EMAIL" to="WindowsButtons" method="_on_email_pressed"]
 [connection signal="pressed" from="WindowsButtons/SETTINGS" to="WindowsButtons" method="_on_settings_pressed"]
+[connection signal="pressed" from="WindowsButtons/quit" to="WindowsButtons" method="_on_quit_pressed"]
