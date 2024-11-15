@@ -319,8 +319,6 @@ theme = SubResource("Theme_wnala")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 54
-text = "Pop-up Ads: Now Less Intrusive
-"
 vertical_alignment = 3
 autowrap_mode = 2
 justification_flags = 235
@@ -334,8 +332,6 @@ offset_bottom = 1041.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
-text = "
-Grants immunity to certain types of phishing attacks for a limited time."
 autowrap_mode = 3
 
 [connection signal="pressed" from="EXIT" to="." method="_on_exit_pressed"]

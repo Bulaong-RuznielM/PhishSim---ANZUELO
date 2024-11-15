@@ -1,9 +1,7 @@
 {
 	"user" : {
 		"display" : {
-			"resolution": "1280x720",
-			"resolutionscal": "1280x720",
-			"fullscreen": false,
+			"fullscreen": false
 		},
 		"audio" : {
 			"master_volume": 0.00,
@@ -16,9 +14,7 @@
 	},
 	"defualt" : {
 		"display" : {
-			"resolution": "1280x720",
-			"resolutionscal": "1280x720",
-			"fullscreen": false,
+			"fullscreen": false
 		},
 		"audio" : {
 			"master_volume": 0.00,

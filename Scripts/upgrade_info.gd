@@ -16,7 +16,7 @@ func read_headline_description_per_card_json(card):
 		file.close()
 		
 		var json = JSON.parse_string(json_string)
-		if typeof(json) == TYPE_DICTIONARY and json.has(Global.load_language_from_settings()): 
+		if typeof(json) == TYPE_DICTIONARY and json.has("English"): 
 			var language_data = json[Global.load_language_from_settings()]
 			if language_data.has("upgrade") and language_data["upgrade"].has(card):
 				return language_data["upgrade"][card]

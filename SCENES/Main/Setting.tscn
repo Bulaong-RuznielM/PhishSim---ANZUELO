@@ -49,14 +49,6 @@ offset_bottom = 105.0
 [node name="GraphicsSettings" type="VBoxContainer" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer"]
 layout_mode = 2
 
-[node name="ResolutionLabel" type="Label" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer/GraphicsSettings"]
-layout_mode = 2
-text = "Resolution"
-
-[node name="ResolutionScalingLabel" type="Label" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer/GraphicsSettings"]
-layout_mode = 2
-text = "Resolution Scaling"
-
 [node name="FullscreenModeLabel" type="Label" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer/GraphicsSettings"]
 layout_mode = 2
 text = "Fullscreen Mode"
@@ -64,12 +56,6 @@ text = "Fullscreen Mode"
 [node name="GraphicsSettingsOptions" type="VBoxContainer" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer"]
 layout_mode = 2
 theme_override_constants/separation = 9
-
-[node name="ResolutionOptionButton" type="OptionButton" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer/GraphicsSettingsOptions"]
-layout_mode = 2
-
-[node name="ResolutionScalingOptionButton" type="OptionButton" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer/GraphicsSettingsOptions"]
-layout_mode = 2
 
 [node name="FullscreenModeCheckButton" type="CheckButton" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer/GraphicsSettingsOptions"]
 layout_mode = 2
@@ -110,42 +96,34 @@ size_flags_horizontal = 3
 theme_override_constants/separation = 14
 
 [node name="MasterVolumeHSlider" type="HSlider" parent="GridContainer/DummyLabel/AudioSettingsLabel/HBoxContainer/VBoxContainer2"]
+unique_name_in_owner = true
 layout_mode = 2
 
 [node name="MusicVolumeHSlider" type="HSlider" parent="GridContainer/DummyLabel/AudioSettingsLabel/HBoxContainer/VBoxContainer2"]
+unique_name_in_owner = true
 layout_mode = 2
 
 [node name="SoundEffectsVolumeHSlider" type="HSlider" parent="GridContainer/DummyLabel/AudioSettingsLabel/HBoxContainer/VBoxContainer2"]
-layout_mode = 2
-
-[node name="GameplaySettingsLabel" type="Label" parent="GridContainer/DummyLabel"]
-layout_mode = 0
-offset_left = 24.0
-offset_top = 376.0
-offset_right = 168.0
-offset_bottom = 399.0
-text = "Gameplay Settings"
-
-[node name="HBoxContainer" type="HBoxContainer" parent="GridContainer/DummyLabel/GameplaySettingsLabel"]
-layout_mode = 0
-offset_left = 21.0
-offset_top = 20.0
-offset_right = 132.0
-offset_bottom = 60.0
-
-[node name="VBoxContainer" type="VBoxContainer" parent="GridContainer/DummyLabel/GameplaySettingsLabel/HBoxContainer"]
-layout_mode = 2
-
-[node name="LanguageLabel" type="Label" parent="GridContainer/DummyLabel/GameplaySettingsLabel/HBoxContainer/VBoxContainer"]
-layout_mode = 2
-text = "Language"
-
-[node name="VBoxContainer2" type="VBoxContainer" parent="GridContainer/DummyLabel/GameplaySettingsLabel/HBoxContainer"]
-layout_mode = 2
-theme_override_constants/separation = 9
-
-[node name="LanguageSelectionOptionButton" type="OptionButton" parent="GridContainer/DummyLabel/GameplaySettingsLabel/HBoxContainer/VBoxContainer2"]
 unique_name_in_owner = true
 layout_mode = 2
+
+[node name="DummyLabel2" type="Label" parent="GridContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="GridContainer/DummyLabel2"]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 539.0
+offset_right = 251.0
+offset_bottom = 570.0
+text = "apply"
+
+[node name="Button2" type="Button" parent="GridContainer/DummyLabel2"]
+layout_mode = 0
+offset_left = 136.0
+offset_top = 539.0
+offset_right = 184.0
+offset_bottom = 570.0
+text = "reset"
 
 [connection signal="pressed" from="EXIT_SETTING" to="." method="_on_exit_setting_pressed"]
