@@ -350,10 +350,10 @@ autowrap_mode = 3
 
 [node name="Upgrade_Info_Description" type="Label" parent="Upgrade shop/UpgradeInfo"]
 layout_mode = 0
-offset_left = 512.0
+offset_left = 597.0
 offset_top = 298.0
-offset_right = 1726.0
-offset_bottom = 1041.0
+offset_right = 1632.0
+offset_bottom = 962.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50

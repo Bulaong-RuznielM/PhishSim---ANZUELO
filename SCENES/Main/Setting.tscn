@@ -27,6 +27,7 @@ modulate = Color(0, 0, 0, 1)
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+scale = Vector2(1.76513, 1.79988)
 
 [node name="DummyLabel" type="Label" parent="GridContainer"]
 layout_mode = 2
@@ -59,6 +60,7 @@ theme_override_constants/separation = 9
 
 [node name="FullscreenModeCheckButton" type="CheckButton" parent="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer/GraphicsSettingsOptions"]
 layout_mode = 2
+button_pressed = true
 
 [node name="AudioSettingsLabel" type="Label" parent="GridContainer/DummyLabel"]
 layout_mode = 0
@@ -112,18 +114,19 @@ layout_mode = 2
 
 [node name="Button" type="Button" parent="GridContainer/DummyLabel2"]
 layout_mode = 0
-offset_left = 200.0
-offset_top = 539.0
-offset_right = 251.0
-offset_bottom = 570.0
+offset_left = 262.871
+offset_top = 505.258
+offset_right = 313.871
+offset_bottom = 536.258
 text = "apply"
 
 [node name="Button2" type="Button" parent="GridContainer/DummyLabel2"]
 layout_mode = 0
-offset_left = 136.0
-offset_top = 539.0
-offset_right = 184.0
-offset_bottom = 570.0
+offset_left = 160.329
+offset_top = 505.258
+offset_right = 208.329
+offset_bottom = 536.258
 text = "reset"
 
 [connection signal="pressed" from="EXIT_SETTING" to="." method="_on_exit_setting_pressed"]
+[connection signal="toggled" from="GridContainer/DummyLabel/GraphicsSettingsLabel/HBoxContainer/GraphicsSettingsOptions/FullscreenModeCheckButton" to="." method="_on_fullscreen_mode_check_button_toggled"]
