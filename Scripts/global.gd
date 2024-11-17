@@ -3,8 +3,50 @@ extends Node
 
 var settings_file_path = "res://Scripts/Data/setting.json"
 
+# Dictionary containing power-up data
 var power_ups = {
+	0: {
+		"Name": "Firewall Shield",
+		"Description": "Blocks one phishing attack automatically."
+	},
+	1: {
+		"Name": "Phish Finder",
+		"Description": "Highlights phishing links for 10 seconds."
+	},
+	2: {
+		"Name": "Email Analyzer",
+		"Description": "Shows detailed sender information to detect suspicious emails."
+	},
+	3: {
+		"Name": "Time Freeze",
+		"Description": "Pauses all incoming emails for 5 seconds to analyze threats."
+	},
+	4: {
+		"Name": "Trusted Contacts",
+		"Description": "Marks emails from verified senders as safe automatically."
+	},
+	5: {
+		"Name": "Decryption Key",
+		"Description": "Decodes hidden text in suspicious links or attachments."
+	},
+	6: {
+		"Name": "Anti-Malware Drone",
+		"Description": "Scans and neutralizes malicious attachments instantly."
+	},
+	7: {
+		"Name": "Security Quiz Boost",
+		"Description": "Provides hints for identifying phishing characteristics in emails."
+	},
+	8: {
+		"Name": "Link Validator",
+		"Description": "Displays the true URL behind shortened links or disguised text."
+	},
+	9: {
+		"Name": "Double Verification",
+		"Description": "Prompts a second opinion for risky actions, reducing errors."
+	}
 }
+
 
 # Load the selected language from settings.json
 func load_language_from_settings() -> String:
