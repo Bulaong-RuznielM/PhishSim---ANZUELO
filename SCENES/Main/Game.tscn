@@ -15,8 +15,8 @@
 modulate = Color(1, 1, 1, 0.458824)
 show_behind_parent = true
 light_mask = 0
-position = Vector2(-3.99991, 104)
-scale = Vector2(0.722656, 0.71875)
+position = Vector2(2.28882e-05, 102)
+scale = Vector2(0.785156, 0.779785)
 texture = ExtResource("1_lyl00")
 
 [node name="MainWindow" type="Sprite2D" parent="."]
@@ -32,6 +32,7 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("3_qnqtk")
+metadata/_edit_use_anchors_ = true
 
 [node name="UPGRADES" type="Button" parent="WindowsButtons"]
 layout_mode = 0
