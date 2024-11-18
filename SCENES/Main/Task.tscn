@@ -351,30 +351,30 @@ text = "Coming Soon"
 
 [node name="ShowTask_2" type="Button" parent="."]
 layout_mode = 0
-offset_left = 21.0
-offset_top = 61.0
-offset_right = 366.0
-offset_bottom = 115.0
+offset_left = 16.0
+offset_top = 80.0
+offset_right = 361.0
+offset_bottom = 134.0
 theme_override_font_sizes/font_size = 33
 text = "Show Task 2 (DEBUG)"
 script = ExtResource("5_yynko")
 
 [node name="HideTask_2" type="Button" parent="."]
 layout_mode = 0
-offset_left = 393.0
-offset_top = 61.0
-offset_right = 738.0
-offset_bottom = 115.0
+offset_left = 392.0
+offset_top = 80.0
+offset_right = 737.0
+offset_bottom = 134.0
 theme_override_font_sizes/font_size = 33
 text = "Hide Task 2 (DEBUG)"
 script = ExtResource("5_yynko")
 
 [node name="ShowAllTasks" type="Button" parent="."]
 layout_mode = 0
-offset_left = 764.0
-offset_top = 57.0
-offset_right = 1104.0
-offset_bottom = 109.0
+offset_left = 760.0
+offset_top = 80.0
+offset_right = 1120.0
+offset_bottom = 132.0
 theme_override_font_sizes/font_size = 31
 text = "Show All Tasks (DEBUG)"
 

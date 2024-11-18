@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://36cck8vjhq2g"]
+[gd_scene load_steps=3 format=3 uid="uid://36cck8vjhq2g"]
 
 [ext_resource type="Script" path="res://Scripts/menu.gd" id="1_hv4x7"]
-[ext_resource type="Texture2D" uid="uid://c1csaw3svf5p5" path="res://ASSETS/miscellaneous/PhishSimMainMenu.jpg" id="2_6avso"]
 [ext_resource type="AudioStream" uid="uid://be3yl4dyabcsm" path="res://AUDIO/01. Constant Moderato.wav" id="3_alns1"]
 
 [node name="MENU" type="Control"]
@@ -16,28 +15,6 @@ grow_vertical = 2
 scale = Vector2(2.79411, 2.38554)
 script = ExtResource("1_hv4x7")
 
-[node name="MainMenuBackground" type="Sprite2D" parent="."]
-position = Vector2(0.357888, -5.03031)
-scale = Vector2(0.336576, 0.269569)
-texture = ExtResource("2_6avso")
-
-[node name="GameTitle" type="Label" parent="."]
-visible = false
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -135.642
-offset_top = -96.4144
-offset_right = 134.358
-offset_bottom = -17.4144
-grow_horizontal = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0.768592, 0.636299, 0, 1)
-theme_override_font_sizes/font_size = 58
-text = "PhishSim"
-
 [node name="MainMenuMusic" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_alns1")
 autoplay = true
@@ -47,6 +24,14 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
+[node name="MenuBackground" type="ColorRect" parent="Control"]
+layout_mode = 0
+offset_left = -343.58
+offset_top = -229.717
+offset_right = 344.42
+offset_bottom = 226.283
+color = Color(0.492237, 0.492237, 0.492237, 1)
+
 [node name="PLAY" type="Button" parent="Control"]
 layout_mode = 1
 anchors_preset = 8
@@ -54,21 +39,47 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -50.0632
-offset_top = 19.8233
-offset_right = 31.9368
-offset_bottom = 64.8233
+offset_left = -74.4001
+offset_top = -21.6768
+offset_right = 7.59986
+offset_bottom = 23.3232
 grow_horizontal = 2
 grow_vertical = 2
 text = "PLAY"
 
 [node name="EXIT" type="Button" parent="Control"]
-layout_mode = 2
-offset_left = -17.5369
-offset_top = 98.091
-offset_right = 47.4631
-offset_bottom = 132.092
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.8528
+offset_top = 56.2778
+offset_right = -2.6928
+offset_bottom = 90.2788
+grow_horizontal = 2
+grow_vertical = 2
 text = "QUIT"
+
+[node name="GameTitle2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -4.93896
+anchor_top = -3.73081
+anchor_right = 5.16104
+anchor_bottom = -0.605812
+offset_left = -197.558
+offset_top = -149.232
+offset_right = 206.442
+offset_bottom = -24.2325
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 91
+text = "PhishSim"
+metadata/_edit_use_anchors_ = true
 
 [connection signal="finished" from="MainMenuMusic" to="." method="_on_main_menu_music_finished"]
 [connection signal="pressed" from="Control/PLAY" to="." method="_on_play_pressed"]
