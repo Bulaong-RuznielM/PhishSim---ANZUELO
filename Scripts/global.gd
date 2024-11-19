@@ -3,6 +3,13 @@ extends Node
 
 var settings_file_path = "res://Scripts/Data/setting.json"
 
+var user_tasks = {
+	0: {
+		"Name": "Manage my Social Page for a day",
+		"Description": "Im gonna "
+	}
+}
+
 # Dictionary containing power-up data
 var power_ups = {
 	0: {
