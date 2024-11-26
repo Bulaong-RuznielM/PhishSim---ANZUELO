@@ -1,6 +1,8 @@
 # res://Scripts/global.gd
 extends Node
 
+var ads = 0
+
 var settings_file_path = "res://Scripts/Data/setting.json"
 
 var user_tasks = {
