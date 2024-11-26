@@ -5,15 +5,15 @@
 
 [sub_resource type="Curve2D" id="Curve2D_pcmdc"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 264, 144, 0, 0, 0, 0, 576, 144, 0, 0, 0, 0, 896, 144, 0, 0, 0, 0, 896, 488, 0, 0, 0, 0, 264, 480, 0, 0, 0, 0, 264, 144)
+"points": PackedVector2Array(0, 0, 0, 0, -5, 658.693, 0, 0, 0, 0, 109, -27.5643, 0, 0, 0, 0, 285, 612.167, 0, 0, 0, 0, 361, 28.6545, 0, 0, 0, 0, 549, 621.86, 0, 0, 0, 0, 639, 18.9616, 0, 0, 0, 0, 825, 552.071, 0, 0, 0, 0, 947, -13.9943, 0, 0, 0, 0, 1085, 517.177, 0, 0, 0, 0, 1302, 29.6238, 0, 0, 0, 0, 1328, 672.263, 0, 0, 0, 0, -62, 718.789, 0, 0, 0, 0, -88, -1.39349)
 }
-point_count = 6
+point_count = 13
 
 [node name="Task_1" type="Node2D"]
 script = ExtResource("1_imwvx")
 
 [node name="MainWindow" type="Sprite2D" parent="."]
-scale = Vector2(0.598958, 0.596296)
+position = Vector2(-4.76837e-07, -1.19209e-07)
 texture = ExtResource("2_nhx6b")
 
 [node name="Button" type="Button" parent="."]
@@ -22,10 +22,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 296.0
-offset_top = -320.0
-offset_right = 571.0
-offset_bottom = -267.0
+offset_left = 685.0
+offset_top = -540.0
+offset_right = 960.0
+offset_bottom = -487.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
@@ -34,18 +34,30 @@ theme_override_font_sizes/font_size = 32
 text = "Go back to TASKS"
 metadata/_edit_use_anchors_ = true
 
+[node name="ADNumber" type="Label" parent="."]
+offset_left = 255.0
+offset_top = -535.0
+offset_right = 671.0
+offset_bottom = -468.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 41
+text = "No. of ADS:"
+
 [node name="PopUpPath" type="Path2D" parent="."]
-position = Vector2(-616, -312)
+position = Vector2(-616, -317.929)
+scale = Vector2(1, 0.982109)
 curve = SubResource("Curve2D_pcmdc")
 
 [node name="PopUpSpawnLocation" type="PathFollow2D" parent="PopUpPath"]
 unique_name_in_owner = true
-position = Vector2(264, 144)
+position = Vector2(-5, 658.693)
+rotation = -1.40618
 
-[node name="Timer" type="Timer" parent="."]
+[node name="TimerMain" type="Timer" parent="."]
 autostart = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="TimerMain" to="." method="_on_timer_main_timeout"]

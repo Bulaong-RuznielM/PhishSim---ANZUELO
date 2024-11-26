@@ -1,41 +1,37 @@
-extends Control
+extends Node
+
+func showinformation(index):
+	$UpgradeInfo/Upgrade_Info_Title.text = Global.power_ups[index]["Name"]
+	$UpgradeInfo/Upgrade_Info_Description.text = Global.power_ups[index]["Description"]
+func _ready():
+	showinformation(0)
 
 func _on_upgrade_1_mouse_entered() -> void:
-  $UpgradeInfo/Upgrade_Info_Title.text = Global.power_ups[0]["Name"]
-  $UpgradeInfo/Upgrade_Info_Description.text = Global.power_ups[0]["Description"]
+	showinformation(0)
 
 func _on_upgrade_2_mouse_entered() -> void:
-  $UpgradeInfo/Upgrade_Info_Title.text = Global.power_ups[1]["Name"]
-  $UpgradeInfo/Upgrade_Info_Description.text = Global.power_ups[1]["Description"]
+	showinformation(1)
 
 func _on_upgrade_3_mouse_entered() -> void:
-  $UpgradeInfo/Upgrade_Info_Title.text = Global.power_ups[2]["Name"]
-  $UpgradeInfo/Upgrade_Info_Description.text = Global.power_ups[2]["Description"]
+	showinformation(2)
 
 func _on_upgrade_4_mouse_entered() -> void:
-  $UpgradeInfo/Upgrade_Info_Title.text = Global.power_ups[3]["Name"]
-  $UpgradeInfo/Upgrade_Info_Description.text = Global.power_ups[3]["Description"]  # Assuming Upgrade_Upscription displays description
+	showinformation(3)
 
 func _on_upgrade_5_mouse_entered() -> void:
-  $UpgradeInfo/Upgrade_Info_Title.text = Global.power_ups[4]["Name"]
-  $UpgradeInfo/Upgrade_Info_Description.text = Global.power_ups[4]["Description"]
+	showinformation(4)
 
 func _on_upgrade_6_mouse_entered() -> void:
-  $UpgradeInfo/Upgrade_Info_Title.text = Global.power_ups[5]["Name"]
-  $UpgradeInfo/Upgrade_Info_Description.text = Global.power_ups[5]["Description"]
+	showinformation(5)
 
 func _on_upgrade_7_mouse_entered() -> void:
-  $UpgradeInfo/Upgrade_Info_Title.text = Global.power_ups[6]["Name"]
-  $UpgradeInfo/Upgrade_Info_Description.text = Global.power_ups[6]["Description"]
+	showinformation(6)
 
 func _on_upgrade_8_mouse_entered() -> void:
-  $UpgradeInfo/Upgrade_Info_Title.text = Global.power_ups[7]["Name"]
-  $UpgradeInfo/Upgrade_Info_Description.text = Global.power_ups[7]["Description"]
+	showinformation(7)
 
 func _on_upgrade_9_mouse_entered() -> void:
-  $UpgradeInfo/Upgrade_Info_Title.text = Global.power_ups[8]["Name"]
-  $UpgradeInfo/Upgrade_Info_Description.text = Global.power_ups[8]["Description"]
+	showinformation(8)
 
 func _on_upgrade_10_mouse_entered() -> void:
-  $UpgradeInfo/Upgrade_Info_Title.text = Global.power_ups[9]["Name"]
-  $UpgradeInfo/Upgrade_Info_Description.text = Global.power_ups[9]["Description"]
+	showinformation(9)
