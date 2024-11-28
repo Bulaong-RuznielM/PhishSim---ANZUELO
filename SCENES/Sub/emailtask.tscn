@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="1_mhiwl"]
 [ext_resource type="Texture2D" uid="uid://c7rmim5y62a2n" path="res://ASSETS/windows/windows_border.png" id="2_md1bd"]
-[ext_resource type="Texture2D" uid="uid://b7n6ho66hk5jx" path="res://ASSETS/Task/windows_border - Copy - Copy - Copy.png" id="3_ipgpf"]
+[ext_resource type="Texture2D" uid="uid://b7n6ho66hk5jx" path="res://ASSETS/windows_border - Copy - Copy - Copy.png" id="3_ipgpf"]
 [ext_resource type="Texture2D" uid="uid://cwf5vxretcc0l" path="res://ASSETS/Task/windows_border - Copy - Copy - Copy - Copy.png" id="4_1q3tr"]
 [ext_resource type="Script" path="res://SCENES/Sub/emLtskExt.gd" id="5_syumb"]
 [ext_resource type="Script" path="res://SCENES/Sub/toEmldsc.gd" id="6_ix2pb"]

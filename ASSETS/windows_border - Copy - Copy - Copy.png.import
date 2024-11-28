@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7n6ho66hk5jx"
-path="res://.godot/imported/windows_border - Copy - Copy - Copy.png-fb5c81c82c0a39122c7b3f6be8f40fe1.ctex"
+path="res://.godot/imported/windows_border - Copy - Copy - Copy.png-4614edb38c2209e1aaae2da8f953dc70.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Task/windows_border - Copy - Copy - Copy.png"
-dest_files=["res://.godot/imported/windows_border - Copy - Copy - Copy.png-fb5c81c82c0a39122c7b3f6be8f40fe1.ctex"]
+source_file="res://ASSETS/windows_border - Copy - Copy - Copy.png"
+dest_files=["res://.godot/imported/windows_border - Copy - Copy - Copy.png-4614edb38c2209e1aaae2da8f953dc70.ctex"]
 
 [params]
 

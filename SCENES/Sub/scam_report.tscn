@@ -27,7 +27,7 @@ offset_bottom = -462.0
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="TaskButton/Control"]
-modulate = Color(0.611848, 0, 0.0231485, 1)
+modulate = Color(0.256493, 0.207411, 0.713681, 1)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -30.844
@@ -39,8 +39,9 @@ offset_top = 15.7576
 offset_right = 1247.99
 offset_bottom = 224.758
 theme_override_font_sizes/font_size = 75
-text = "You have lost 5 coins 
-from your Bank account!"
+text = "Congratulations
+You have earned 10 coins !
+"
 horizontal_alignment = 1
 metadata/_edit_use_anchors_ = true
 
