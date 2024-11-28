@@ -330,10 +330,10 @@ script = SubResource("GDScript_tgoxq")
 
 [node name="Upgrade_Info_MainTitle" type="Label" parent="Upgrade shop/UpgradeInfo"]
 layout_mode = 0
-offset_left = 979.0
-offset_top = 84.0
-offset_right = 1526.0
-offset_bottom = 161.0
+offset_left = 795.0
+offset_top = 65.0
+offset_right = 1342.0
+offset_bottom = 142.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -343,10 +343,10 @@ text = "UPGRADE INFO:"
 
 [node name="Upgrade_Info_Title" type="Label" parent="Upgrade shop/UpgradeInfo"]
 layout_mode = 0
-offset_left = 516.0
-offset_top = 155.0
-offset_right = 1729.0
-offset_bottom = 296.0
+offset_left = 379.0
+offset_top = 177.0
+offset_right = 1592.0
+offset_bottom = 318.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
@@ -355,10 +355,10 @@ autowrap_mode = 3
 
 [node name="Upgrade_Info_Description" type="Label" parent="Upgrade shop/UpgradeInfo"]
 layout_mode = 0
-offset_left = 597.0
-offset_top = 298.0
-offset_right = 1632.0
-offset_bottom = 962.0
+offset_left = 427.0
+offset_top = 297.0
+offset_right = 1659.0
+offset_bottom = 1057.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
