@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://36cck8vjhq2g"]
+[gd_scene load_steps=2 format=3 uid="uid://36cck8vjhq2g"]
 
 [ext_resource type="Script" path="res://Scripts/menu.gd" id="1_hv4x7"]
-[ext_resource type="AudioStream" uid="uid://be3yl4dyabcsm" path="res://AUDIO/01. Constant Moderato.wav" id="3_alns1"]
 
 [node name="MENU" type="Control"]
 layout_mode = 3
@@ -16,7 +15,7 @@ scale = Vector2(2.79411, 2.38554)
 script = ExtResource("1_hv4x7")
 
 [node name="MainMenuMusic" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("3_alns1")
+volume_db = 10.306
 autoplay = true
 
 [node name="Control" type="Control" parent="."]
@@ -25,11 +24,14 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="MenuBackground" type="ColorRect" parent="Control"]
-layout_mode = 0
-offset_left = -343.58
-offset_top = -229.717
-offset_right = 344.42
-offset_bottom = 226.283
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.011
+anchor_right = 0.011
+offset_left = -344.02
+offset_top = -227.621
+offset_right = 343.98
+offset_bottom = 228.379
 color = Color(0.492237, 0.492237, 0.492237, 1)
 
 [node name="PLAY" type="Button" parent="Control"]

@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://vr4vteslwl5j"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(218.952, 145.148)
+scale = Vector2(1.64, 0.758352)
+offset = Vector2(21.9512, 39.5594)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 204.0
+offset_top = 18.0
+offset_right = 260.0
+offset_bottom = 41.0
+text = "Market"
+horizontal_alignment = 1

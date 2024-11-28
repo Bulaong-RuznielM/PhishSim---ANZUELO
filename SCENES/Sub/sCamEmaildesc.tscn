@@ -1,0 +1,139 @@
+[gd_scene load_steps=7 format=3 uid="uid://c2bnrl4ffeokq"]
+
+[ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="2_0vejb"]
+[ext_resource type="Texture2D" uid="uid://c7rmim5y62a2n" path="res://ASSETS/windows/windows_border.png" id="3_1xxj1"]
+[ext_resource type="Script" path="res://SCENES/Sub/button.gd" id="4_0wtsg"]
+[ext_resource type="Script" path="res://SCENES/Sub/ext.gd" id="4_0022v"]
+[ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="4_orcpf"]
+[ext_resource type="Script" path="res://SCENES/Sub/reprtscm.gd" id="6_wjhbb"]
+
+[node name="ScamEmailDesc" type="Node2D"]
+
+[node name="WindowsBorder-Copy" type="Sprite2D" parent="."]
+position = Vector2(961, 543)
+texture = ExtResource("2_0vejb")
+
+[node name="WindowsBorder" type="Sprite2D" parent="."]
+position = Vector2(961, 578)
+scale = Vector2(0.946354, 0.839815)
+texture = ExtResource("3_1xxj1")
+
+[node name="TaskButton" type="Sprite2D" parent="WindowsBorder"]
+position = Vector2(326.516, 440.573)
+scale = Vector2(0.768176, 1.18537)
+texture = ExtResource("4_orcpf")
+
+[node name="TaskButton2" type="Sprite2D" parent="WindowsBorder/TaskButton"]
+position = Vector2(522.72, 1.00452)
+scale = Vector2(1, 0.997733)
+texture = ExtResource("4_orcpf")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Control"]
+modulate = Color(0.0807833, 0.0807833, 0.0807833, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.075
+anchor_top = 0.1
+anchor_right = 0.075
+anchor_bottom = 0.1
+offset_left = 96.0
+offset_top = 201.0
+offset_right = 754.0
+offset_bottom = 521.0
+scale = Vector2(3, 3)
+pivot_offset = Vector2(3, 3)
+theme_override_font_sizes/font_size = 8
+text = "
+Dear [Your Name],
+
+Congratulations! You’ve been selected as one of our exclusive customers to purchase the brand-new iPhone 15 at an incredible discount.
+
+👉 Only $199 (Retail price: $999)
+👉 Free Shipping Worldwide
+👉 Limited Stock - Act Fast!
+
+To claim this offer, simply click the link below and complete your secure checkout:
+
+Click AGREEto Get Your iPhone 15 Now!
+
+Don’t miss this once-in-a-lifetime deal. This offer expires in 24 hours!
+
+Best regards,
+Apple Promotions Team
+
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="Control"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 8.725
+anchor_top = 0.125
+anchor_right = 8.725
+anchor_bottom = 0.125
+offset_left = 762.0
+offset_top = 892.0
+offset_right = 1080.0
+offset_bottom = 997.0
+tooltip_text = "Agree: If you Agree on a Legitimate E-mail then you will earn the said terms."
+theme_override_font_sizes/font_size = 35
+text = "AGREE"
+script = ExtResource("4_0wtsg")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 89.0
+offset_top = 157.0
+offset_right = 960.0
+offset_bottom = 199.0
+theme_override_colors/font_color = Color(0.975665, 1.27546e-06, 5.77569e-07, 1)
+theme_override_font_sizes/font_size = 30
+text = "Subject: Limited Offer: Get the New iPhone 15 for Only $199!"
+metadata/_edit_use_anchors_ = true
+
+[node name="ext" type="Button" parent="Control"]
+modulate = Color(0.56217, 0.0174843, 0.0174901, 0.94902)
+layout_mode = 0
+offset_left = 1857.0
+offset_top = 7.0
+offset_right = 1916.0
+offset_bottom = 66.0
+tooltip_text = "Exit"
+theme_override_colors/icon_normal_color = Color(0.8, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0.815686, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0.839216, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0.546409, 3.85046e-07, 2.40654e-07, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.54001, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0.69247, 0, 0, 1)
+script = ExtResource("4_0022v")
+metadata/_edit_use_anchors_ = true
+
+[node name="reprtscm" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.4
+anchor_top = -0.55
+anchor_right = -0.4
+anchor_bottom = -0.55
+offset_left = 1489.0
+offset_top = 895.0
+offset_right = 1825.0
+offset_bottom = 1021.0
+tooltip_text = "Report: If you succesfuly Report a Scam E-mail then you will earn money if not then you will lose a bit of your money."
+theme_override_font_sizes/font_size = 35
+text = "REPORT"
+script = ExtResource("6_wjhbb")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Control/Button" to="Control/Button" method="_on_pressed"]
+[connection signal="pressed" from="Control/ext" to="Control/ext" method="_on_pressed"]
+[connection signal="pressed" from="Control/reprtscm" to="Control/reprtscm" method="_on_pressed"]
