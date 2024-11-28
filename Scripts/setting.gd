@@ -21,6 +21,7 @@ func _on_sound_effects_volume_h_slider_mouse_exited() -> void:
 	release_focus()
 
 
+#Fullscreen code
 func _on_fullscreen_mode_check_button_toggled(toggled_on: bool) -> void:
 	# Get the current window mode
 	var current_mode = DisplayServer.window_get_mode()
