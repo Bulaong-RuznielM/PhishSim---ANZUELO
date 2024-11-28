@@ -9,16 +9,19 @@ func spawn_popup():
 
 func _on_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://SCENES/Main/Task.tscn")
+	Global.ads = 0
 
 func ifAdsMoreThan(maxAds):
 	if (Global.ads >= maxAds):
 		spawn_popup()
 
-func isLose():
-	pass
-	
+func isLose(maxAds):
+	if (Global.ads >= (maxAds + maxAds)):
+		pass
+
 func _on_timer_main_timeout() -> void:
-	$ADNumber.text = "No. of ADS: " + str(Global.ads)
 	spawn_popup()
 	ifAdsMoreThan(20)
-	print(Global.ads)
+
+func _on_timer_ads_counter_timeout() -> void:
+	$ADNumber.text = "No. of ADS: " + str(Global.ads)
