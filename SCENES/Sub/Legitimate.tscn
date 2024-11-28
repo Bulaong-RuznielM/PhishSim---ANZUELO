@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://b7gctcvxfthn"]
+[gd_scene load_steps=7 format=3 uid="uid://b7gctcvxfthn"]
 
 [ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="2_yvxwb"]
 [ext_resource type="Texture2D" uid="uid://c7rmim5y62a2n" path="res://ASSETS/windows/windows_border.png" id="3_061n2"]
+[ext_resource type="Script" path="res://SCENES/Sub/legit_email_report.gd" id="4_4k53h"]
 [ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="4_d5pl2"]
+[ext_resource type="Script" path="res://SCENES/Sub/legit_email_agree.gd" id="4_fl030"]
 [ext_resource type="Script" path="res://SCENES/Sub/exit.gd" id="4_qo8mf"]
 
 [node name="Legitimate" type="Node2D"]
@@ -26,7 +28,12 @@ position = Vector2(474.575, 1.00452)
 scale = Vector2(1, 0.997733)
 texture = ExtResource("4_d5pl2")
 
-[node name="Button2" type="Button" parent="WindowsBorder"]
+[node name="LegitEmailReport" type="Button" parent="WindowsBorder"]
+anchors_preset = -1
+anchor_left = -0.00465158
+anchor_top = -0.00042962
+anchor_right = -0.000484912
+anchor_bottom = 0.00605186
 offset_left = 557.931
 offset_top = 377.464
 offset_right = 893.931
@@ -34,6 +41,7 @@ offset_bottom = 503.464
 tooltip_text = "Report: If you succesfuly Report a Scam E-mail then you will earn money if not then you will lose a bit of your money."
 theme_override_font_sizes/font_size = 35
 text = "REPORT"
+script = ExtResource("4_4k53h")
 metadata/_edit_use_anchors_ = true
 
 [node name="Control" type="Control" parent="."]
@@ -47,10 +55,10 @@ metadata/_edit_use_anchors_ = true
 modulate = Color(0.0807833, 0.0807833, 0.0807833, 1)
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.375
-anchor_top = -0.55
-anchor_right = -0.375
-anchor_bottom = -0.55
+anchor_left = 0.075
+anchor_top = 0.225
+anchor_right = 0.075
+anchor_bottom = 0.225
 offset_left = 96.0
 offset_top = 201.0
 offset_right = 754.0
@@ -58,28 +66,28 @@ offset_bottom = 521.0
 scale = Vector2(3, 3)
 pivot_offset = Vector2(3, 3)
 theme_override_font_sizes/font_size = 8
-text = "
-Dear [Your Name],
+text = "Dear [First Name],
 
-Congratulations! You’ve been selected as one of our exclusive customers to purchase the brand-new iPhone 15 at an incredible discount.
+Cyber threats are evolving—your protection should too. It’s time to upgrade your Firewall Shield
+ and ensure your network stays secure against the latest risks.
 
-👉 Only $199 (Retail price: $999)
-👉 Free Shipping Worldwide
-👉 Limited Stock - Act Fast!
+Why upgrade now?
+🛡️ Advanced threat detection to stop attacks before they start.
+⚡ Faster performance for seamless protection without slowing you down.
+🔒 Enhanced features for complete peace of mind.
 
-To claim this offer, simply click the link below and complete your secure checkout:
+Stay ahead of threats and protect what matters most.
 
-Click AGREEto Get Your iPhone 15 Now!
+Upgrade Now
 
-Don’t miss this once-in-a-lifetime deal. This offer expires in 24 hours!
+Your safety is our priority. Let us know if you need assistance!
 
 Best regards,
-Apple Promotions Team
-
+Anzuelo
 "
 metadata/_edit_use_anchors_ = true
 
-[node name="Button" type="Button" parent="Control"]
+[node name="LegitEmailAgree" type="Button" parent="Control"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 1
 anchors_preset = -1
@@ -94,17 +102,22 @@ offset_bottom = 997.0
 tooltip_text = "Agree: If you Agree on a Legitimate E-mail then you will earn the said terms."
 theme_override_font_sizes/font_size = 35
 text = "AGREE"
+script = ExtResource("4_fl030")
 metadata/_edit_use_anchors_ = true
 
 [node name="Label2" type="Label" parent="Control"]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.15
+anchor_right = 0.675
+anchor_bottom = -0.15
 offset_left = 89.0
 offset_top = 157.0
 offset_right = 960.0
 offset_bottom = 199.0
 theme_override_colors/font_color = Color(0.975665, 1.27546e-06, 5.77569e-07, 1)
 theme_override_font_sizes/font_size = 30
-text = "Legitimate"
+text = "Subject: Upgrade Your Firewall Shield for Enhanced Protection"
 metadata/_edit_use_anchors_ = true
 
 [node name="exit" type="Button" parent="Control"]
@@ -124,4 +137,6 @@ theme_override_colors/icon_disabled_color = Color(0.69247, 0, 0, 1)
 script = ExtResource("4_qo8mf")
 metadata/_edit_use_anchors_ = true
 
+[connection signal="pressed" from="WindowsBorder/LegitEmailReport" to="WindowsBorder/LegitEmailReport" method="_on_pressed"]
+[connection signal="pressed" from="Control/LegitEmailAgree" to="Control/LegitEmailAgree" method="_on_pressed"]
 [connection signal="pressed" from="Control/exit" to="Control/exit" method="_on_pressed"]

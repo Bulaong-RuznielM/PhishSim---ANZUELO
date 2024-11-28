@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://q2wdnr76wvra"]
+
+[ext_resource type="Texture2D" uid="uid://qfdp5lhuq2qv" path="res://ASSETS/Upgrade/items_border.png" id="1_jumjc"]
+[ext_resource type="Script" path="res://SCENES/Sub/legit_report_continiue.gd" id="2_5yc1g"]
+
+[node name="LegitEmailReportt" type="Node2D"]
+
+[node name="ItemsBorder" type="Sprite2D" parent="."]
+position = Vector2(974.997, 252.48)
+rotation = -1.5721
+scale = Vector2(0.554596, 1.10962)
+texture = ExtResource("1_jumjc")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Control"]
+modulate = Color(0.8, 0.0862745, 0.0862745, 1)
+layout_mode = 0
+offset_left = 703.0
+offset_top = 171.0
+offset_right = 1262.0
+offset_bottom = 258.0
+theme_override_font_sizes/font_size = 30
+text = "You have Reported a Legitimate E-mail
+Better luck next time!"
+horizontal_alignment = 1
+
+[node name="LegitReportContiniue" type="Button" parent="."]
+offset_left = 1116.0
+offset_top = 315.0
+offset_right = 1288.0
+offset_bottom = 357.0
+text = "Continiue"
+script = ExtResource("2_5yc1g")
+
+[connection signal="pressed" from="LegitReportContiniue" to="LegitReportContiniue" method="_on_pressed"]
