@@ -73,10 +73,10 @@ text = "ACCEPT"
 
 [node name="Label2" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_1"]
 layout_mode = 0
-offset_left = 25.8637
-offset_top = 207.406
-offset_right = 485.864
-offset_bottom = 251.406
+offset_left = 20.8899
+offset_top = 178.349
+offset_right = 480.89
+offset_bottom = 222.349
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -118,8 +118,9 @@ offset_bottom = 269.349
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 66
-text = "Coming Soon"
+theme_override_font_sizes/font_size = 36
+text = "Check my Emails for me"
+autowrap_mode = 2
 
 [node name="Task_3" type="TextureRect" parent="TaskUI/ScrollContainer/HBoxContainer"]
 unique_name_in_owner = true
@@ -389,6 +390,7 @@ text = "Hide All Tasks (DEBUG)"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="TaskUI/ScrollContainer/HBoxContainer/Task_1/Task_1" to="TaskUI" method="_on_task_1_pressed"]
+[connection signal="pressed" from="TaskUI/ScrollContainer/HBoxContainer/Task_2/Task_2" to="TaskUI" method="_on_task_2_pressed"]
 [connection signal="pressed" from="ShowTask_2" to="TaskUI" method="_on_show_task_2_pressed"]
 [connection signal="pressed" from="HideTask_2" to="TaskUI" method="_on_hide_task_2_pressed"]
 [connection signal="pressed" from="ShowAllTasks" to="TaskUI" method="_on_show_all_tasks_pressed"]
