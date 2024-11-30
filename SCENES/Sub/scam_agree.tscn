@@ -1,10 +1,11 @@
 [gd_scene load_steps=4 format=3 uid="uid://dm1jjiqeu2aqn"]
 
+[ext_resource type="Script" path="res://Scripts/scam_agree.gd" id="1_253gf"]
 [ext_resource type="Texture2D" uid="uid://qfdp5lhuq2qv" path="res://ASSETS/Upgrade/items_border.png" id="1_bq5o8"]
 [ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="2_oloph"]
-[ext_resource type="Script" path="res://continiue_report.gd" id="3_hkc0n"]
 
 [node name="ScamReport" type="Node2D"]
+script = ExtResource("1_253gf")
 
 [node name="ItemsBorder" type="Sprite2D" parent="."]
 position = Vector2(979, 243)
@@ -17,39 +18,28 @@ position = Vector2(1217, 338)
 scale = Vector2(0.520225, 0.445946)
 texture = ExtResource("2_oloph")
 
-[node name="Control" type="Control" parent="TaskButton"]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 200.0
-offset_top = -462.0
-offset_right = 248.0
-offset_bottom = -462.0
-metadata/_edit_use_anchors_ = true
-
-[node name="Label" type="Label" parent="TaskButton/Control"]
+[node name="Label" type="Label" parent="TaskButton"]
 modulate = Color(0.611848, 0, 0.0231485, 1)
-layout_mode = 1
 anchors_preset = -1
 anchor_left = -30.844
 anchor_top = -13.546
 anchor_right = -30.844
 anchor_bottom = -13.546
-offset_left = 353.989
-offset_top = 15.7576
-offset_right = 1247.99
-offset_bottom = 224.758
+offset_left = 12799.1
+offset_top = 1057.36
+offset_right = 13693.1
+offset_bottom = 1266.36
 theme_override_font_sizes/font_size = 75
 text = "You have lost 5 coins 
 from your Bank account!"
 horizontal_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="continiueReport" type="Button" parent="."]
-offset_left = 1103.0
-offset_top = 313.0
-offset_right = 1331.0
-offset_bottom = 362.0
+[node name="continiueReport" type="Button" parent="TaskButton"]
+offset_left = -219.0
+offset_top = -56.0
+offset_right = 223.0
+offset_bottom = 56.0
 text = "Continiue"
-script = ExtResource("3_hkc0n")
 
-[connection signal="pressed" from="continiueReport" to="continiueReport" method="_on_pressed"]
+[connection signal="pressed" from="TaskButton/continiueReport" to="." method="_on_continiue_report_pressed"]

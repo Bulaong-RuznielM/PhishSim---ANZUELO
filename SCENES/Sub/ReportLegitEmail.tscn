@@ -1,23 +1,24 @@
 [gd_scene load_steps=3 format=3 uid="uid://q2wdnr76wvra"]
 
-[ext_resource type="Texture2D" uid="uid://qfdp5lhuq2qv" path="res://ASSETS/Upgrade/items_border.png" id="1_jumjc"]
-[ext_resource type="Script" path="res://SCENES/Sub/legit_report_continiue.gd" id="2_5yc1g"]
+[ext_resource type="Texture2D" uid="uid://qfdp5lhuq2qv" path="res://ASSETS/Upgrade/items_border.png" id="1_1pd1p"]
+[ext_resource type="Script" path="res://Scripts/report_legit_email.gd" id="1_yd13b"]
 
-[node name="LegitEmailReportt" type="Node2D"]
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yd13b")
 
 [node name="ItemsBorder" type="Sprite2D" parent="."]
 position = Vector2(974.997, 252.48)
 rotation = -1.5721
 scale = Vector2(0.554596, 1.10962)
-texture = ExtResource("1_jumjc")
+texture = ExtResource("1_1pd1p")
 
-[node name="Control" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="Label" type="Label" parent="Control"]
+[node name="Label" type="Label" parent="."]
 modulate = Color(0.8, 0.0862745, 0.0862745, 1)
 layout_mode = 0
 offset_left = 703.0
@@ -30,11 +31,11 @@ Better luck next time!"
 horizontal_alignment = 1
 
 [node name="LegitReportContiniue" type="Button" parent="."]
+layout_mode = 0
 offset_left = 1116.0
 offset_top = 315.0
 offset_right = 1288.0
 offset_bottom = 357.0
 text = "Continiue"
-script = ExtResource("2_5yc1g")
 
-[connection signal="pressed" from="LegitReportContiniue" to="LegitReportContiniue" method="_on_pressed"]
+[connection signal="pressed" from="LegitReportContiniue" to="." method="_on_legit_report_continiue_pressed"]

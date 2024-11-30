@@ -57,11 +57,11 @@ rotation = -0.00120545
 [node name="TimerMain" type="Timer" parent="."]
 autostart = true
 
-[node name="Camera2D" type="Camera2D" parent="."]
-
 [node name="TimerAdsCounter" type="Timer" parent="."]
-wait_time = 0.1
+wait_time = 0.05
 autostart = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="timeout" from="TimerMain" to="." method="_on_timer_main_timeout"]

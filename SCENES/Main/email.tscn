@@ -1,48 +1,123 @@
-[gd_scene load_steps=4 format=3 uid="uid://c4ctfk1d3w8t4"]
+[gd_scene load_steps=6 format=3 uid="uid://c4ctfk1d3w8t4"]
 
-[ext_resource type="Script" path="res://Scripts/email.gd" id="1_83kkl"]
+[ext_resource type="Script" path="res://Scripts/MainEmail.gd" id="1_wjvj2"]
+[ext_resource type="Texture2D" uid="uid://c7rmim5y62a2n" path="res://ASSETS/windows/windows_border.png" id="2_7qq1y"]
 [ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="2_xg0u5"]
-[ext_resource type="Texture2D" uid="uid://qfdp5lhuq2qv" path="res://ASSETS/Upgrade/items_border.png" id="3_mdq82"]
+[ext_resource type="Texture2D" uid="uid://b7n6ho66hk5jx" path="res://ASSETS/windows_border - Copy - Copy - Copy.png" id="3_n0h42"]
+[ext_resource type="Script" path="res://Scripts/EmailControler.gd" id="4_k7hke"]
 
-[node name="Control" type="Control"]
+[node name="Node2D" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("1_83kkl")
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_wjvj2")
 
-[node name="WindowsBorder-Copy" type="Sprite2D" parent="."]
-position = Vector2(960, 540)
+[node name="TextureRect" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
 texture = ExtResource("2_xg0u5")
 
-[node name="Exit" type="Button" parent="."]
+[node name="EmailExitButton" type="Button" parent="Control/TextureRect"]
 layout_mode = 0
 offset_left = 1852.0
-offset_right = 1921.0
-offset_bottom = 66.0
+offset_right = 1920.0
+offset_bottom = 67.0
 
-[node name="ScrollContainer" type="ScrollContainer" parent="."]
+[node name="EmailContaner" type="TextureRect" parent="Control/TextureRect"]
 layout_mode = 0
 offset_left = 24.0
-offset_top = 144.0
-offset_right = 1896.0
-offset_bottom = 1064.0
+offset_top = 80.0
+offset_right = 1944.0
+offset_bottom = 1160.0
+scale = Vector2(0.974921, 0.912457)
+texture = ExtResource("2_7qq1y")
+script = ExtResource("4_k7hke")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+[node name="Banner" type="TextureRect" parent="Control/TextureRect/EmailContaner"]
+layout_mode = 0
+offset_left = 16.4116
+offset_top = 17.5351
+offset_right = 1936.41
+offset_bottom = 358.535
+scale = Vector2(0.981678, 0.540453)
+texture = ExtResource("3_n0h42")
+
+[node name="Label" type="Label" parent="Control/TextureRect/EmailContaner/Banner"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 1069.94
+offset_top = 48.6677
+offset_right = 1417.94
+offset_bottom = 153.668
+scale = Vector2(1.12278, 2.26359)
+theme_override_font_sizes/font_size = 76
+text = "E-Mail"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Control/TextureRect/EmailContaner"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 219.0
+offset_right = 1944.0
+offset_bottom = 1228.0
+scale = Vector2(0.982891, 0.842745)
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/TextureRect/EmailContaner/ScrollContainer"]
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="ScrollContainer/VBoxContainer"]
+[node name="Email1Task" type="TextureRect" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer"]
 layout_mode = 2
-texture = ExtResource("3_mdq82")
+texture = ExtResource("3_n0h42")
 
-[node name="Button" type="Button" parent="ScrollContainer/VBoxContainer/TextureRect"]
+[node name="Email1Label" type="Label" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email1Task"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 150.275
+offset_top = 83.2283
+offset_right = 498.275
+offset_bottom = 188.228
+scale = Vector2(1.00857, 1.43815)
+theme_override_font_sizes/font_size = 76
+text = "asdasdad"
+
+[node name="Email1Button" type="Button" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email1Task"]
+layout_mode = 0
+offset_left = 1435.96
+offset_top = 145.65
+offset_right = 1786.96
+offset_bottom = 226.65
+theme_override_font_sizes/font_size = 53
+text = "Open"
+
+[node name="Email2Task" type="TextureRect" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer"]
 layout_mode = 2
-offset_left = 336.0
-offset_top = 600.0
-offset_right = 416.0
-offset_bottom = 636.0
-text = "text"
+texture = ExtResource("3_n0h42")
 
-[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
+[node name="Email2Label" type="Label" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email2Task"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 150.275
+offset_top = 83.2283
+offset_right = 498.275
+offset_bottom = 188.228
+scale = Vector2(1.00857, 1.43815)
+theme_override_font_sizes/font_size = 76
+text = "asdasdad"
+
+[node name="Email2Button" type="Button" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email2Task"]
+layout_mode = 0
+offset_left = 1435.96
+offset_top = 145.65
+offset_right = 1786.96
+offset_bottom = 226.65
+theme_override_font_sizes/font_size = 53
+text = "Open"
+
+[connection signal="pressed" from="Control/TextureRect/EmailExitButton" to="Control" method="_on_email_exit_button_pressed"]
+[connection signal="pressed" from="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email1Task/Email1Button" to="Control/TextureRect/EmailContaner" method="_on_email_1_button_pressed"]
+[connection signal="pressed" from="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email2Task/Email2Button" to="Control/TextureRect/EmailContaner" method="_on_email_2_button_pressed"]

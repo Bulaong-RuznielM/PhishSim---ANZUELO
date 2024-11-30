@@ -389,6 +389,7 @@ text = "Hide All Tasks (DEBUG)"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="TaskUI/ScrollContainer/HBoxContainer/Task_1/Task_1" to="TaskUI" method="_on_task_1_pressed"]
+[connection signal="pressed" from="TaskUI/ScrollContainer/HBoxContainer/Task_2/Task_2" to="TaskUI" method="_on_task_2_pressed"]
 [connection signal="pressed" from="ShowTask_2" to="TaskUI" method="_on_show_task_2_pressed"]
 [connection signal="pressed" from="HideTask_2" to="TaskUI" method="_on_hide_task_2_pressed"]
 [connection signal="pressed" from="ShowAllTasks" to="TaskUI" method="_on_show_all_tasks_pressed"]

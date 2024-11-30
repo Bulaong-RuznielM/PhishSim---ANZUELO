@@ -1,71 +1,50 @@
-[gd_scene load_steps=7 format=3 uid="uid://b7gctcvxfthn"]
+[gd_scene load_steps=5 format=3 uid="uid://b7gctcvxfthn"]
 
+[ext_resource type="Script" path="res://Scripts/legitimate.gd" id="1_bagye"]
 [ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="2_yvxwb"]
 [ext_resource type="Texture2D" uid="uid://c7rmim5y62a2n" path="res://ASSETS/windows/windows_border.png" id="3_061n2"]
-[ext_resource type="Script" path="res://SCENES/Sub/legit_email_report.gd" id="4_4k53h"]
 [ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="4_d5pl2"]
-[ext_resource type="Script" path="res://SCENES/Sub/legit_email_agree.gd" id="4_fl030"]
-[ext_resource type="Script" path="res://SCENES/Sub/exit.gd" id="4_qo8mf"]
 
 [node name="Legitimate" type="Node2D"]
+script = ExtResource("1_bagye")
 
 [node name="WindowsBorder-Copy" type="Sprite2D" parent="."]
 position = Vector2(961, 543)
 texture = ExtResource("2_yvxwb")
 
-[node name="WindowsBorder" type="Sprite2D" parent="."]
-position = Vector2(961, 578)
+[node name="WindowsBorder" type="Sprite2D" parent="WindowsBorder-Copy"]
+position = Vector2(0, 35)
 scale = Vector2(0.946354, 0.839815)
 texture = ExtResource("3_061n2")
 
-[node name="TaskButton" type="Sprite2D" parent="WindowsBorder"]
-position = Vector2(357.16, 444.145)
-scale = Vector2(0.768176, 1.18537)
-texture = ExtResource("4_d5pl2")
-
-[node name="TaskButton2" type="Sprite2D" parent="WindowsBorder/TaskButton"]
-position = Vector2(474.575, 1.00452)
-scale = Vector2(1, 0.997733)
-texture = ExtResource("4_d5pl2")
-
-[node name="LegitEmailReport" type="Button" parent="WindowsBorder"]
+[node name="LegitEmailHeadLine" type="Label" parent="WindowsBorder-Copy/WindowsBorder"]
 anchors_preset = -1
-anchor_left = -0.00465158
-anchor_top = -0.00042962
-anchor_right = -0.000484912
-anchor_bottom = 0.00605186
-offset_left = 557.931
-offset_top = 377.464
-offset_right = 893.931
-offset_bottom = 503.464
-tooltip_text = "Report: If you succesfuly Report a Scam E-mail then you will earn money if not then you will lose a bit of your money."
-theme_override_font_sizes/font_size = 35
-text = "REPORT"
-script = ExtResource("4_4k53h")
+anchor_top = -0.15
+anchor_right = 0.675
+anchor_bottom = -0.15
+offset_left = -921.431
+offset_top = -346.445
+offset_right = -50.4312
+offset_bottom = -304.445
+theme_override_colors/font_color = Color(0.975665, 1.27546e-06, 5.77569e-07, 1)
+theme_override_font_sizes/font_size = 30
+text = "Subject: Upgrade Your Firewall Shield for Enhanced Protection"
 metadata/_edit_use_anchors_ = true
 
-[node name="Control" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-metadata/_edit_use_anchors_ = true
-
-[node name="Label" type="Label" parent="Control"]
+[node name="LegitEmailValue" type="Label" parent="WindowsBorder-Copy/WindowsBorder"]
 modulate = Color(0.0807833, 0.0807833, 0.0807833, 1)
-layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.075
 anchor_top = 0.225
 anchor_right = 0.075
 anchor_bottom = 0.225
-offset_left = 96.0
-offset_top = 201.0
-offset_right = 754.0
-offset_bottom = 521.0
+offset_left = -1029.5
+offset_top = -653.805
+offset_right = -371.504
+offset_bottom = -333.805
 scale = Vector2(3, 3)
 pivot_offset = Vector2(3, 3)
-theme_override_font_sizes/font_size = 8
+theme_override_font_sizes/font_size = 10
 text = "Dear [First Name],
 
 Cyber threats are evolving—your protection should too. It’s time to upgrade your Firewall Shield
@@ -87,46 +66,53 @@ Anzuelo
 "
 metadata/_edit_use_anchors_ = true
 
-[node name="LegitEmailAgree" type="Button" parent="Control"]
+[node name="TaskButton" type="Sprite2D" parent="WindowsBorder-Copy/WindowsBorder"]
+position = Vector2(357.16, 444.145)
+scale = Vector2(0.768176, 1.18537)
+texture = ExtResource("4_d5pl2")
+
+[node name="LegitEmailAgree" type="Button" parent="WindowsBorder-Copy/WindowsBorder/TaskButton"]
 custom_minimum_size = Vector2(100, 100)
-layout_mode = 1
 anchors_preset = -1
-anchor_left = 9.425
-anchor_top = 0.1
-anchor_right = 9.425
-anchor_bottom = 0.1
-offset_left = 762.0
-offset_top = 892.0
-offset_right = 1080.0
-offset_bottom = 997.0
+anchor_left = 9.41847
+anchor_top = 0.102241
+anchor_right = 9.70611
+anchor_bottom = 0.165304
+offset_left = -4414.22
+offset_top = -66.3487
+offset_right = -4096.22
+offset_bottom = 38.6513
 tooltip_text = "Agree: If you Agree on a Legitimate E-mail then you will earn the said terms."
 theme_override_font_sizes/font_size = 35
 text = "AGREE"
-script = ExtResource("4_fl030")
 metadata/_edit_use_anchors_ = true
 
-[node name="Label2" type="Label" parent="Control"]
-layout_mode = 1
+[node name="TaskButton2" type="Sprite2D" parent="WindowsBorder-Copy/WindowsBorder"]
+position = Vector2(721.717, 445.336)
+scale = Vector2(0.768176, 1.18268)
+texture = ExtResource("4_d5pl2")
+
+[node name="LegitEmailReport" type="Button" parent="WindowsBorder-Copy/WindowsBorder/TaskButton2"]
 anchors_preset = -1
-anchor_top = -0.15
-anchor_right = 0.675
-anchor_bottom = -0.15
-offset_left = 89.0
-offset_top = 157.0
-offset_right = 960.0
-offset_bottom = 199.0
-theme_override_colors/font_color = Color(0.975665, 1.27546e-06, 5.77569e-07, 1)
-theme_override_font_sizes/font_size = 30
-text = "Subject: Upgrade Your Firewall Shield for Enhanced Protection"
+anchor_left = -0.0235506
+anchor_top = -0.00606667
+anchor_right = 0.221393
+anchor_bottom = -0.141202
+offset_left = -212.52
+offset_top = -55.3266
+offset_right = 123.48
+offset_bottom = 70.6734
+tooltip_text = "Report: If you succesfuly Report a Scam E-mail then you will earn money if not then you will lose a bit of your money."
+theme_override_font_sizes/font_size = 35
+text = "REPORT"
 metadata/_edit_use_anchors_ = true
 
-[node name="exit" type="Button" parent="Control"]
+[node name="exit" type="Button" parent="WindowsBorder-Copy"]
 modulate = Color(0.56217, 0.0174843, 0.0174901, 0.94902)
-layout_mode = 0
-offset_left = 1857.0
-offset_top = 7.0
-offset_right = 1916.0
-offset_bottom = 66.0
+offset_left = 896.0
+offset_top = -536.0
+offset_right = 955.0
+offset_bottom = -477.0
 tooltip_text = "Exit"
 theme_override_colors/icon_normal_color = Color(0.8, 0, 0, 1)
 theme_override_colors/icon_focus_color = Color(0.815686, 0, 0, 1)
@@ -134,9 +120,8 @@ theme_override_colors/icon_pressed_color = Color(0.839216, 0, 0, 1)
 theme_override_colors/icon_hover_color = Color(0.546409, 3.85046e-07, 2.40654e-07, 1)
 theme_override_colors/icon_hover_pressed_color = Color(0.54001, 0, 0, 1)
 theme_override_colors/icon_disabled_color = Color(0.69247, 0, 0, 1)
-script = ExtResource("4_qo8mf")
 metadata/_edit_use_anchors_ = true
 
-[connection signal="pressed" from="WindowsBorder/LegitEmailReport" to="WindowsBorder/LegitEmailReport" method="_on_pressed"]
-[connection signal="pressed" from="Control/LegitEmailAgree" to="Control/LegitEmailAgree" method="_on_pressed"]
-[connection signal="pressed" from="Control/exit" to="Control/exit" method="_on_pressed"]
+[connection signal="pressed" from="WindowsBorder-Copy/WindowsBorder/TaskButton/LegitEmailAgree" to="." method="_on_legit_email_agree_pressed"]
+[connection signal="pressed" from="WindowsBorder-Copy/WindowsBorder/TaskButton2/LegitEmailReport" to="." method="_on_legit_email_report_pressed"]
+[connection signal="pressed" from="WindowsBorder-Copy/exit" to="." method="_on_exit_pressed"]
