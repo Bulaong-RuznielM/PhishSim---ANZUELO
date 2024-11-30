@@ -69,6 +69,7 @@ vertical_scroll_mode = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Control/TextureRect/EmailContaner/ScrollContainer"]
 layout_mode = 2
+theme_override_constants/separation = 79
 
 [node name="Email1Task" type="TextureRect" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer"]
 layout_mode = 2
@@ -82,8 +83,11 @@ offset_top = 83.2283
 offset_right = 498.275
 offset_bottom = 188.228
 scale = Vector2(1.00857, 1.43815)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 76
-text = "asdasdad"
+text = "Phishing Email"
 
 [node name="Email1Button" type="Button" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email1Task"]
 layout_mode = 0
@@ -106,10 +110,67 @@ offset_top = 83.2283
 offset_right = 498.275
 offset_bottom = 188.228
 scale = Vector2(1.00857, 1.43815)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 76
-text = "asdasdad"
+text = "Real Email"
 
 [node name="Email2Button" type="Button" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email2Task"]
+layout_mode = 0
+offset_left = 1435.96
+offset_top = 145.65
+offset_right = 1786.96
+offset_bottom = 226.65
+theme_override_font_sizes/font_size = 53
+text = "Open"
+
+[node name="Email3Task" type="TextureRect" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("3_n0h42")
+
+[node name="Email1Label" type="Label" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email3Task"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 150.275
+offset_top = 83.2283
+offset_right = 498.275
+offset_bottom = 188.228
+scale = Vector2(1.00857, 1.43815)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 76
+text = "Phishing Email"
+
+[node name="Email1Button" type="Button" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email3Task"]
+layout_mode = 0
+offset_left = 1435.96
+offset_top = 145.65
+offset_right = 1786.96
+offset_bottom = 226.65
+theme_override_font_sizes/font_size = 53
+text = "Open"
+
+[node name="Email4Task" type="TextureRect" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("3_n0h42")
+
+[node name="Email2Label" type="Label" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email4Task"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 150.275
+offset_top = 83.2283
+offset_right = 498.275
+offset_bottom = 188.228
+scale = Vector2(1.00857, 1.43815)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 76
+text = "Real Email"
+
+[node name="Email2Button" type="Button" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email4Task"]
 layout_mode = 0
 offset_left = 1435.96
 offset_top = 145.65
@@ -121,3 +182,5 @@ text = "Open"
 [connection signal="pressed" from="Control/TextureRect/EmailExitButton" to="Control" method="_on_email_exit_button_pressed"]
 [connection signal="pressed" from="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email1Task/Email1Button" to="Control/TextureRect/EmailContaner" method="_on_email_1_button_pressed"]
 [connection signal="pressed" from="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email2Task/Email2Button" to="Control/TextureRect/EmailContaner" method="_on_email_2_button_pressed"]
+[connection signal="pressed" from="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email3Task/Email1Button" to="Control/TextureRect/EmailContaner" method="_on_email_1_button_pressed"]
+[connection signal="pressed" from="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email4Task/Email2Button" to="Control/TextureRect/EmailContaner" method="_on_email_2_button_pressed"]

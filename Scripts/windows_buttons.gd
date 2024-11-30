@@ -13,4 +13,4 @@ func _on_upgrades_pressed() -> void:
 
 
 func _on_quit_pressed() -> void:
-	get_tree().change_scene_to_file("res://SCENES/Main/Menu.tscn")
+	get_tree().change_scene_to_file("res://SCENES/Main/menu.tscn")

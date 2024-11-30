@@ -95,7 +95,7 @@ texture = ExtResource("4_d5pl2")
 [node name="LegitEmailReport" type="Button" parent="WindowsBorder-Copy/WindowsBorder/TaskButton2"]
 anchors_preset = -1
 anchor_left = -0.0235506
-anchor_top = -0.00606667
+anchor_top = -0.141202
 anchor_right = 0.221393
 anchor_bottom = -0.141202
 offset_left = -212.52

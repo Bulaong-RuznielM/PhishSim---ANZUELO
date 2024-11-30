@@ -114,7 +114,12 @@ Apple Promotions Team"
 metadata/_edit_use_anchors_ = true
 
 [node name="EmailTaskHeadLine" type="Label" parent="Control"]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.025
+anchor_top = -0.525
+anchor_right = -0.025
+anchor_bottom = -0.525
 offset_left = 89.0
 offset_top = 157.0
 offset_right = 960.0

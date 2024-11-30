@@ -1,10 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://dw3cw6bi88ke8"]
+[gd_scene load_steps=8 format=3 uid="uid://dw3cw6bi88ke8"]
 
 [ext_resource type="Script" path="res://Scripts/upgrades.gd" id="1_6fcv3"]
 [ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="3_0new6"]
 [ext_resource type="Texture2D" uid="uid://c7rmim5y62a2n" path="res://ASSETS/windows/windows_border.png" id="3_j0gk0"]
 [ext_resource type="Script" path="res://Scripts/upgrade_shop.gd" id="3_n5r8t"]
 [ext_resource type="FontFile" uid="uid://2t3fwfyco16d" path="res://FONTS/super-pixel-font/SuperPixel-m2L8j.ttf" id="5_l0ups"]
+
+[sub_resource type="Theme" id="Theme_7pxca"]
 
 [sub_resource type="GDScript" id="GDScript_tgoxq"]
 script/source = "extends Control
@@ -59,6 +61,7 @@ offset_left = -125.0
 offset_top = 41.0
 offset_right = 351.0
 offset_bottom = 1073.0
+theme = SubResource("Theme_7pxca")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Upgrade shop/ScrollContainer"]
 layout_mode = 2

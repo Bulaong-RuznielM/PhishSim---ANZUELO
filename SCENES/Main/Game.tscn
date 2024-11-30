@@ -9,21 +9,20 @@
 [ext_resource type="FontFile" uid="uid://2t3fwfyco16d" path="res://FONTS/super-pixel-font/SuperPixel-m2L8j.ttf" id="8_gqawu"]
 
 [node name="MainScreen" type="Node2D"]
+position = Vector2(956, 508)
 
 [node name="Background" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0.458824)
 show_behind_parent = true
 light_mask = 0
-position = Vector2(2.28882e-05, 102)
-scale = Vector2(0.785156, 0.779785)
+position = Vector2(-3.99998, 102)
+scale = Vector2(0.965887, 0.861346)
 texture = ExtResource("1_lyl00")
 
 [node name="MainWindow" type="Sprite2D" parent="."]
-position = Vector2(-6, -1)
-scale = Vector2(0.574479, 0.560185)
+position = Vector2(-3, -19)
+scale = Vector2(0.715194, 0.66714)
 texture = ExtResource("2_fq1uo")
-
-[node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="WindowsButtons" type="Control" parent="."]
 layout_mode = 3
@@ -34,31 +33,49 @@ script = ExtResource("3_qnqtk")
 metadata/_edit_use_anchors_ = true
 
 [node name="UPGRADES" type="Button" parent="WindowsButtons"]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -2.6
+anchor_top = -1.4
+anchor_right = -2.6
+anchor_bottom = -1.4
 offset_left = -485.0
 offset_top = -217.0
 offset_right = -364.0
 offset_bottom = -76.0
-scale = Vector2(0.686383, 0.66872)
+scale = Vector2(0.755704, 0.737867)
 icon = ExtResource("4_vpjab")
+metadata/_edit_use_anchors_ = true
 
 [node name="TASKS" type="Button" parent="WindowsButtons"]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -2.55
+anchor_top = -0.625
+anchor_right = -2.55
+anchor_bottom = -0.625
 offset_left = -486.0
 offset_top = -114.0
 offset_right = -365.0
 offset_bottom = 27.0
 scale = Vector2(0.716955, 0.676655)
 icon = ExtResource("5_qisv7")
+metadata/_edit_use_anchors_ = true
 
 [node name="SETTINGS" type="Button" parent="WindowsButtons"]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -24.5
+anchor_top = -2.425
+anchor_right = -24.5
+anchor_bottom = -2.425
 offset_left = 392.0
 offset_top = 88.0
 offset_right = 513.0
 offset_bottom = 229.0
 scale = Vector2(0.758283, 0.724612)
 icon = ExtResource("7_smah1")
+metadata/_edit_use_anchors_ = true
 
 [node name="quit" type="Button" parent="WindowsButtons"]
 layout_mode = 0
@@ -67,12 +84,13 @@ offset_top = 363.0
 offset_right = -393.0
 offset_bottom = 394.0
 text = "go back to menu"
+metadata/_edit_use_anchors_ = true
 
 [node name="DevText" type="Label" parent="."]
-offset_left = -320.0
-offset_top = -264.0
-offset_right = 400.0
-offset_bottom = 183.0
+offset_left = -325.0
+offset_top = -303.0
+offset_right = 395.0
+offset_bottom = 144.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("8_gqawu")
 theme_override_font_sizes/font_size = 31
@@ -80,13 +98,14 @@ text = "Everything in the game right now is temporary. No design/feature is fina
 
 
 
-Features that are working:. 
+Features that are working:
+
 A. Upgrades
-B. Task
-c. Email (nothing)
-d. setting"
+B. Task (Pop ups, Email)
+C. Settings"
 vertical_alignment = 1
 autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="WindowsButtons/UPGRADES" to="WindowsButtons" method="_on_upgrades_pressed"]
 [connection signal="pressed" from="WindowsButtons/TASKS" to="WindowsButtons" method="_on_tasks_pressed"]

@@ -73,15 +73,16 @@ text = "ACCEPT"
 
 [node name="Label2" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_1"]
 layout_mode = 0
-offset_left = 25.8637
-offset_top = 207.406
-offset_right = 485.864
-offset_bottom = 251.406
+offset_left = 53.0
+offset_top = 160.0
+offset_right = 411.0
+offset_bottom = 274.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 26
+theme_override_font_sizes/font_size = 32
 text = "Close all the incoming Pop-Ups"
+autowrap_mode = 2
 
 [node name="Task_2" type="TextureRect" parent="TaskUI/ScrollContainer/HBoxContainer"]
 unique_name_in_owner = true
@@ -111,15 +112,15 @@ text = "ACCEPT"
 
 [node name="ComingSoon" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_2"]
 layout_mode = 0
-offset_left = 9.53083
+offset_left = 15.4994
 offset_top = 178.349
-offset_right = 427.531
+offset_right = 433.5
 offset_bottom = 269.349
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 66
-text = "Coming Soon"
+theme_override_font_sizes/font_size = 56
+text = "Manage Emails"
 
 [node name="Task_3" type="TextureRect" parent="TaskUI/ScrollContainer/HBoxContainer"]
 unique_name_in_owner = true
