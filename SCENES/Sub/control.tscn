@@ -1,0 +1,67 @@
+[gd_scene load_steps=3 format=3 uid="uid://d22t277s8or2y"]
+
+[ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="1_rv1e4"]
+[ext_resource type="Texture2D" uid="uid://c7rmim5y62a2n" path="res://ASSETS/windows/windows_border.png" id="2_8v5p5"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_rv1e4")
+
+[node name="Button" type="Button" parent="TextureRect"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 1852.0
+offset_right = 1920.0
+offset_bottom = 67.0
+theme_override_font_sizes/font_size = 29
+
+[node name="WindowsBorder" type="Sprite2D" parent="TextureRect"]
+position = Vector2(956, 568)
+scale = Vector2(0.9625, 0.874074)
+texture = ExtResource("2_8v5p5")
+
+[node name="Label" type="Label" parent="TextureRect/WindowsBorder"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -935.065
+offset_top = -411.864
+offset_right = -741.065
+offset_bottom = -342.864
+theme_override_font_sizes/font_size = 50
+text = "{TITLE}"
+
+[node name="Label2" type="Label" parent="TextureRect/WindowsBorder"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -935.0
+offset_top = -238.0
+offset_right = 931.0
+offset_bottom = 519.0
+theme_override_font_sizes/font_size = 31
+text = "{BODY}"
+
+[node name="Button" type="Button" parent="TextureRect/WindowsBorder"]
+modulate = Color(0, 0, 0, 1)
+offset_left = 553.0
+offset_top = 458.0
+offset_right = 730.0
+offset_bottom = 519.0
+theme_override_font_sizes/font_size = 38
+text = "AGREE"
+
+[node name="Button2" type="Button" parent="TextureRect/WindowsBorder"]
+modulate = Color(0, 0, 0, 1)
+offset_left = 743.896
+offset_top = 457.627
+offset_right = 934.896
+offset_bottom = 518.627
+theme_override_font_sizes/font_size = 38
+text = "REPORT"

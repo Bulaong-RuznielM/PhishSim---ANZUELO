@@ -50,3 +50,7 @@ func _on_hide_all_tasks_pressed() -> void:
 
 	%Task_8.visible = false
 	
+
+
+func _on_task_2_pressed() -> void:
+	pass # Replace with function body.

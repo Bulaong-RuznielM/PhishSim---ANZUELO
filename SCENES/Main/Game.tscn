@@ -1,11 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://0r27r2r5msub"]
+[gd_scene load_steps=8 format=3 uid="uid://0r27r2r5msub"]
 
 [ext_resource type="Texture2D" uid="uid://dcmppo5daehm3" path="res://ASSETS/miscellaneous/BACKGROUND.jpg" id="1_lyl00"]
 [ext_resource type="Texture2D" uid="uid://brttk0nyik33q" path="res://ASSETS/windows/MAIN START.jpg" id="2_fq1uo"]
 [ext_resource type="Script" path="res://Scripts/windows_buttons.gd" id="3_qnqtk"]
 [ext_resource type="Texture2D" uid="uid://uaide1why5oe" path="res://ASSETS/icons/windows_border - Copy (3) - Copy - Copy.png" id="4_vpjab"]
 [ext_resource type="Texture2D" uid="uid://b74t45ak3kdrt" path="res://ASSETS/icons/windows_border - Copy (2) - Copy - Copy.png" id="5_qisv7"]
-[ext_resource type="Texture2D" uid="uid://bnu6c215f35s5" path="res://ASSETS/icons/windows_border - Copy (5) - Copy - Copy.png" id="6_qfmiy"]
 [ext_resource type="Texture2D" uid="uid://cejuqdp0jpmsr" path="res://ASSETS/icons/windows_border - Copy (4) - Copy - Copy.png" id="7_smah1"]
 [ext_resource type="FontFile" uid="uid://2t3fwfyco16d" path="res://FONTS/super-pixel-font/SuperPixel-m2L8j.ttf" id="8_gqawu"]
 
@@ -52,15 +51,6 @@ offset_bottom = 27.0
 scale = Vector2(0.716955, 0.676655)
 icon = ExtResource("5_qisv7")
 
-[node name="EMAIL" type="Button" parent="WindowsButtons"]
-layout_mode = 0
-offset_left = -488.0
-offset_top = -8.0
-offset_right = -367.0
-offset_bottom = 133.0
-scale = Vector2(0.736425, 0.742107)
-icon = ExtResource("6_qfmiy")
-
 [node name="SETTINGS" type="Button" parent="WindowsButtons"]
 layout_mode = 0
 offset_left = 392.0
@@ -100,6 +90,5 @@ autowrap_mode = 2
 
 [connection signal="pressed" from="WindowsButtons/UPGRADES" to="WindowsButtons" method="_on_upgrades_pressed"]
 [connection signal="pressed" from="WindowsButtons/TASKS" to="WindowsButtons" method="_on_tasks_pressed"]
-[connection signal="pressed" from="WindowsButtons/EMAIL" to="WindowsButtons" method="_on_email_pressed"]
 [connection signal="pressed" from="WindowsButtons/SETTINGS" to="WindowsButtons" method="_on_settings_pressed"]
 [connection signal="pressed" from="WindowsButtons/quit" to="WindowsButtons" method="_on_quit_pressed"]
