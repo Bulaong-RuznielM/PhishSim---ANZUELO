@@ -12,7 +12,10 @@ func _on_hide_task_2_pressed() -> void:
 
 func _on_show_task_2_pressed() -> void:
 	%Task_2.visible = true
-	
+
+func _on_task_3_pressed() -> void:
+	get_tree().change_scene_to_file("res://SCENES/Sub/Profile_Finder.tscn")
+
 	
 #My non experienced coder brain thinks that there is a better way to do this but
 #Im too inexeperienced to fix it.
