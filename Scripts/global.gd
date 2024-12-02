@@ -12,6 +12,38 @@ var user_tasks = {
 	}
 }
 
+var users = {
+	"0" : 
+	{
+	"%user%status" : "Real",
+	"%user%profile" : "", ##start in 1
+	"%user%banner" : "", ##start in 1
+	"%user%" : "user",
+	"%@username%" : "@user",
+	"%user%intro" : "What is happening?",
+	"%user%info" : "INFO",
+	"%user%check" : "True", ## icons
+	"%user%commentnumber" : "2", ##max 15, 0 - 15.
+	"%user%blocks" : 
+		{
+		"0" : 
+			{
+			"comment" : "In the waning days of World War II, the village of Oradour-sur-Glane in France bore witness to an unspeakable atrocity. On June 10, 1944, Nazi soldiers surrounded the town, rounding up its residents under the guise of identity checks. Men were led to barns, women and children to the church. Without warning, gunfire erupted in the barns, and the church was set ablaze with grenades and fuel, leaving nearly the entire population—642 people—dead in a single day. The ruins of Oradour remain untouched to this day, a chilling testament to human cruelty.",
+			"reply" : "100",
+			"repost" : "400",
+			"like" : "1000"
+			},
+		"1" :
+			{
+			"comment" : "...1",
+			"reply" : "...1",
+			"repost" : "...1",
+			"like" : "...1"
+			}
+		}
+	}
+}
+
 # Dictionary containing power-up data
 var power_ups = {
 	0: {
