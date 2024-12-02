@@ -33,34 +33,34 @@ func dynamicSetter(sellect):
 		if container_node:
 			container_node.show()
 
-		var visblename_node = get_node_or_null("%visblename_C" + str(i))
+		var visblename_node = get_node_or_null("%Container" + str(i) + "/HBoxContainer/visblename")
 		if visblename_node:
 			visblename_node.text = Global.users[whatUser]["%user%"]
 
-		var username_node = get_node_or_null("%username_C" + str(i))
+		var username_node = get_node_or_null("%Container" + str(i) + "/HBoxContainer/username")
 		if username_node:
 			username_node.text = Global.users[whatUser]["%@username%"]
 
-		var check_node = get_node_or_null("%Check_C" + str(i))
+		var check_node = get_node_or_null("%Container" + str(i) + "/HBoxContainer/_/Check")
 		if check_node:
 			if Global.users[whatUser]["%user%check"] == "True":
 				check_node.show()
 			else:
 				check_node.hide()
 
-		var comment_node = get_node_or_null("%Comment_C" + str(i))
+		var comment_node = get_node_or_null("%Container" + str(i) + "/Comment")
 		if comment_node:
 			comment_node.text = Global.users[whatUser]["%user%blocks"][str(i)]["comment"]
 
-		var reply_node = get_node_or_null("%reply_Label_C" + str(i))
+		var reply_node = get_node_or_null("%Container" + str(i) + "/reply_Label")
 		if reply_node:
 			reply_node.text = Global.users[whatUser]["%user%blocks"][str(i)]["reply"]
 
-		var repost_node = get_node_or_null("%repost_Label_C" + str(i))
+		var repost_node = get_node_or_null("%Container" + str(i) + "/repost_Label")
 		if repost_node:
 			repost_node.text = Global.users[whatUser]["%user%blocks"][str(i)]["repost"]
 
-		var like_node = get_node_or_null("%like_Label_C" + str(i))
+		var like_node = get_node_or_null("%Container" + str(i) + "/like_Label_C")
 		if like_node:
 			like_node.text = Global.users[whatUser]["%user%blocks"][str(i)]["like"]
 

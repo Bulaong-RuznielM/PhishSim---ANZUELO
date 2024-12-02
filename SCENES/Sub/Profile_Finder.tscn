@@ -56,8 +56,7 @@ offset_right = 187.191
 offset_bottom = 121.498
 scale = Vector2(0.491462, 1.8126)
 
-[node name="visblename_C0" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container0/HBoxContainer"]
-unique_name_in_owner = true
+[node name="visblename" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container0/HBoxContainer"]
 modulate = Color(0, 0, 0, 1)
 layout_mode = 2
 text = "asdasda"
@@ -66,20 +65,17 @@ text = "asdasda"
 layout_mode = 2
 text = "..."
 
-[node name="Check_C0" type="Sprite2D" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container0/HBoxContainer/_"]
-unique_name_in_owner = true
+[node name="Check" type="Sprite2D" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container0/HBoxContainer/_"]
 position = Vector2(4.14284, -0.292252)
 scale = Vector2(0.0617045, 0.079142)
 texture = ExtResource("5_bfj6w")
 
-[node name="username_C0" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container0/HBoxContainer"]
-unique_name_in_owner = true
+[node name="username" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container0/HBoxContainer"]
 modulate = Color(0, 0, 0, 1)
 layout_mode = 2
 text = "@asdasda"
 
-[node name="User_Profile_C0" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container0"]
-unique_name_in_owner = true
+[node name="User_Profile" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container0"]
 layout_mode = 0
 offset_left = 9.38528
 offset_top = 39.5847
@@ -88,8 +84,7 @@ offset_bottom = 314.585
 scale = Vector2(0.173005, 0.69354)
 texture = ExtResource("4_bxgdw")
 
-[node name="Comment_C0" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container0"]
-unique_name_in_owner = true
+[node name="Comment" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container0"]
 modulate = Color(0, 0, 0, 1)
 layout_mode = 0
 offset_left = 9.0
@@ -100,8 +95,7 @@ scale = Vector2(0.476928, 2.0875)
 text = "In the waning days of World War II, the village of Oradour-sur-Glane in France bore witness to an unspeakable atrocity. On June 10, 1944, Nazi soldiers surrounded the town, rounding up its residents under the guise of identity checks. Men were led to barns, women and children to the church. Without warning, gunfire erupted in the barns, and the church was set ablaze with grenades and fuel, leaving nearly the entire population—642 people—dead in a single day. The ruins of Oradour remain untouched to this day, a chilling testament to human cruelty."
 autowrap_mode = 3
 
-[node name="reply_Label_C0" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container0"]
-unique_name_in_owner = true
+[node name="reply_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container0"]
 modulate = Color(0, 0, 0, 1)
 layout_mode = 0
 offset_left = 33.8912
@@ -112,8 +106,7 @@ scale = Vector2(0.617065, 1.5058)
 theme_override_font_sizes/font_size = 28
 text = "..."
 
-[node name="repost_Label_C0" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container0"]
-unique_name_in_owner = true
+[node name="repost_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container0"]
 modulate = Color(0, 0, 0, 1)
 layout_mode = 0
 offset_left = 75.6035
@@ -124,8 +117,7 @@ scale = Vector2(0.635754, 1.50728)
 theme_override_font_sizes/font_size = 28
 text = "..."
 
-[node name="like_Label_C0" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container0"]
-unique_name_in_owner = true
+[node name="like_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container0"]
 modulate = Color(0, 0, 0, 1)
 layout_mode = 0
 offset_left = 118.359
@@ -149,8 +141,7 @@ offset_right = 187.191
 offset_bottom = 121.498
 scale = Vector2(0.491462, 1.8126)
 
-[node name="visblename_C1" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container1/HBoxContainer"]
-unique_name_in_owner = true
+[node name="visblename" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container1/HBoxContainer"]
 modulate = Color(0, 0, 0, 1)
 layout_mode = 2
 text = "asdasda"
@@ -159,20 +150,17 @@ text = "asdasda"
 layout_mode = 2
 text = "..."
 
-[node name="Check_C1" type="Sprite2D" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container1/HBoxContainer/_"]
-unique_name_in_owner = true
-position = Vector2(2.02099, -0.497915)
+[node name="Check" type="Sprite2D" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container1/HBoxContainer/_"]
+position = Vector2(4.14284, -0.292252)
 scale = Vector2(0.0617045, 0.079142)
 texture = ExtResource("5_bfj6w")
 
-[node name="username_C1" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container1/HBoxContainer"]
-unique_name_in_owner = true
+[node name="username" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container1/HBoxContainer"]
 modulate = Color(0, 0, 0, 1)
 layout_mode = 2
 text = "@asdasda"
 
-[node name="User_Profile_C1" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container1"]
-unique_name_in_owner = true
+[node name="User_Profile" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container1"]
 layout_mode = 0
 offset_left = 9.38528
 offset_top = 39.5847
@@ -181,8 +169,7 @@ offset_bottom = 314.585
 scale = Vector2(0.173005, 0.69354)
 texture = ExtResource("4_bxgdw")
 
-[node name="Comment_C1" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container1"]
-unique_name_in_owner = true
+[node name="Comment" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container1"]
 modulate = Color(0, 0, 0, 1)
 layout_mode = 0
 offset_left = 9.0
@@ -193,8 +180,7 @@ scale = Vector2(0.476928, 2.0875)
 text = "In the waning days of World War II, the village of Oradour-sur-Glane in France bore witness to an unspeakable atrocity. On June 10, 1944, Nazi soldiers surrounded the town, rounding up its residents under the guise of identity checks. Men were led to barns, women and children to the church. Without warning, gunfire erupted in the barns, and the church was set ablaze with grenades and fuel, leaving nearly the entire population—642 people—dead in a single day. The ruins of Oradour remain untouched to this day, a chilling testament to human cruelty."
 autowrap_mode = 3
 
-[node name="reply_Label_C1" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container1"]
-unique_name_in_owner = true
+[node name="reply_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container1"]
 modulate = Color(0, 0, 0, 1)
 layout_mode = 0
 offset_left = 33.8912
@@ -205,8 +191,7 @@ scale = Vector2(0.617065, 1.5058)
 theme_override_font_sizes/font_size = 28
 text = "..."
 
-[node name="repost_Label_C1" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container1"]
-unique_name_in_owner = true
+[node name="repost_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container1"]
 modulate = Color(0, 0, 0, 1)
 layout_mode = 0
 offset_left = 75.6035
@@ -217,8 +202,1112 @@ scale = Vector2(0.635754, 1.50728)
 theme_override_font_sizes/font_size = 28
 text = "..."
 
-[node name="like_Label_C1" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container1"]
+[node name="like_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container1"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 118.359
+offset_top = 577.472
+offset_right = 158.359
+offset_bottom = 616.472
+scale = Vector2(0.626876, 1.48178)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="Container2" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer"]
 unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("3_dl5t6")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container2"]
+layout_mode = 0
+offset_left = 41.1909
+offset_top = 81.4981
+offset_right = 187.191
+offset_bottom = 121.498
+scale = Vector2(0.491462, 1.8126)
+
+[node name="visblename" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container2/HBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "asdasda"
+
+[node name="_" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container2/HBoxContainer"]
+layout_mode = 2
+text = "..."
+
+[node name="Check" type="Sprite2D" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container2/HBoxContainer/_"]
+position = Vector2(4.14284, -0.292252)
+scale = Vector2(0.0617045, 0.079142)
+texture = ExtResource("5_bfj6w")
+
+[node name="username" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container2/HBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "@asdasda"
+
+[node name="User_Profile" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container2"]
+layout_mode = 0
+offset_left = 9.38528
+offset_top = 39.5847
+offset_right = 192.385
+offset_bottom = 314.585
+scale = Vector2(0.173005, 0.69354)
+texture = ExtResource("4_bxgdw")
+
+[node name="Comment" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container2"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 9.0
+offset_top = 270.0
+offset_right = 918.0
+offset_bottom = 444.0
+scale = Vector2(0.476928, 2.0875)
+text = "In the waning days of World War II, the village of Oradour-sur-Glane in France bore witness to an unspeakable atrocity. On June 10, 1944, Nazi soldiers surrounded the town, rounding up its residents under the guise of identity checks. Men were led to barns, women and children to the church. Without warning, gunfire erupted in the barns, and the church was set ablaze with grenades and fuel, leaving nearly the entire population—642 people—dead in a single day. The ruins of Oradour remain untouched to this day, a chilling testament to human cruelty."
+autowrap_mode = 3
+
+[node name="reply_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container2"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 33.8912
+offset_top = 577.472
+offset_right = 73.8912
+offset_bottom = 616.472
+scale = Vector2(0.617065, 1.5058)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="repost_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container2"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 75.6035
+offset_top = 577.472
+offset_right = 115.604
+offset_bottom = 616.472
+scale = Vector2(0.635754, 1.50728)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="like_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container2"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 118.359
+offset_top = 577.472
+offset_right = 158.359
+offset_bottom = 616.472
+scale = Vector2(0.626876, 1.48178)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="Container3" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("3_dl5t6")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container3"]
+layout_mode = 0
+offset_left = 41.1909
+offset_top = 81.4981
+offset_right = 187.191
+offset_bottom = 121.498
+scale = Vector2(0.491462, 1.8126)
+
+[node name="visblename" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container3/HBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "asdasda"
+
+[node name="_" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container3/HBoxContainer"]
+layout_mode = 2
+text = "..."
+
+[node name="Check" type="Sprite2D" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container3/HBoxContainer/_"]
+position = Vector2(4.14284, -0.292252)
+scale = Vector2(0.0617045, 0.079142)
+texture = ExtResource("5_bfj6w")
+
+[node name="username" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container3/HBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "@asdasda"
+
+[node name="User_Profile" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container3"]
+layout_mode = 0
+offset_left = 9.38528
+offset_top = 39.5847
+offset_right = 192.385
+offset_bottom = 314.585
+scale = Vector2(0.173005, 0.69354)
+texture = ExtResource("4_bxgdw")
+
+[node name="Comment" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container3"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 9.0
+offset_top = 270.0
+offset_right = 918.0
+offset_bottom = 444.0
+scale = Vector2(0.476928, 2.0875)
+text = "In the waning days of World War II, the village of Oradour-sur-Glane in France bore witness to an unspeakable atrocity. On June 10, 1944, Nazi soldiers surrounded the town, rounding up its residents under the guise of identity checks. Men were led to barns, women and children to the church. Without warning, gunfire erupted in the barns, and the church was set ablaze with grenades and fuel, leaving nearly the entire population—642 people—dead in a single day. The ruins of Oradour remain untouched to this day, a chilling testament to human cruelty."
+autowrap_mode = 3
+
+[node name="reply_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container3"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 33.8912
+offset_top = 577.472
+offset_right = 73.8912
+offset_bottom = 616.472
+scale = Vector2(0.617065, 1.5058)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="repost_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container3"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 75.6035
+offset_top = 577.472
+offset_right = 115.604
+offset_bottom = 616.472
+scale = Vector2(0.635754, 1.50728)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="like_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container3"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 118.359
+offset_top = 577.472
+offset_right = 158.359
+offset_bottom = 616.472
+scale = Vector2(0.626876, 1.48178)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="Container4" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("3_dl5t6")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container4"]
+layout_mode = 0
+offset_left = 41.1909
+offset_top = 81.4981
+offset_right = 187.191
+offset_bottom = 121.498
+scale = Vector2(0.491462, 1.8126)
+
+[node name="visblename" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container4/HBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "asdasda"
+
+[node name="_" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container4/HBoxContainer"]
+layout_mode = 2
+text = "..."
+
+[node name="Check" type="Sprite2D" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container4/HBoxContainer/_"]
+position = Vector2(4.14284, -0.292252)
+scale = Vector2(0.0617045, 0.079142)
+texture = ExtResource("5_bfj6w")
+
+[node name="username" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container4/HBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "@asdasda"
+
+[node name="User_Profile" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container4"]
+layout_mode = 0
+offset_left = 9.38528
+offset_top = 39.5847
+offset_right = 192.385
+offset_bottom = 314.585
+scale = Vector2(0.173005, 0.69354)
+texture = ExtResource("4_bxgdw")
+
+[node name="Comment" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container4"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 9.0
+offset_top = 270.0
+offset_right = 918.0
+offset_bottom = 444.0
+scale = Vector2(0.476928, 2.0875)
+text = "In the waning days of World War II, the village of Oradour-sur-Glane in France bore witness to an unspeakable atrocity. On June 10, 1944, Nazi soldiers surrounded the town, rounding up its residents under the guise of identity checks. Men were led to barns, women and children to the church. Without warning, gunfire erupted in the barns, and the church was set ablaze with grenades and fuel, leaving nearly the entire population—642 people—dead in a single day. The ruins of Oradour remain untouched to this day, a chilling testament to human cruelty."
+autowrap_mode = 3
+
+[node name="reply_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container4"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 33.8912
+offset_top = 577.472
+offset_right = 73.8912
+offset_bottom = 616.472
+scale = Vector2(0.617065, 1.5058)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="repost_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container4"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 75.6035
+offset_top = 577.472
+offset_right = 115.604
+offset_bottom = 616.472
+scale = Vector2(0.635754, 1.50728)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="like_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container4"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 118.359
+offset_top = 577.472
+offset_right = 158.359
+offset_bottom = 616.472
+scale = Vector2(0.626876, 1.48178)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="Container5" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("3_dl5t6")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container5"]
+layout_mode = 0
+offset_left = 41.1909
+offset_top = 81.4981
+offset_right = 187.191
+offset_bottom = 121.498
+scale = Vector2(0.491462, 1.8126)
+
+[node name="visblename" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container5/HBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "asdasda"
+
+[node name="_" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container5/HBoxContainer"]
+layout_mode = 2
+text = "..."
+
+[node name="Check" type="Sprite2D" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container5/HBoxContainer/_"]
+position = Vector2(4.14284, -0.292252)
+scale = Vector2(0.0617045, 0.079142)
+texture = ExtResource("5_bfj6w")
+
+[node name="username" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container5/HBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "@asdasda"
+
+[node name="User_Profile" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container5"]
+layout_mode = 0
+offset_left = 9.38528
+offset_top = 39.5847
+offset_right = 192.385
+offset_bottom = 314.585
+scale = Vector2(0.173005, 0.69354)
+texture = ExtResource("4_bxgdw")
+
+[node name="Comment" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container5"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 9.0
+offset_top = 270.0
+offset_right = 918.0
+offset_bottom = 444.0
+scale = Vector2(0.476928, 2.0875)
+text = "In the waning days of World War II, the village of Oradour-sur-Glane in France bore witness to an unspeakable atrocity. On June 10, 1944, Nazi soldiers surrounded the town, rounding up its residents under the guise of identity checks. Men were led to barns, women and children to the church. Without warning, gunfire erupted in the barns, and the church was set ablaze with grenades and fuel, leaving nearly the entire population—642 people—dead in a single day. The ruins of Oradour remain untouched to this day, a chilling testament to human cruelty."
+autowrap_mode = 3
+
+[node name="reply_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container5"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 33.8912
+offset_top = 577.472
+offset_right = 73.8912
+offset_bottom = 616.472
+scale = Vector2(0.617065, 1.5058)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="repost_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container5"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 75.6035
+offset_top = 577.472
+offset_right = 115.604
+offset_bottom = 616.472
+scale = Vector2(0.635754, 1.50728)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="like_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container5"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 118.359
+offset_top = 577.472
+offset_right = 158.359
+offset_bottom = 616.472
+scale = Vector2(0.626876, 1.48178)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="Container6" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("3_dl5t6")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container6"]
+layout_mode = 0
+offset_left = 41.1909
+offset_top = 81.4981
+offset_right = 187.191
+offset_bottom = 121.498
+scale = Vector2(0.491462, 1.8126)
+
+[node name="visblename" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container6/HBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "asdasda"
+
+[node name="_" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container6/HBoxContainer"]
+layout_mode = 2
+text = "..."
+
+[node name="Check" type="Sprite2D" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container6/HBoxContainer/_"]
+position = Vector2(4.14284, -0.292252)
+scale = Vector2(0.0617045, 0.079142)
+texture = ExtResource("5_bfj6w")
+
+[node name="username" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container6/HBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "@asdasda"
+
+[node name="User_Profile" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container6"]
+layout_mode = 0
+offset_left = 9.38528
+offset_top = 39.5847
+offset_right = 192.385
+offset_bottom = 314.585
+scale = Vector2(0.173005, 0.69354)
+texture = ExtResource("4_bxgdw")
+
+[node name="Comment" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container6"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 9.0
+offset_top = 270.0
+offset_right = 918.0
+offset_bottom = 444.0
+scale = Vector2(0.476928, 2.0875)
+text = "In the waning days of World War II, the village of Oradour-sur-Glane in France bore witness to an unspeakable atrocity. On June 10, 1944, Nazi soldiers surrounded the town, rounding up its residents under the guise of identity checks. Men were led to barns, women and children to the church. Without warning, gunfire erupted in the barns, and the church was set ablaze with grenades and fuel, leaving nearly the entire population—642 people—dead in a single day. The ruins of Oradour remain untouched to this day, a chilling testament to human cruelty."
+autowrap_mode = 3
+
+[node name="reply_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container6"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 33.8912
+offset_top = 577.472
+offset_right = 73.8912
+offset_bottom = 616.472
+scale = Vector2(0.617065, 1.5058)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="repost_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container6"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 75.6035
+offset_top = 577.472
+offset_right = 115.604
+offset_bottom = 616.472
+scale = Vector2(0.635754, 1.50728)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="like_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container6"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 118.359
+offset_top = 577.472
+offset_right = 158.359
+offset_bottom = 616.472
+scale = Vector2(0.626876, 1.48178)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="Container7" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("3_dl5t6")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container7"]
+layout_mode = 0
+offset_left = 41.1909
+offset_top = 81.4981
+offset_right = 187.191
+offset_bottom = 121.498
+scale = Vector2(0.491462, 1.8126)
+
+[node name="visblename" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container7/HBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "asdasda"
+
+[node name="_" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container7/HBoxContainer"]
+layout_mode = 2
+text = "..."
+
+[node name="Check" type="Sprite2D" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container7/HBoxContainer/_"]
+position = Vector2(4.14284, -0.292252)
+scale = Vector2(0.0617045, 0.079142)
+texture = ExtResource("5_bfj6w")
+
+[node name="username" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container7/HBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "@asdasda"
+
+[node name="User_Profile" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container7"]
+layout_mode = 0
+offset_left = 9.38528
+offset_top = 39.5847
+offset_right = 192.385
+offset_bottom = 314.585
+scale = Vector2(0.173005, 0.69354)
+texture = ExtResource("4_bxgdw")
+
+[node name="Comment" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container7"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 9.0
+offset_top = 270.0
+offset_right = 918.0
+offset_bottom = 444.0
+scale = Vector2(0.476928, 2.0875)
+text = "In the waning days of World War II, the village of Oradour-sur-Glane in France bore witness to an unspeakable atrocity. On June 10, 1944, Nazi soldiers surrounded the town, rounding up its residents under the guise of identity checks. Men were led to barns, women and children to the church. Without warning, gunfire erupted in the barns, and the church was set ablaze with grenades and fuel, leaving nearly the entire population—642 people—dead in a single day. The ruins of Oradour remain untouched to this day, a chilling testament to human cruelty."
+autowrap_mode = 3
+
+[node name="reply_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container7"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 33.8912
+offset_top = 577.472
+offset_right = 73.8912
+offset_bottom = 616.472
+scale = Vector2(0.617065, 1.5058)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="repost_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container7"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 75.6035
+offset_top = 577.472
+offset_right = 115.604
+offset_bottom = 616.472
+scale = Vector2(0.635754, 1.50728)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="like_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container7"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 118.359
+offset_top = 577.472
+offset_right = 158.359
+offset_bottom = 616.472
+scale = Vector2(0.626876, 1.48178)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="Container8" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("3_dl5t6")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container8"]
+layout_mode = 0
+offset_left = 41.1909
+offset_top = 81.4981
+offset_right = 187.191
+offset_bottom = 121.498
+scale = Vector2(0.491462, 1.8126)
+
+[node name="visblename" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container8/HBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "asdasda"
+
+[node name="_" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container8/HBoxContainer"]
+layout_mode = 2
+text = "..."
+
+[node name="Check" type="Sprite2D" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container8/HBoxContainer/_"]
+position = Vector2(4.14284, -0.292252)
+scale = Vector2(0.0617045, 0.079142)
+texture = ExtResource("5_bfj6w")
+
+[node name="username" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container8/HBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "@asdasda"
+
+[node name="User_Profile" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container8"]
+layout_mode = 0
+offset_left = 9.38528
+offset_top = 39.5847
+offset_right = 192.385
+offset_bottom = 314.585
+scale = Vector2(0.173005, 0.69354)
+texture = ExtResource("4_bxgdw")
+
+[node name="Comment" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container8"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 9.0
+offset_top = 270.0
+offset_right = 918.0
+offset_bottom = 444.0
+scale = Vector2(0.476928, 2.0875)
+text = "In the waning days of World War II, the village of Oradour-sur-Glane in France bore witness to an unspeakable atrocity. On June 10, 1944, Nazi soldiers surrounded the town, rounding up its residents under the guise of identity checks. Men were led to barns, women and children to the church. Without warning, gunfire erupted in the barns, and the church was set ablaze with grenades and fuel, leaving nearly the entire population—642 people—dead in a single day. The ruins of Oradour remain untouched to this day, a chilling testament to human cruelty."
+autowrap_mode = 3
+
+[node name="reply_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container8"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 33.8912
+offset_top = 577.472
+offset_right = 73.8912
+offset_bottom = 616.472
+scale = Vector2(0.617065, 1.5058)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="repost_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container8"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 75.6035
+offset_top = 577.472
+offset_right = 115.604
+offset_bottom = 616.472
+scale = Vector2(0.635754, 1.50728)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="like_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container8"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 118.359
+offset_top = 577.472
+offset_right = 158.359
+offset_bottom = 616.472
+scale = Vector2(0.626876, 1.48178)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="Container9" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("3_dl5t6")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container9"]
+layout_mode = 0
+offset_left = 41.1909
+offset_top = 81.4981
+offset_right = 187.191
+offset_bottom = 121.498
+scale = Vector2(0.491462, 1.8126)
+
+[node name="visblename" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container9/HBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "asdasda"
+
+[node name="_" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container9/HBoxContainer"]
+layout_mode = 2
+text = "..."
+
+[node name="Check" type="Sprite2D" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container9/HBoxContainer/_"]
+position = Vector2(4.14284, -0.292252)
+scale = Vector2(0.0617045, 0.079142)
+texture = ExtResource("5_bfj6w")
+
+[node name="username" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container9/HBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "@asdasda"
+
+[node name="User_Profile" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container9"]
+layout_mode = 0
+offset_left = 9.38528
+offset_top = 39.5847
+offset_right = 192.385
+offset_bottom = 314.585
+scale = Vector2(0.173005, 0.69354)
+texture = ExtResource("4_bxgdw")
+
+[node name="Comment" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container9"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 9.0
+offset_top = 270.0
+offset_right = 918.0
+offset_bottom = 444.0
+scale = Vector2(0.476928, 2.0875)
+text = "In the waning days of World War II, the village of Oradour-sur-Glane in France bore witness to an unspeakable atrocity. On June 10, 1944, Nazi soldiers surrounded the town, rounding up its residents under the guise of identity checks. Men were led to barns, women and children to the church. Without warning, gunfire erupted in the barns, and the church was set ablaze with grenades and fuel, leaving nearly the entire population—642 people—dead in a single day. The ruins of Oradour remain untouched to this day, a chilling testament to human cruelty."
+autowrap_mode = 3
+
+[node name="reply_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container9"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 33.8912
+offset_top = 577.472
+offset_right = 73.8912
+offset_bottom = 616.472
+scale = Vector2(0.617065, 1.5058)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="repost_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container9"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 75.6035
+offset_top = 577.472
+offset_right = 115.604
+offset_bottom = 616.472
+scale = Vector2(0.635754, 1.50728)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="like_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container9"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 118.359
+offset_top = 577.472
+offset_right = 158.359
+offset_bottom = 616.472
+scale = Vector2(0.626876, 1.48178)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="Container10" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("3_dl5t6")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container10"]
+layout_mode = 0
+offset_left = 41.1909
+offset_top = 81.4981
+offset_right = 187.191
+offset_bottom = 121.498
+scale = Vector2(0.491462, 1.8126)
+
+[node name="visblename" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container10/HBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "asdasda"
+
+[node name="_" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container10/HBoxContainer"]
+layout_mode = 2
+text = "..."
+
+[node name="Check" type="Sprite2D" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container10/HBoxContainer/_"]
+position = Vector2(4.14284, -0.292252)
+scale = Vector2(0.0617045, 0.079142)
+texture = ExtResource("5_bfj6w")
+
+[node name="username" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container10/HBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "@asdasda"
+
+[node name="User_Profile" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container10"]
+layout_mode = 0
+offset_left = 9.38528
+offset_top = 39.5847
+offset_right = 192.385
+offset_bottom = 314.585
+scale = Vector2(0.173005, 0.69354)
+texture = ExtResource("4_bxgdw")
+
+[node name="Comment" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container10"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 9.0
+offset_top = 270.0
+offset_right = 918.0
+offset_bottom = 444.0
+scale = Vector2(0.476928, 2.0875)
+text = "In the waning days of World War II, the village of Oradour-sur-Glane in France bore witness to an unspeakable atrocity. On June 10, 1944, Nazi soldiers surrounded the town, rounding up its residents under the guise of identity checks. Men were led to barns, women and children to the church. Without warning, gunfire erupted in the barns, and the church was set ablaze with grenades and fuel, leaving nearly the entire population—642 people—dead in a single day. The ruins of Oradour remain untouched to this day, a chilling testament to human cruelty."
+autowrap_mode = 3
+
+[node name="reply_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container10"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 33.8912
+offset_top = 577.472
+offset_right = 73.8912
+offset_bottom = 616.472
+scale = Vector2(0.617065, 1.5058)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="repost_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container10"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 75.6035
+offset_top = 577.472
+offset_right = 115.604
+offset_bottom = 616.472
+scale = Vector2(0.635754, 1.50728)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="like_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container10"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 118.359
+offset_top = 577.472
+offset_right = 158.359
+offset_bottom = 616.472
+scale = Vector2(0.626876, 1.48178)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="Container11" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("3_dl5t6")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container11"]
+layout_mode = 0
+offset_left = 41.1909
+offset_top = 81.4981
+offset_right = 187.191
+offset_bottom = 121.498
+scale = Vector2(0.491462, 1.8126)
+
+[node name="visblename" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container11/HBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "asdasda"
+
+[node name="_" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container11/HBoxContainer"]
+layout_mode = 2
+text = "..."
+
+[node name="Check" type="Sprite2D" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container11/HBoxContainer/_"]
+position = Vector2(4.14284, -0.292252)
+scale = Vector2(0.0617045, 0.079142)
+texture = ExtResource("5_bfj6w")
+
+[node name="username" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container11/HBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "@asdasda"
+
+[node name="User_Profile" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container11"]
+layout_mode = 0
+offset_left = 9.38528
+offset_top = 39.5847
+offset_right = 192.385
+offset_bottom = 314.585
+scale = Vector2(0.173005, 0.69354)
+texture = ExtResource("4_bxgdw")
+
+[node name="Comment" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container11"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 9.0
+offset_top = 270.0
+offset_right = 918.0
+offset_bottom = 444.0
+scale = Vector2(0.476928, 2.0875)
+text = "In the waning days of World War II, the village of Oradour-sur-Glane in France bore witness to an unspeakable atrocity. On June 10, 1944, Nazi soldiers surrounded the town, rounding up its residents under the guise of identity checks. Men were led to barns, women and children to the church. Without warning, gunfire erupted in the barns, and the church was set ablaze with grenades and fuel, leaving nearly the entire population—642 people—dead in a single day. The ruins of Oradour remain untouched to this day, a chilling testament to human cruelty."
+autowrap_mode = 3
+
+[node name="reply_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container11"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 33.8912
+offset_top = 577.472
+offset_right = 73.8912
+offset_bottom = 616.472
+scale = Vector2(0.617065, 1.5058)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="repost_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container11"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 75.6035
+offset_top = 577.472
+offset_right = 115.604
+offset_bottom = 616.472
+scale = Vector2(0.635754, 1.50728)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="like_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container11"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 118.359
+offset_top = 577.472
+offset_right = 158.359
+offset_bottom = 616.472
+scale = Vector2(0.626876, 1.48178)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="Container12" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("3_dl5t6")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container12"]
+layout_mode = 0
+offset_left = 41.1909
+offset_top = 81.4981
+offset_right = 187.191
+offset_bottom = 121.498
+scale = Vector2(0.491462, 1.8126)
+
+[node name="visblename" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container12/HBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "asdasda"
+
+[node name="_" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container12/HBoxContainer"]
+layout_mode = 2
+text = "..."
+
+[node name="Check" type="Sprite2D" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container12/HBoxContainer/_"]
+position = Vector2(4.14284, -0.292252)
+scale = Vector2(0.0617045, 0.079142)
+texture = ExtResource("5_bfj6w")
+
+[node name="username" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container12/HBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "@asdasda"
+
+[node name="User_Profile" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container12"]
+layout_mode = 0
+offset_left = 9.38528
+offset_top = 39.5847
+offset_right = 192.385
+offset_bottom = 314.585
+scale = Vector2(0.173005, 0.69354)
+texture = ExtResource("4_bxgdw")
+
+[node name="Comment" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container12"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 9.0
+offset_top = 270.0
+offset_right = 918.0
+offset_bottom = 444.0
+scale = Vector2(0.476928, 2.0875)
+text = "In the waning days of World War II, the village of Oradour-sur-Glane in France bore witness to an unspeakable atrocity. On June 10, 1944, Nazi soldiers surrounded the town, rounding up its residents under the guise of identity checks. Men were led to barns, women and children to the church. Without warning, gunfire erupted in the barns, and the church was set ablaze with grenades and fuel, leaving nearly the entire population—642 people—dead in a single day. The ruins of Oradour remain untouched to this day, a chilling testament to human cruelty."
+autowrap_mode = 3
+
+[node name="reply_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container12"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 33.8912
+offset_top = 577.472
+offset_right = 73.8912
+offset_bottom = 616.472
+scale = Vector2(0.617065, 1.5058)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="repost_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container12"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 75.6035
+offset_top = 577.472
+offset_right = 115.604
+offset_bottom = 616.472
+scale = Vector2(0.635754, 1.50728)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="like_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container12"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 118.359
+offset_top = 577.472
+offset_right = 158.359
+offset_bottom = 616.472
+scale = Vector2(0.626876, 1.48178)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="Container13" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("3_dl5t6")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container13"]
+layout_mode = 0
+offset_left = 41.1909
+offset_top = 81.4981
+offset_right = 187.191
+offset_bottom = 121.498
+scale = Vector2(0.491462, 1.8126)
+
+[node name="visblename" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container13/HBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "asdasda"
+
+[node name="_" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container13/HBoxContainer"]
+layout_mode = 2
+text = "..."
+
+[node name="Check" type="Sprite2D" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container13/HBoxContainer/_"]
+position = Vector2(4.14284, -0.292252)
+scale = Vector2(0.0617045, 0.079142)
+texture = ExtResource("5_bfj6w")
+
+[node name="username" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container13/HBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "@asdasda"
+
+[node name="User_Profile" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container13"]
+layout_mode = 0
+offset_left = 9.38528
+offset_top = 39.5847
+offset_right = 192.385
+offset_bottom = 314.585
+scale = Vector2(0.173005, 0.69354)
+texture = ExtResource("4_bxgdw")
+
+[node name="Comment" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container13"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 9.0
+offset_top = 270.0
+offset_right = 918.0
+offset_bottom = 444.0
+scale = Vector2(0.476928, 2.0875)
+text = "In the waning days of World War II, the village of Oradour-sur-Glane in France bore witness to an unspeakable atrocity. On June 10, 1944, Nazi soldiers surrounded the town, rounding up its residents under the guise of identity checks. Men were led to barns, women and children to the church. Without warning, gunfire erupted in the barns, and the church was set ablaze with grenades and fuel, leaving nearly the entire population—642 people—dead in a single day. The ruins of Oradour remain untouched to this day, a chilling testament to human cruelty."
+autowrap_mode = 3
+
+[node name="reply_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container13"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 33.8912
+offset_top = 577.472
+offset_right = 73.8912
+offset_bottom = 616.472
+scale = Vector2(0.617065, 1.5058)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="repost_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container13"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 75.6035
+offset_top = 577.472
+offset_right = 115.604
+offset_bottom = 616.472
+scale = Vector2(0.635754, 1.50728)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="like_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container13"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 118.359
+offset_top = 577.472
+offset_right = 158.359
+offset_bottom = 616.472
+scale = Vector2(0.626876, 1.48178)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="Container14" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("3_dl5t6")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container14"]
+layout_mode = 0
+offset_left = 41.1909
+offset_top = 81.4981
+offset_right = 187.191
+offset_bottom = 121.498
+scale = Vector2(0.491462, 1.8126)
+
+[node name="visblename" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container14/HBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "asdasda"
+
+[node name="_" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container14/HBoxContainer"]
+layout_mode = 2
+text = "..."
+
+[node name="Check" type="Sprite2D" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container14/HBoxContainer/_"]
+position = Vector2(4.14284, -0.292252)
+scale = Vector2(0.0617045, 0.079142)
+texture = ExtResource("5_bfj6w")
+
+[node name="username" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container14/HBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+text = "@asdasda"
+
+[node name="User_Profile" type="TextureRect" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container14"]
+layout_mode = 0
+offset_left = 9.38528
+offset_top = 39.5847
+offset_right = 192.385
+offset_bottom = 314.585
+scale = Vector2(0.173005, 0.69354)
+texture = ExtResource("4_bxgdw")
+
+[node name="Comment" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container14"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 9.0
+offset_top = 270.0
+offset_right = 918.0
+offset_bottom = 444.0
+scale = Vector2(0.476928, 2.0875)
+text = "In the waning days of World War II, the village of Oradour-sur-Glane in France bore witness to an unspeakable atrocity. On June 10, 1944, Nazi soldiers surrounded the town, rounding up its residents under the guise of identity checks. Men were led to barns, women and children to the church. Without warning, gunfire erupted in the barns, and the church was set ablaze with grenades and fuel, leaving nearly the entire population—642 people—dead in a single day. The ruins of Oradour remain untouched to this day, a chilling testament to human cruelty."
+autowrap_mode = 3
+
+[node name="reply_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container14"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 33.8912
+offset_top = 577.472
+offset_right = 73.8912
+offset_bottom = 616.472
+scale = Vector2(0.617065, 1.5058)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="repost_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container14"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 75.6035
+offset_top = 577.472
+offset_right = 115.604
+offset_bottom = 616.472
+scale = Vector2(0.635754, 1.50728)
+theme_override_font_sizes/font_size = 28
+text = "..."
+
+[node name="like_Label" type="Label" parent="WindowsBorder-Copy/Conment_Contaners/VBoxContainer/Container14"]
 modulate = Color(0, 0, 0, 1)
 layout_mode = 0
 offset_left = 118.359
