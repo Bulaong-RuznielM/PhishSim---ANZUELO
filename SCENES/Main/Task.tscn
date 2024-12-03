@@ -113,7 +113,7 @@ offset_bottom = 327.58
 scale = Vector2(1.83755, 2.1351)
 text = "ACCEPT"
 
-[node name="ComingSoon" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_2"]
+[node name="Tasl_2_title" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_2"]
 layout_mode = 0
 offset_left = 15.4994
 offset_top = 178.349
@@ -151,17 +151,18 @@ offset_bottom = 327.58
 scale = Vector2(1.83755, 2.1351)
 text = "ACCEPT"
 
-[node name="ComingSoon" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_3"]
+[node name="Tasl_3_title" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_3"]
 layout_mode = 0
-offset_left = 9.53083
-offset_top = 178.349
-offset_right = 427.531
-offset_bottom = 269.349
+offset_left = 15.4994
+offset_top = 170.333
+offset_right = 435.499
+offset_bottom = 355.333
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 66
-text = "Coming Soon"
+theme_override_font_sizes/font_size = 57
+text = "Profile Checker"
+autowrap_mode = 2
 
 [node name="Task_4" type="TextureRect" parent="TaskUI/ScrollContainer/HBoxContainer"]
 unique_name_in_owner = true
