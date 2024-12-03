@@ -15,6 +15,8 @@ func _on_show_task_2_pressed() -> void:
 
 func _on_task_3_pressed() -> void:
 	get_tree().change_scene_to_file("res://SCENES/Sub/Profile_Finder.tscn")
+	
+	
 
 	
 #My non experienced coder brain thinks that there is a better way to do this but
@@ -54,3 +56,7 @@ func _on_hide_all_tasks_pressed() -> void:
 
 	%Task_8.visible = false
 	
+
+
+func _on_task_44_pressed() -> void:
+	get_tree().change_scene_to_file("res://SCENES/Sub/CanvasItems.tscn")
