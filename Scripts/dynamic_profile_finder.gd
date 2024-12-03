@@ -65,7 +65,7 @@ func dynamic_setter(select):
 		if repost_node:
 			repost_node.text = Global.users[whatUser]["%user%blocks"][str(i)]["repost"]
 
-		var like_node = get_node_or_null("%Container" + str(i) + "/like_Label_C")
+		var like_node = get_node_or_null("%Container" + str(i) + "/like_Label")
 		if like_node:
 			like_node.text = Global.users[whatUser]["%user%blocks"][str(i)]["like"]
 
@@ -73,13 +73,13 @@ func _on_profile_finder_exit_pressed() -> void:
 	get_tree().change_scene_to_file("res://SCENES/Main/Task.tscn")
 
 func _on_real_profile_button_pressed() -> void:
-	if not status:
+	if status:
 		get_tree().change_scene_to_file("res://SCENES/Sub/scam_report.tscn")
 	else:
 		get_tree().change_scene_to_file("res://SCENES/Sub/scam_agree.tscn")
 
 func _on_report_profile_button_pressed() -> void:
-	if status:
+	if not status:
 		get_tree().change_scene_to_file("res://SCENES/Sub/scam_report.tscn")
 	else:
 		get_tree().change_scene_to_file("res://SCENES/Sub/scam_agree.tscn")
