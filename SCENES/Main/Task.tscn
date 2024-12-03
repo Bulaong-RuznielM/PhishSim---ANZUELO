@@ -181,7 +181,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 29
 text = "TASK 4"
 
-[node name="Task_4" type="Button" parent="TaskUI/ScrollContainer/HBoxContainer/Task_4"]
+[node name="Task_44" type="Button" parent="TaskUI/ScrollContainer/HBoxContainer/Task_4"]
 layout_mode = 0
 offset_left = 150.208
 offset_top = 296.58
@@ -192,15 +192,16 @@ text = "ACCEPT"
 
 [node name="ComingSoon" type="Label" parent="TaskUI/ScrollContainer/HBoxContainer/Task_4"]
 layout_mode = 0
-offset_left = 9.53083
-offset_top = 178.349
-offset_right = 427.531
-offset_bottom = 269.349
+offset_left = 65.2373
+offset_top = 162.317
+offset_right = 656.237
+offset_bottom = 356.317
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 66
-text = "Coming Soon"
+theme_override_font_sizes/font_size = 35
+text = "Canvas items
+(Buy the cheapest)"
 
 [node name="Task_5" type="TextureRect" parent="TaskUI/ScrollContainer/HBoxContainer"]
 unique_name_in_owner = true
@@ -395,6 +396,7 @@ text = "Hide All Tasks (DEBUG)"
 [connection signal="pressed" from="TaskUI/ScrollContainer/HBoxContainer/Task_1/Task_1" to="TaskUI" method="_on_task_1_pressed"]
 [connection signal="pressed" from="TaskUI/ScrollContainer/HBoxContainer/Task_2/Task_2" to="TaskUI" method="_on_task_2_pressed"]
 [connection signal="pressed" from="TaskUI/ScrollContainer/HBoxContainer/Task_3/Task_3" to="TaskUI" method="_on_task_3_pressed"]
+[connection signal="pressed" from="TaskUI/ScrollContainer/HBoxContainer/Task_4/Task_44" to="TaskUI" method="_on_task_44_pressed"]
 [connection signal="pressed" from="ShowTask_2" to="TaskUI" method="_on_show_task_2_pressed"]
 [connection signal="pressed" from="HideTask_2" to="TaskUI" method="_on_hide_task_2_pressed"]
 [connection signal="pressed" from="ShowAllTasks" to="TaskUI" method="_on_show_all_tasks_pressed"]

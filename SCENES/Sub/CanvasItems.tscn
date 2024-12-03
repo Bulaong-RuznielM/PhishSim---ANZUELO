@@ -1,0 +1,62 @@
+[gd_scene load_steps=4 format=3 uid="uid://bhh0vt5osyq7i"]
+
+[ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="1_f1r3f"]
+[ext_resource type="Texture2D" uid="uid://b7n6ho66hk5jx" path="res://ASSETS/windows_border - Copy - Copy - Copy.png" id="2_8lyy0"]
+[ext_resource type="Script" path="res://SCENES/Sub/control.gd" id="3_gplm7"]
+
+[node name="Canvas" type="Node2D"]
+
+[node name="WindowsBorder-Copy" type="Sprite2D" parent="."]
+position = Vector2(961, 541)
+texture = ExtResource("1_f1r3f")
+
+[node name="WindowsBorder-Copy-Copy-Copy" type="Sprite2D" parent="."]
+position = Vector2(960, 613.625)
+scale = Vector2(0.92526, 2.37903)
+texture = ExtResource("2_8lyy0")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_gplm7")
+
+[node name="GOLOOGOLOO" type="Label" parent="Control"]
+modulate = Color(0.854902, 0.815686, 0.0980392, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 733.0
+offset_top = 88.0
+offset_right = 1139.0
+offset_bottom = 177.0
+theme_override_font_sizes/font_size = 75
+text = "GolooGoloo"
+horizontal_alignment = 1
+
+[node name="HScrollBar" type="HScrollBar" parent="Control"]
+layout_mode = 0
+offset_left = 79.0
+offset_top = 285.0
+offset_right = 1838.0
+offset_bottom = 933.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/HScrollBar"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.183
+anchor_bottom = -0.183
+offset_top = 123.584
+offset_right = 1753.0
+offset_bottom = 761.584
+
+[node name="ExitCanvas" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 1856.0
+offset_top = 6.0
+offset_right = 1916.0
+offset_bottom = 63.0
+
+[connection signal="pressed" from="Control/ExitCanvas" to="Control" method="_on_exit_canvas_pressed"]
