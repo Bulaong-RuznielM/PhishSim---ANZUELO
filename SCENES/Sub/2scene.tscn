@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://3tk8hpmlt371"]
+
+[ext_resource type="Texture2D" uid="uid://dyty8h4dhelmw" path="res://ASSETS/CutScenes/2.jpg" id="1_d3fwc"]
+[ext_resource type="Script" path="res://SCENES/Sub/2_scene.gd" id="1_fcvtp"]
+[ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="2_335p5"]
+
+[node name="Scene_2" type="Node2D"]
+script = ExtResource("1_fcvtp")
+
+[node name="2" type="Sprite2D" parent="."]
+position = Vector2(959, 540)
+texture = ExtResource("1_d3fwc")
+
+[node name="TaskButton" type="Sprite2D" parent="."]
+position = Vector2(1751.25, 1026.75)
+scale = Vector2(0.765169, 0.95045)
+texture = ExtResource("2_335p5")
+
+[node name="skip_2" type="Button" parent="."]
+offset_left = 1586.0
+offset_top = 981.0
+offset_right = 1916.0
+offset_bottom = 1073.0
+theme_override_font_sizes/font_size = 40
+text = "Next"
+
+[node name="Label" type="Label" parent="skip_2"]
+layout_mode = 0
+offset_left = -1556.0
+offset_top = -964.0
+offset_right = -1484.0
+offset_bottom = -915.0
+theme_override_font_sizes/font_size = 35
+text = "2 / 7"
+
+[connection signal="pressed" from="skip_2" to="." method="_on_skip_2_pressed"]
