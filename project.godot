@@ -32,6 +32,10 @@ window/stretch/mode="viewport"
 
 project/assembly_name="PR 2 GAME"
 
+[editor]
+
+movie_writer/fps=59
+
 [input]
 
 esc={

@@ -19,16 +19,60 @@ func get_random_profile():
 func dynamic_setter(select):
 	var whatUser = get_random_profile() if select == "auto" else str(select)
 	
-	# Accessing the nodes and updating text values
-	%User_Label.text = Global.users[whatUser]["%user%"]
-	%Username_Label.text = Global.users[whatUser]["%@username%"]
-	%Usercomment_Label.text = Global.users[whatUser]["%user%intro"]
-	%Userinfo_Label.text = Global.users[whatUser]["%user%info"]
+	if not Global.users.has(whatUser):
+		print("User not found")
+		return
+
+	var user_data = Global.users[whatUser]
 	
-	if (Global.users[whatUser]["%user%status"] == "Real"):
-		status = true
-	else:
-		status = false
+	# Accessing the nodes and updating text values
+	%User_Label.text = user_data["%user%"]
+	%Username_Label.text = user_data["%@username%"]
+	%Usercomment_Label.text = user_data["%user%intro"]
+	%Userinfo_Label.text = user_data["%user%info"]
+	
+	status = user_data["%user%status"] == "Real"
+
+	# Loop to show and update comment containers
+	var comment_count = int(user_data["%user%commentnumber"])
+	for i in range(comment_count):
+		var container_node = get_node_or_null("%Container" + str(i))
+		if container_node:
+			container_node.show()
+
+			var block_data = user_data["%user%blocks"][str(i)]
+			
+			var visblename_node = get_node_or_null("%Container" + str(i) + "/HBoxContainer/visblename")
+			if visblename_node:
+				visblename_node.text = user_data["%user%"]
+
+			var username_node = get_node_or_null("%Container" + str(i) + "/HBoxContainer/username")
+			if username_node:
+				username_node.text = user_data["%@username%"]
+
+			var check_node = get_node_or_null("%Container" + str(i) + "/HBoxContainer/_/Check")
+			if check_node:
+				if user_data["%user%check"] == "True":
+					check_node.show()
+				else:
+					check_node.hide()
+
+			var comment_node = get_node_or_null("%Container" + str(i) + "/Comment")
+			if comment_node:
+				comment_node.text = block_data["comment"]
+
+			var reply_node = get_node_or_null("%Container" + str(i) + "/reply_Label")
+			if reply_node:
+				reply_node.text = block_data["reply"]
+
+			var repost_node = get_node_or_null("%Container" + str(i) + "/repost_Label")
+			if repost_node:
+				repost_node.text = block_data["repost"]
+
+			var like_node = get_node_or_null("%Container" + str(i) + "/like_Label")
+			if like_node:
+				like_node.text = block_data["like"]
+
 
 
 	
