@@ -107,6 +107,10 @@ vertical_alignment = 1
 autowrap_mode = 2
 metadata/_edit_use_anchors_ = true
 
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
 [connection signal="pressed" from="WindowsButtons/UPGRADES" to="WindowsButtons" method="_on_upgrades_pressed"]
 [connection signal="pressed" from="WindowsButtons/TASKS" to="WindowsButtons" method="_on_tasks_pressed"]
 [connection signal="pressed" from="WindowsButtons/SETTINGS" to="WindowsButtons" method="_on_settings_pressed"]
