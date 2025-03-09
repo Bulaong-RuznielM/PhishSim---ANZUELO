@@ -63,6 +63,20 @@ autostart = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
+[node name="TimeLeft" type="Label" parent="."]
+offset_left = -155.0
+offset_top = -468.0
+offset_right = 261.0
+offset_bottom = -401.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 41
+text = "Time Left: "
+
+[node name="TimerGameSecond" type="Timer" parent="."]
+autostart = true
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="timeout" from="TimerMain" to="." method="_on_timer_main_timeout"]
 [connection signal="timeout" from="TimerAdsCounter" to="." method="_on_timer_ads_counter_timeout"]
+[connection signal="timeout" from="TimerGameSecond" to="." method="_on_timer_game_second_timeout"]
