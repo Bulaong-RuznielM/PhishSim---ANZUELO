@@ -8,7 +8,7 @@ func spawn_popup():
 	add_child(new_popup)
 
 func _on_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://SCENES/Main/Task.tscn")
+	get_tree().change_scene_to_file("res://SCENES/Main/task.tscn")
 	Global.ads = 0
 
 func ifAdsMoreThan(maxAds):

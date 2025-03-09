@@ -114,7 +114,7 @@ func dynamic_setter(select):
 			like_node.text = Global.users[whatUser]["%user%blocks"][str(i)]["like"]
 
 func _on_profile_finder_exit_pressed() -> void:
-	get_tree().change_scene_to_file("res://SCENES/Main/Task.tscn")
+	get_tree().change_scene_to_file("res://SCENES/Main/task.tscn")
 
 func _on_real_profile_button_pressed() -> void:
 	if status:

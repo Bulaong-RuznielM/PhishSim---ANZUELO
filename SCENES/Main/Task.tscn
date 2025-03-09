@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://jlc10skc3u2v"]
 
-[ext_resource type="Script" path="res://Scripts/task.gd" id="1_1kidr"]
-[ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="2_x7i3i"]
-[ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="4_yq8du"]
-[ext_resource type="PackedScene" uid="uid://te8o6b5ichyu" path="res://SCENES/Sub/TaskSelector.tscn" id="5_5uoy0"]
+[ext_resource type="Script" path="res://Scripts/task.gd" id="1_fjnlb"]
+[ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="2_ioskh"]
+[ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="3_3oel1"]
+[ext_resource type="PackedScene" uid="uid://te8o6b5ichyu" path="res://SCENES/Sub/TaskSelector.tscn" id="4_cr6a6"]
 
 [node name="TASKS" type="Control"]
 layout_mode = 3
@@ -12,11 +12,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_1kidr")
+script = ExtResource("1_fjnlb")
 
 [node name="WindowsBorder-Copy" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
-texture = ExtResource("2_x7i3i")
+texture = ExtResource("2_ioskh")
 
 [node name="Button" type="Button" parent="."]
 modulate = Color(1, 0, 0, 1)
@@ -44,7 +44,7 @@ theme_override_constants/separation = 111
 
 [node name="Task_1" type="TextureRect" parent="ScrollContainer/HBoxContainer"]
 layout_mode = 2
-texture = ExtResource("4_yq8du")
+texture = ExtResource("3_3oel1")
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Task_1"]
 layout_mode = 0
@@ -82,7 +82,7 @@ autowrap_mode = 2
 [node name="Task_2" type="TextureRect" parent="ScrollContainer/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-texture = ExtResource("4_yq8du")
+texture = ExtResource("3_3oel1")
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Task_2"]
 layout_mode = 0
@@ -119,7 +119,7 @@ text = "Manage Emails"
 [node name="Task_3" type="TextureRect" parent="ScrollContainer/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-texture = ExtResource("4_yq8du")
+texture = ExtResource("3_3oel1")
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Task_3"]
 layout_mode = 0
@@ -157,7 +157,7 @@ autowrap_mode = 2
 [node name="Task_4" type="TextureRect" parent="ScrollContainer/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-texture = ExtResource("4_yq8du")
+texture = ExtResource("3_3oel1")
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Task_4"]
 layout_mode = 0
@@ -195,7 +195,7 @@ text = "Canvas items
 [node name="Task_5" type="TextureRect" parent="ScrollContainer/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-texture = ExtResource("4_yq8du")
+texture = ExtResource("3_3oel1")
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Task_5"]
 layout_mode = 0
@@ -232,7 +232,7 @@ text = "Coming Soon"
 [node name="Task_6" type="TextureRect" parent="ScrollContainer/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-texture = ExtResource("4_yq8du")
+texture = ExtResource("3_3oel1")
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Task_6"]
 layout_mode = 0
@@ -269,7 +269,7 @@ text = "Coming Soon"
 [node name="Task_7" type="TextureRect" parent="ScrollContainer/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-texture = ExtResource("4_yq8du")
+texture = ExtResource("3_3oel1")
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Task_7"]
 layout_mode = 0
@@ -306,7 +306,7 @@ text = "Coming Soon"
 [node name="Task_8" type="TextureRect" parent="ScrollContainer/HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-texture = ExtResource("4_yq8du")
+texture = ExtResource("3_3oel1")
 
 [node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Task_8"]
 layout_mode = 0
@@ -345,7 +345,7 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="ScrollContainer" parent="TaskUI" instance=ExtResource("5_5uoy0")]
+[node name="ScrollContainer" parent="TaskUI" instance=ExtResource("4_cr6a6")]
 layout_mode = 1
 offset_left = 32.0
 offset_top = 80.0
