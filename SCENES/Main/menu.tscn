@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://36cck8vjhq2g"]
+[gd_scene load_steps=3 format=3 uid="uid://36cck8vjhq2g"]
 
 [ext_resource type="Script" path="res://Scripts/menu.gd" id="1_hv4x7"]
+[ext_resource type="FontFile" uid="uid://cgsxe0kffiqdb" path="res://ASSETS/NEW ASSETS/kenney_ui-pack/Font/Kenney Future.ttf" id="2_diewo"]
 
 [node name="MENU" type="Control"]
 layout_mode = 3
@@ -41,12 +42,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -74.4001
-offset_top = -21.6768
-offset_right = 7.59986
-offset_bottom = 23.3232
+offset_left = -85.8528
+offset_top = -25.0303
+offset_right = -3.85285
+offset_bottom = 19.9697
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1.43933, 1.75518)
+theme_override_fonts/font = ExtResource("2_diewo")
 text = "PLAY"
 
 [node name="EXIT" type="Button" parent="Control"]
@@ -56,12 +59,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -64.8528
-offset_top = 56.2778
-offset_right = -2.6928
-offset_bottom = 90.2788
+offset_left = -71.537
+offset_top = 78.9294
+offset_right = -9.37697
+offset_bottom = 112.93
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1.48465, 1.82924)
+theme_override_fonts/font = ExtResource("2_diewo")
 text = "QUIT"
 
 [node name="GameTitle2" type="Label" parent="."]
@@ -79,9 +84,19 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_diewo")
 theme_override_font_sizes/font_size = 91
 text = "PhishSim"
 metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = -140.295
+offset_top = 172.707
+offset_right = 18.7049
+offset_bottom = 195.707
+scale = Vector2(1.82287, 1.82287)
+text = "Very early Prototype"
 
 [connection signal="finished" from="MainMenuMusic" to="." method="_on_main_menu_music_finished"]
 [connection signal="pressed" from="Control/PLAY" to="." method="_on_play_pressed"]

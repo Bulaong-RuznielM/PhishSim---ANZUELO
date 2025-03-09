@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://jlc10skc3u2v"]
+[gd_scene load_steps=6 format=3 uid="uid://jlc10skc3u2v"]
 
 [ext_resource type="Script" path="res://Scripts/task.gd" id="1_fjnlb"]
 [ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="2_ioskh"]
 [ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="3_3oel1"]
 [ext_resource type="PackedScene" uid="uid://te8o6b5ichyu" path="res://SCENES/Sub/TaskSelector.tscn" id="4_cr6a6"]
+[ext_resource type="FontFile" uid="uid://cgsxe0kffiqdb" path="res://ASSETS/NEW ASSETS/kenney_ui-pack/Font/Kenney Future.ttf" id="5_r0uw5"]
 
 [node name="TASKS" type="Control"]
 layout_mode = 3
@@ -348,21 +349,22 @@ offset_bottom = 40.0
 [node name="ScrollContainer" parent="TaskUI" instance=ExtResource("4_cr6a6")]
 layout_mode = 1
 offset_left = 32.0
-offset_top = 80.0
+offset_top = 88.0
 offset_right = 1848.0
-offset_bottom = 984.0
+offset_bottom = 896.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="TaskSelectorScene" type="Label" parent="."]
 layout_mode = 0
-offset_left = 43.0
-offset_top = 72.0
-offset_right = 783.0
-offset_bottom = 230.0
+offset_left = 16.0
+offset_top = 56.0
+offset_right = 1210.0
+offset_bottom = 214.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_r0uw5")
 theme_override_font_sizes/font_size = 116
 text = "Task Selector"
 

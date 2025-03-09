@@ -1,10 +1,12 @@
-[gd_scene load_steps=8 format=3 uid="uid://dw3cw6bi88ke8"]
+[gd_scene load_steps=10 format=3 uid="uid://dw3cw6bi88ke8"]
 
 [ext_resource type="Script" path="res://Scripts/upgrades.gd" id="1_pgmny"]
 [ext_resource type="Script" path="res://Scripts/upgrade_shop.gd" id="2_sn276"]
+[ext_resource type="Texture2D" uid="uid://dwlryjo0w4vep" path="res://ASSETS/NEW ASSETS/MENU.png" id="3_h44hj"]
 [ext_resource type="Texture2D" uid="uid://c7rmim5y62a2n" path="res://ASSETS/windows/windows_border.png" id="3_ytk3a"]
 [ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="4_4n2kr"]
 [ext_resource type="FontFile" uid="uid://2t3fwfyco16d" path="res://FONTS/super-pixel-font/SuperPixel-m2L8j.ttf" id="5_xppof"]
+[ext_resource type="FontFile" uid="uid://cgsxe0kffiqdb" path="res://ASSETS/NEW ASSETS/kenney_ui-pack/Font/Kenney Future.ttf" id="7_vt3oh"]
 
 [sub_resource type="Theme" id="Theme_7pxca"]
 
@@ -22,11 +24,12 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -3.0
-offset_top = 3.0
+offset_top = -34.0
 offset_right = -3.0
-offset_bottom = 3.0
+offset_bottom = -34.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(0.999225, 0.947396)
 script = ExtResource("1_pgmny")
 
 [node name="EXIT" type="Button" parent="."]
@@ -46,6 +49,24 @@ offset_top = -560.0
 offset_right = -808.0
 offset_bottom = -560.0
 script = ExtResource("2_sn276")
+
+[node name="ColorRect" type="ColorRect" parent="Upgrade shop"]
+layout_mode = 0
+offset_left = -146.74
+offset_top = 36.4597
+offset_right = -106.74
+offset_bottom = 76.4597
+scale = Vector2(47.8192, 28.1596)
+color = Color(0.780702, 0.780702, 0.780702, 1)
+
+[node name="Desktop" type="TextureRect" parent="Upgrade shop"]
+visible = false
+layout_mode = 0
+offset_left = -152.745
+offset_top = 81.8473
+offset_right = 1767.26
+offset_bottom = 1161.85
+texture = ExtResource("3_h44hj")
 
 [node name="TextureRect" type="TextureRect" parent="Upgrade shop"]
 layout_mode = 0
@@ -352,6 +373,7 @@ offset_right = 1592.0
 offset_bottom = 318.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_vt3oh")
 theme_override_font_sizes/font_size = 50
 text = "Hover over an upgrade"
 autowrap_mode = 3

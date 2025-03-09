@@ -1,17 +1,18 @@
 [gd_scene load_steps=8 format=3 uid="uid://0r27r2r5msub"]
 
 [ext_resource type="Texture2D" uid="uid://dcmppo5daehm3" path="res://ASSETS/miscellaneous/BACKGROUND.jpg" id="1_q5ji8"]
-[ext_resource type="Texture2D" uid="uid://brttk0nyik33q" path="res://ASSETS/windows/MAIN START.jpg" id="2_8qu7x"]
+[ext_resource type="Texture2D" uid="uid://dwlryjo0w4vep" path="res://ASSETS/NEW ASSETS/MENU.png" id="2_gvhu3"]
 [ext_resource type="Script" path="res://Scripts/windows_buttons.gd" id="3_2lbkg"]
-[ext_resource type="Texture2D" uid="uid://uaide1why5oe" path="res://ASSETS/icons/windows_border - Copy (3) - Copy - Copy.png" id="4_8fedt"]
-[ext_resource type="Texture2D" uid="uid://b74t45ak3kdrt" path="res://ASSETS/icons/windows_border - Copy (2) - Copy - Copy.png" id="5_vxjyb"]
-[ext_resource type="Texture2D" uid="uid://cejuqdp0jpmsr" path="res://ASSETS/icons/windows_border - Copy (4) - Copy - Copy.png" id="6_cm611"]
+[ext_resource type="Texture2D" uid="uid://bq2qd6mi1nnvx" path="res://ASSETS/NEW ASSETS/icons/ffffff/transparent/1x1/delapouite/open-folder.png" id="4_0l062"]
+[ext_resource type="Texture2D" uid="uid://cdbaarviti6bq" path="res://ASSETS/NEW ASSETS/icons/ffffff/transparent/1x1/delapouite/id-card.png" id="5_ftkc2"]
+[ext_resource type="Texture2D" uid="uid://c4ba5ra6m6kat" path="res://ASSETS/NEW ASSETS/icons/ffffff/transparent/1x1/delapouite/settings-knobs.png" id="6_xmyqi"]
 [ext_resource type="FontFile" uid="uid://2t3fwfyco16d" path="res://FONTS/super-pixel-font/SuperPixel-m2L8j.ttf" id="7_movfa"]
 
 [node name="MainScreen" type="Node2D"]
 position = Vector2(956, 508)
 
 [node name="Background" type="Sprite2D" parent="."]
+visible = false
 modulate = Color(1, 1, 1, 0.458824)
 show_behind_parent = true
 light_mask = 0
@@ -20,9 +21,9 @@ scale = Vector2(0.965887, 0.861346)
 texture = ExtResource("1_q5ji8")
 
 [node name="MainWindow" type="Sprite2D" parent="."]
-position = Vector2(-3, -19)
-scale = Vector2(0.715194, 0.66714)
-texture = ExtResource("2_8qu7x")
+position = Vector2(-74, 27)
+scale = Vector2(1.0847, 1.01181)
+texture = ExtResource("2_gvhu3")
 
 [node name="WindowsButtons" type="Control" parent="."]
 layout_mode = 3
@@ -35,63 +36,93 @@ metadata/_edit_use_anchors_ = true
 [node name="UPGRADES" type="Button" parent="WindowsButtons"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -2.6
-anchor_top = -1.4
-anchor_right = -2.6
-anchor_bottom = -1.4
-offset_left = -485.0
-offset_top = -217.0
-offset_right = -364.0
-offset_bottom = -76.0
-scale = Vector2(0.755704, 0.737867)
-icon = ExtResource("4_8fedt")
+anchor_left = -21.9
+anchor_top = -10.9
+anchor_right = -21.9
+anchor_bottom = -10.9
+offset_right = 520.0
+offset_bottom = 520.0
+scale = Vector2(0.35339, 0.35339)
+icon = ExtResource("4_0l062")
 metadata/_edit_use_anchors_ = true
+
+[node name="Upgrades_Label" type="Label" parent="WindowsButtons/UPGRADES"]
+layout_mode = 0
+offset_left = -100.606
+offset_top = 517.404
+offset_right = -16.6062
+offset_bottom = 540.404
+scale = Vector2(8.52352, 8.52352)
+text = "UPGRADES"
 
 [node name="TASKS" type="Button" parent="WindowsButtons"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -2.55
-anchor_top = -0.625
-anchor_right = -2.55
-anchor_bottom = -0.625
-offset_left = -486.0
-offset_top = -114.0
-offset_right = -365.0
-offset_bottom = 27.0
-scale = Vector2(0.716955, 0.676655)
-icon = ExtResource("5_vxjyb")
+anchor_left = -21.975
+anchor_top = -2.9
+anchor_right = -12.0
+anchor_bottom = 6.575
+offset_right = 121.0
+offset_bottom = 141.0
+scale = Vector2(0.354073, 0.334171)
+icon = ExtResource("5_ftkc2")
 metadata/_edit_use_anchors_ = true
+
+[node name="Tasks_Label" type="Label" parent="WindowsButtons/TASKS"]
+offset_left = -7.22193
+offset_top = 543.295
+offset_right = 43.7781
+offset_bottom = 566.295
+scale = Vector2(10.0654, 10.0654)
+text = "TASKS
+"
 
 [node name="SETTINGS" type="Button" parent="WindowsButtons"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -24.5
-anchor_top = -2.425
-anchor_right = -24.5
-anchor_bottom = -2.425
-offset_left = 392.0
-offset_top = 88.0
-offset_right = 513.0
-offset_bottom = 229.0
-scale = Vector2(0.758283, 0.724612)
-icon = ExtResource("6_cm611")
+anchor_left = -21.9
+anchor_top = 5.1
+anchor_right = -11.925
+anchor_bottom = 14.575
+offset_right = 121.0
+offset_bottom = 141.0
+scale = Vector2(0.331602, 0.316878)
+icon = ExtResource("6_xmyqi")
 metadata/_edit_use_anchors_ = true
 
-[node name="quit" type="Button" parent="WindowsButtons"]
+[node name="Settings_Label" type="Label" parent="WindowsButtons/SETTINGS"]
 layout_mode = 0
+offset_left = -81.4229
+offset_top = 542.796
+offset_right = 2.57713
+offset_bottom = 565.796
+scale = Vector2(10.0654, 10.0654)
+text = "SETTINGS
+"
+
+[node name="quit" type="Button" parent="WindowsButtons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -10.3
+anchor_top = 2.9
+anchor_right = -10.65
+anchor_bottom = 2.9
 offset_left = -530.0
 offset_top = 363.0
 offset_right = -393.0
 offset_bottom = 394.0
-text = "go back to menu"
+scale = Vector2(2.70059, 2.63109)
+text = "Back to Menu
+"
 metadata/_edit_use_anchors_ = true
 
 [node name="DevText" type="Label" parent="."]
-offset_left = -325.0
-offset_top = -303.0
-offset_right = 395.0
-offset_bottom = 144.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+offset_left = -468.0
+offset_top = -308.0
+offset_right = 252.0
+offset_bottom = 139.0
+scale = Vector2(1.37987, 1.37987)
+theme_override_colors/font_color = Color(0.797659, 0.797658, 0.797659, 1)
 theme_override_fonts/font = ExtResource("7_movfa")
 theme_override_font_sizes/font_size = 31
 text = "Everything in the game right now is temporary. No design/feature is final

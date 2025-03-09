@@ -1,0 +1,375 @@
+[gd_scene load_steps=6 format=3 uid="uid://jlc10skc3u2v"]
+
+[ext_resource type="Script" path="res://Scripts/task.gd" id="1_fjnlb"]
+[ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="2_ioskh"]
+[ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="3_3oel1"]
+[ext_resource type="PackedScene" uid="uid://te8o6b5ichyu" path="res://SCENES/Sub/TaskSelector.tscn" id="4_cr6a6"]
+[ext_resource type="FontFile" uid="uid://cgsxe0kffiqdb" path="res://ASSETS/NEW ASSETS/kenney_ui-pack/Font/Kenney Future.ttf" id="5_r0uw5"]
+
+[node name="TASKS" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fjnlb")
+
+[node name="WindowsBorder-Copy" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("2_ioskh")
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 0, 0, 1)
+self_modulate = Color(1, 0, 0, 1)
+layout_mode = 0
+offset_left = 1852.0
+offset_right = 1920.0
+offset_bottom = 67.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 43.0
+offset_top = 238.0
+offset_right = 1871.0
+offset_bottom = 949.0
+scale = Vector2(1.00527, 0.998044)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 111
+
+[node name="Task_1" type="TextureRect" parent="ScrollContainer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("3_3oel1")
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Task_1"]
+layout_mode = 0
+offset_left = 98.481
+offset_top = 29.0568
+offset_right = 195.481
+offset_bottom = 69.0568
+scale = Vector2(2.4886, 3.27344)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 29
+text = "TASK 1"
+
+[node name="Task_1" type="Button" parent="ScrollContainer/HBoxContainer/Task_1"]
+layout_mode = 0
+offset_left = 150.208
+offset_top = 296.58
+offset_right = 217.208
+offset_bottom = 327.58
+scale = Vector2(1.83755, 2.1351)
+text = "ACCEPT"
+
+[node name="Label2" type="Label" parent="ScrollContainer/HBoxContainer/Task_1"]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 160.0
+offset_right = 411.0
+offset_bottom = 274.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "Close all the incoming Pop-Ups"
+autowrap_mode = 2
+
+[node name="Task_2" type="TextureRect" parent="ScrollContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("3_3oel1")
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Task_2"]
+layout_mode = 0
+offset_left = 98.481
+offset_top = 29.0568
+offset_right = 195.481
+offset_bottom = 69.0568
+scale = Vector2(2.4886, 3.27344)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 29
+text = "TASK 2"
+
+[node name="Task_2" type="Button" parent="ScrollContainer/HBoxContainer/Task_2"]
+layout_mode = 0
+offset_left = 150.208
+offset_top = 296.58
+offset_right = 217.208
+offset_bottom = 327.58
+scale = Vector2(1.83755, 2.1351)
+text = "ACCEPT"
+
+[node name="Tasl_2_title" type="Label" parent="ScrollContainer/HBoxContainer/Task_2"]
+layout_mode = 0
+offset_left = 15.4994
+offset_top = 178.349
+offset_right = 433.5
+offset_bottom = 269.349
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 56
+text = "Manage Emails"
+
+[node name="Task_3" type="TextureRect" parent="ScrollContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("3_3oel1")
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Task_3"]
+layout_mode = 0
+offset_left = 98.481
+offset_top = 29.0568
+offset_right = 195.481
+offset_bottom = 69.0568
+scale = Vector2(2.4886, 3.27344)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 29
+text = "TASK 3"
+
+[node name="Task_3" type="Button" parent="ScrollContainer/HBoxContainer/Task_3"]
+layout_mode = 0
+offset_left = 150.208
+offset_top = 296.58
+offset_right = 217.208
+offset_bottom = 327.58
+scale = Vector2(1.83755, 2.1351)
+text = "ACCEPT"
+
+[node name="Tasl_3_title" type="Label" parent="ScrollContainer/HBoxContainer/Task_3"]
+layout_mode = 0
+offset_left = 15.4994
+offset_top = 170.333
+offset_right = 435.499
+offset_bottom = 355.333
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 57
+text = "Profile Checker"
+autowrap_mode = 2
+
+[node name="Task_4" type="TextureRect" parent="ScrollContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("3_3oel1")
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Task_4"]
+layout_mode = 0
+offset_left = 98.481
+offset_top = 29.0568
+offset_right = 195.481
+offset_bottom = 69.0568
+scale = Vector2(2.4886, 3.27344)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 29
+text = "TASK 4"
+
+[node name="Task_44" type="Button" parent="ScrollContainer/HBoxContainer/Task_4"]
+layout_mode = 0
+offset_left = 150.208
+offset_top = 296.58
+offset_right = 217.208
+offset_bottom = 327.58
+scale = Vector2(1.83755, 2.1351)
+text = "ACCEPT"
+
+[node name="ComingSoon" type="Label" parent="ScrollContainer/HBoxContainer/Task_4"]
+layout_mode = 0
+offset_left = 65.2373
+offset_top = 162.317
+offset_right = 656.237
+offset_bottom = 356.317
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "Canvas items
+(Buy the cheapest)"
+
+[node name="Task_5" type="TextureRect" parent="ScrollContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("3_3oel1")
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Task_5"]
+layout_mode = 0
+offset_left = 98.481
+offset_top = 29.0568
+offset_right = 195.481
+offset_bottom = 69.0568
+scale = Vector2(2.4886, 3.27344)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 29
+text = "TASK 5"
+
+[node name="Task_5" type="Button" parent="ScrollContainer/HBoxContainer/Task_5"]
+layout_mode = 0
+offset_left = 150.208
+offset_top = 296.58
+offset_right = 217.208
+offset_bottom = 327.58
+scale = Vector2(1.83755, 2.1351)
+text = "ACCEPT"
+
+[node name="ComingSoon" type="Label" parent="ScrollContainer/HBoxContainer/Task_5"]
+layout_mode = 0
+offset_left = 9.53083
+offset_top = 178.349
+offset_right = 427.531
+offset_bottom = 269.349
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 66
+text = "Coming Soon"
+
+[node name="Task_6" type="TextureRect" parent="ScrollContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("3_3oel1")
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Task_6"]
+layout_mode = 0
+offset_left = 98.481
+offset_top = 29.0568
+offset_right = 195.481
+offset_bottom = 69.0568
+scale = Vector2(2.4886, 3.27344)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 29
+text = "TASK 6"
+
+[node name="Task_6" type="Button" parent="ScrollContainer/HBoxContainer/Task_6"]
+layout_mode = 0
+offset_left = 150.208
+offset_top = 296.58
+offset_right = 217.208
+offset_bottom = 327.58
+scale = Vector2(1.83755, 2.1351)
+text = "ACCEPT"
+
+[node name="ComingSoon" type="Label" parent="ScrollContainer/HBoxContainer/Task_6"]
+layout_mode = 0
+offset_left = 9.53083
+offset_top = 178.349
+offset_right = 427.531
+offset_bottom = 269.349
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 66
+text = "Coming Soon"
+
+[node name="Task_7" type="TextureRect" parent="ScrollContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("3_3oel1")
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Task_7"]
+layout_mode = 0
+offset_left = 98.481
+offset_top = 29.0568
+offset_right = 195.481
+offset_bottom = 69.0568
+scale = Vector2(2.4886, 3.27344)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 29
+text = "TASK 7"
+
+[node name="Task_7" type="Button" parent="ScrollContainer/HBoxContainer/Task_7"]
+layout_mode = 0
+offset_left = 150.208
+offset_top = 296.58
+offset_right = 217.208
+offset_bottom = 327.58
+scale = Vector2(1.83755, 2.1351)
+text = "ACCEPT"
+
+[node name="ComingSoon" type="Label" parent="ScrollContainer/HBoxContainer/Task_7"]
+layout_mode = 0
+offset_left = 9.53083
+offset_top = 178.349
+offset_right = 427.531
+offset_bottom = 269.349
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 66
+text = "Coming Soon"
+
+[node name="Task_8" type="TextureRect" parent="ScrollContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("3_3oel1")
+
+[node name="Label" type="Label" parent="ScrollContainer/HBoxContainer/Task_8"]
+layout_mode = 0
+offset_left = 98.481
+offset_top = 29.0568
+offset_right = 195.481
+offset_bottom = 69.0568
+scale = Vector2(2.4886, 3.27344)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 29
+text = "TASK 8"
+
+[node name="Task_8" type="Button" parent="ScrollContainer/HBoxContainer/Task_8"]
+layout_mode = 0
+offset_left = 150.208
+offset_top = 296.58
+offset_right = 217.208
+offset_bottom = 327.58
+scale = Vector2(1.83755, 2.1351)
+text = "ACCEPT"
+
+[node name="ComingSoon" type="Label" parent="ScrollContainer/HBoxContainer/Task_8"]
+layout_mode = 0
+offset_left = 9.53083
+offset_top = 178.349
+offset_right = 427.531
+offset_bottom = 269.349
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 66
+text = "Coming Soon"
+
+[node name="TaskUI" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ScrollContainer" parent="TaskUI" instance=ExtResource("4_cr6a6")]
+layout_mode = 1
+offset_left = 32.0
+offset_top = 80.0
+offset_right = 1848.0
+offset_bottom = 984.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TaskSelectorScene" type="Label" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 56.0
+offset_right = 1210.0
+offset_bottom = 214.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_r0uw5")
+theme_override_font_sizes/font_size = 116
+text = "Task Selector"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/HBoxContainer/Task_1/Task_1" to="TaskUI" method="_on_task_1_pressed"]
+[connection signal="pressed" from="ScrollContainer/HBoxContainer/Task_2/Task_2" to="TaskUI" method="_on_task_2_pressed"]
+[connection signal="pressed" from="ScrollContainer/HBoxContainer/Task_3/Task_3" to="TaskUI" method="_on_task_3_pressed"]
+[connection signal="pressed" from="ScrollContainer/HBoxContainer/Task_4/Task_44" to="TaskUI" method="_on_task_44_pressed"]
