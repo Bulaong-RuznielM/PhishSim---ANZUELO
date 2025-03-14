@@ -37,9 +37,9 @@ modulate = Color(1, 0, 0, 1)
 self_modulate = Color(1, 0, 0, 1)
 top_level = true
 layout_mode = 0
-offset_left = 1852.0
+offset_left = 1782.0
 offset_right = 1920.0
-offset_bottom = 67.0
+offset_bottom = 139.0
 
 [node name="Upgrade shop" type="Control" parent="."]
 layout_mode = 1

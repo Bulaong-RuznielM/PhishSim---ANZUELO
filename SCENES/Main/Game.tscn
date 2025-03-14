@@ -69,6 +69,7 @@ icon = ExtResource("5_ftkc2")
 metadata/_edit_use_anchors_ = true
 
 [node name="Tasks_Label" type="Label" parent="WindowsButtons/TASKS"]
+layout_mode = 0
 offset_left = -7.22193
 offset_top = 543.295
 offset_right = 43.7781
@@ -103,7 +104,7 @@ text = "SETTINGS
 [node name="quit" type="Button" parent="WindowsButtons"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -10.3
+anchor_left = -10.65
 anchor_top = 2.9
 anchor_right = -10.65
 anchor_bottom = 2.9
@@ -117,6 +118,7 @@ text = "Back to Menu
 metadata/_edit_use_anchors_ = true
 
 [node name="DevText" type="Label" parent="."]
+visible = false
 offset_left = -468.0
 offset_top = -308.0
 offset_right = 252.0

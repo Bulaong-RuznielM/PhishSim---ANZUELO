@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://26wxp1vho5mt"]
+
+[ext_resource type="Script" path="res://SCENES/Sub/Game_Tutorial/tutorial_final.gd" id="1_llukt"]
+[ext_resource type="Texture2D" uid="uid://bgoethw1bo5r1" path="res://SCENES/Sub/Game_Tutorial/Tutorial_IMAGES/Tutorial_FINAL.png" id="1_tb8ea"]
+
+[node name="TutorialInitial" type="Node2D"]
+script = ExtResource("1_llukt")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_tb8ea")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 848.0
+offset_top = 832.0
+offset_right = 1197.0
+offset_bottom = 953.0
+theme_override_font_sizes/font_size = 71
+text = "Next --->"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

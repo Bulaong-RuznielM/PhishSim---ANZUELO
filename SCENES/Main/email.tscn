@@ -23,9 +23,9 @@ texture = ExtResource("2_xg0u5")
 
 [node name="EmailExitButton" type="Button" parent="Control/TextureRect"]
 layout_mode = 0
-offset_left = 1852.0
+offset_left = 1823.0
 offset_right = 1920.0
-offset_bottom = 67.0
+offset_bottom = 83.0
 
 [node name="EmailContaner" type="TextureRect" parent="Control/TextureRect"]
 layout_mode = 0

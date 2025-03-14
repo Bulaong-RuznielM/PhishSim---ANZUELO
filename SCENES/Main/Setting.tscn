@@ -18,9 +18,9 @@ texture = ExtResource("2_4b714")
 
 [node name="EXIT_SETTING" type="Button" parent="."]
 layout_mode = 0
-offset_left = 1852.0
+offset_left = 1792.0
 offset_right = 1920.0
-offset_bottom = 67.0
+offset_bottom = 112.0
 
 [node name="GridContainer" type="GridContainer" parent="."]
 modulate = Color(0, 0, 0, 1)

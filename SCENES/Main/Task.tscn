@@ -23,9 +23,9 @@ texture = ExtResource("2_ioskh")
 modulate = Color(1, 0, 0, 1)
 self_modulate = Color(1, 0, 0, 1)
 layout_mode = 0
-offset_left = 1852.0
+offset_left = 1816.0
 offset_right = 1920.0
-offset_bottom = 67.0
+offset_bottom = 96.0
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 visible = false
