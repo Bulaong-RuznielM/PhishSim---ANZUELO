@@ -1,15 +1,13 @@
 [gd_resource type="Theme" load_steps=3 format=3 uid="uid://dpw6rugitmvrc"]
 
-[ext_resource type="Texture2D" uid="uid://c5erty8kj3ni" path="res://ASSETS/NEW ASSETS/FREE VERSION/FREE VERSION/Menu 1/PNG/Menu-1-01_0004_Layer-17.png" id="1_djodg"]
+[ext_resource type="Texture2D" uid="uid://dvqh3sdhubt5e" path="res://ASSETS/NEW ASSETS/OTHERS/Game_Window.PNG" id="1_vgl1q"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w7dtn"]
-texture = ExtResource("1_djodg")
-texture_margin_top = 20.0
-texture_margin_bottom = 13.0
-expand_margin_left = 82.0
-expand_margin_top = 65.0
-expand_margin_right = 94.0
-expand_margin_bottom = 363.0
+texture = ExtResource("1_vgl1q")
+texture_margin_left = 920.0
+texture_margin_top = 240.0
+texture_margin_bottom = 135.0
+expand_margin_bottom = 265.0
 
 [resource]
 PanelContainer/styles/panel = SubResource("StyleBoxTexture_w7dtn")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://te8o6b5ichyu"]
+[gd_scene load_steps=7 format=3 uid="uid://te8o6b5ichyu"]
 
 [ext_resource type="Texture2D" uid="uid://w0n2r3u5w5mk" path="res://ASSETS/icons/scrollintro.png" id="2_hala2"]
 [ext_resource type="Theme" uid="uid://dpw6rugitmvrc" path="res://THEMES/TaskTitleTheme.tres" id="2_swt3r"]
@@ -8,6 +8,8 @@
 [sub_resource type="Theme" id="Theme_onklx"]
 Label/font_sizes/font_size = 64
 Label/fonts/font = ExtResource("3_x8nxo")
+
+[sub_resource type="Theme" id="Theme_rjt2s"]
 
 [node name="ScrollContainer" type="ScrollContainer"]
 clip_contents = false
@@ -33,38 +35,46 @@ theme_override_constants/margin_right = 1920
 [node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/MarginContainer"]
 layout_mode = 2
 mouse_filter = 2
-theme_override_constants/separation = 305
+theme_override_constants/separation = 295
 
 [node name="Task_1" type="PanelContainer" parent="CenterContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 theme = ExtResource("2_swt3r")
 
-[node name="Task_1_label" type="Label" parent="CenterContainer/MarginContainer/HBoxContainer/Task_1"]
+[node name="Task_Elements" type="Control" parent="CenterContainer/MarginContainer/HBoxContainer/Task_1"]
 layout_mode = 2
-theme = SubResource("Theme_onklx")
-text = " TASK 1 "
-horizontal_alignment = 1
-vertical_alignment = 1
 
-[node name="Task_1" type="Button" parent="CenterContainer/MarginContainer/HBoxContainer/Task_1/Task_1_label"]
+[node name="Task_1_label" type="Label" parent="CenterContainer/MarginContainer/HBoxContainer/Task_1/Task_Elements"]
+layout_mode = 2
+offset_left = -904.0
+offset_top = -196.0
+offset_right = -427.0
+offset_bottom = -81.0
+theme = SubResource("Theme_onklx")
+theme_override_font_sizes/font_size = 91
+text = " TASK 1 "
+
+[node name="Task_1" type="Button" parent="CenterContainer/MarginContainer/HBoxContainer/Task_1/Task_Elements/Task_1_label"]
 layout_mode = 0
-offset_left = 72.0
-offset_top = 313.0
-offset_right = 139.0
-offset_bottom = 344.0
-scale = Vector2(2.15553, 2.4771)
+offset_left = 312.0
+offset_top = 464.0
+offset_right = 379.0
+offset_bottom = 495.0
+scale = Vector2(3.13315, 3.60057)
+theme = SubResource("Theme_rjt2s")
 text = "ACCEPT"
 
-[node name="Task_1_Desc" type="Label" parent="CenterContainer/MarginContainer/HBoxContainer/Task_1/Task_1_label"]
+[node name="Task_1_Desc" type="Label" parent="CenterContainer/MarginContainer/HBoxContainer/Task_1/Task_Elements/Task_1_label"]
 layout_mode = 0
-offset_top = 139.0
-offset_right = 358.0
-offset_bottom = 253.0
-scale = Vector2(0.994348, 1)
+offset_left = 144.0
+offset_top = 136.0
+offset_right = 852.0
+offset_bottom = 416.0
+scale = Vector2(0.997233, 1.0029)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 77
 text = "Close all the incoming Pop-Ups"
 autowrap_mode = 2
 
@@ -72,33 +82,46 @@ autowrap_mode = 2
 layout_mode = 2
 theme = ExtResource("2_swt3r")
 
-[node name="Task_2_label" type="Label" parent="CenterContainer/MarginContainer/HBoxContainer/Task_2"]
+[node name="Task_Elements" type="Control" parent="CenterContainer/MarginContainer/HBoxContainer/Task_2"]
 layout_mode = 2
+
+[node name="Task_2_label" type="Label" parent="CenterContainer/MarginContainer/HBoxContainer/Task_2/Task_Elements"]
+layout_mode = 2
+offset_left = -911.0
+offset_top = -196.0
+offset_right = -476.0
+offset_bottom = -93.0
 theme = SubResource("Theme_onklx")
+theme_override_font_sizes/font_size = 91
 text = " TASK 2"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Tasl_2_title" type="Label" parent="CenterContainer/MarginContainer/HBoxContainer/Task_2/Task_2_label"]
+[node name="Tasl_2_title" type="Label" parent="CenterContainer/MarginContainer/HBoxContainer/Task_2/Task_Elements/Task_2_label"]
 layout_mode = 0
-offset_left = -55.0
-offset_top = 169.0
-offset_right = 522.0
-offset_bottom = 260.0
+offset_left = 40.0
+offset_top = 136.0
+offset_right = 1142.0
+offset_bottom = 529.0
 scale = Vector2(0.740587, 0.740587)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 56
-text = "Manage Emails"
+text = "Check your email spam folder. 
 
-[node name="Task_2" type="Button" parent="CenterContainer/MarginContainer/HBoxContainer/Task_2/Task_2_label"]
+Find out which one is a real email, or a phishing/scam email"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Task_2" type="Button" parent="CenterContainer/MarginContainer/HBoxContainer/Task_2/Task_Elements/Task_2_label"]
 layout_mode = 0
-offset_left = 89.0
-offset_top = 305.0
-offset_right = 156.0
-offset_bottom = 336.0
-scale = Vector2(2.1167, 2.45945)
+offset_left = 344.0
+offset_top = 464.0
+offset_right = 411.0
+offset_bottom = 495.0
+scale = Vector2(3.05562, 3.55041)
 text = "ACCEPT"
 
 [node name="STORAGE" type="Control" parent="."]
@@ -142,5 +165,5 @@ offset_bottom = 936.0
 texture = ExtResource("2_hala2")
 
 [connection signal="gui_input" from="." to="." method="_on_ScrollContainer_gui_input"]
-[connection signal="pressed" from="CenterContainer/MarginContainer/HBoxContainer/Task_1/Task_1_label/Task_1" to="." method="_on_task_1_pressed"]
-[connection signal="pressed" from="CenterContainer/MarginContainer/HBoxContainer/Task_2/Task_2_label/Task_2" to="." method="_on_task_2_pressed"]
+[connection signal="pressed" from="CenterContainer/MarginContainer/HBoxContainer/Task_1/Task_Elements/Task_1_label/Task_1" to="." method="_on_task_1_pressed"]
+[connection signal="pressed" from="CenterContainer/MarginContainer/HBoxContainer/Task_2/Task_Elements/Task_2_label/Task_2" to="." method="_on_task_2_pressed"]
