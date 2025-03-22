@@ -1,3 +1,265 @@
-[gd_scene format=3 uid="uid://cjwsqjuayve82"]
+[gd_scene load_steps=5 format=3 uid="uid://cjwsqjuayve82"]
 
-[node name="GameTask1" type="Node2D"]
+[ext_resource type="Script" path="res://Scripts/game_task_3.gd" id="1_3pdl6"]
+[ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="1_e4shb"]
+[ext_resource type="Texture2D" uid="uid://c7rmim5y62a2n" path="res://ASSETS/windows/windows_border.png" id="2_tt6xe"]
+[ext_resource type="Texture2D" uid="uid://qfdp5lhuq2qv" path="res://ASSETS/Upgrade/items_border.png" id="3_4wu0v"]
+
+[node name="GameTask3" type="Node2D"]
+script = ExtResource("1_3pdl6")
+
+[node name="MAIN" type="Sprite2D" parent="."]
+position = Vector2(960, 539)
+texture = ExtResource("1_e4shb")
+
+[node name="WindowsBorder" type="Sprite2D" parent="."]
+position = Vector2(1195.5, 567)
+scale = Vector2(0.747396, 0.940741)
+texture = ExtResource("2_tt6xe")
+
+[node name="QUESTION" type="Label" parent="WindowsBorder"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -933.0
+offset_top = -470.0
+offset_right = -477.0
+offset_bottom = -270.0
+scale = Vector2(4.00411, 3.56386)
+text = "LOREm"
+autowrap_mode = 3
+
+[node name="SCAM" type="Button" parent="WindowsBorder"]
+modulate = Color(1, 0, 0, 1)
+offset_left = 690.0
+offset_top = 394.0
+offset_right = 818.0
+offset_bottom = 504.0
+scale = Vector2(1.90297, 1.05213)
+text = "SCAM"
+
+[node name="REAL" type="Button" parent="WindowsBorder"]
+modulate = Color(0.144384, 0.818793, 7.70092e-07, 1)
+offset_left = 395.373
+offset_top = 396.496
+offset_right = 538.373
+offset_bottom = 508.496
+scale = Vector2(1.70964, 1.03876)
+text = "REAL"
+
+[node name="RETURN" type="Button" parent="."]
+offset_left = 1795.0
+offset_top = 3.0
+offset_right = 1915.0
+offset_bottom = 120.0
+
+[node name="VScrollBar" type="VScrollBar" parent="."]
+offset_left = 486.0
+offset_top = 74.0
+offset_right = 494.0
+offset_bottom = 1070.0
+scale = Vector2(-1.1206, 3.28316)
+
+[node name="usersCOns" type="BoxContainer" parent="VScrollBar"]
+layout_mode = 0
+offset_left = 9.81614
+offset_top = -2.13209
+offset_right = 459.816
+offset_bottom = 1321.87
+scale = Vector2(0.930279, 0.073247)
+alignment = 1
+vertical = true
+
+[node name="TextureRect" type="TextureRect" parent="VScrollBar/usersCOns"]
+layout_mode = 2
+texture = ExtResource("3_4wu0v")
+
+[node name="Label" type="Label" parent="VScrollBar/usersCOns/TextureRect"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 360.681
+offset_top = 41.5832
+offset_right = 467.681
+offset_bottom = 64.5832
+scale = Vector2(-1.71705, 11.6992)
+text = "LOREm Name"
+
+[node name="Label2" type="Label" parent="VScrollBar/usersCOns/TextureRect"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 363.559
+offset_top = 361.774
+offset_right = 470.559
+offset_bottom = 384.774
+scale = Vector2(-1.71705, 11.6992)
+text = "LOREm Number"
+
+[node name="TextureRect2" type="TextureRect" parent="VScrollBar/usersCOns"]
+layout_mode = 2
+texture = ExtResource("3_4wu0v")
+
+[node name="Label" type="Label" parent="VScrollBar/usersCOns/TextureRect2"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 360.681
+offset_top = 41.5832
+offset_right = 467.681
+offset_bottom = 64.5832
+scale = Vector2(-1.71705, 11.6992)
+text = "LOREm Name"
+
+[node name="Label2" type="Label" parent="VScrollBar/usersCOns/TextureRect2"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 363.559
+offset_top = 361.774
+offset_right = 470.559
+offset_bottom = 384.774
+scale = Vector2(-1.71705, 11.6992)
+text = "LOREm Number"
+
+[node name="TextureRect3" type="TextureRect" parent="VScrollBar/usersCOns"]
+layout_mode = 2
+texture = ExtResource("3_4wu0v")
+
+[node name="Label" type="Label" parent="VScrollBar/usersCOns/TextureRect3"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 360.681
+offset_top = 41.5832
+offset_right = 467.681
+offset_bottom = 64.5832
+scale = Vector2(-1.71705, 11.6992)
+text = "LOREm Name"
+
+[node name="Label2" type="Label" parent="VScrollBar/usersCOns/TextureRect3"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 363.559
+offset_top = 361.774
+offset_right = 470.559
+offset_bottom = 384.774
+scale = Vector2(-1.71705, 11.6992)
+text = "LOREm Number"
+
+[node name="TextureRect4" type="TextureRect" parent="VScrollBar/usersCOns"]
+layout_mode = 2
+texture = ExtResource("3_4wu0v")
+
+[node name="Label" type="Label" parent="VScrollBar/usersCOns/TextureRect4"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 360.681
+offset_top = 41.5832
+offset_right = 467.681
+offset_bottom = 64.5832
+scale = Vector2(-1.71705, 11.6992)
+text = "LOREm Name"
+
+[node name="Label2" type="Label" parent="VScrollBar/usersCOns/TextureRect4"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 363.559
+offset_top = 361.774
+offset_right = 470.559
+offset_bottom = 384.774
+scale = Vector2(-1.71705, 11.6992)
+text = "LOREm Number"
+
+[node name="TextureRect5" type="TextureRect" parent="VScrollBar/usersCOns"]
+layout_mode = 2
+texture = ExtResource("3_4wu0v")
+
+[node name="Label" type="Label" parent="VScrollBar/usersCOns/TextureRect5"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 360.681
+offset_top = 41.5832
+offset_right = 467.681
+offset_bottom = 64.5832
+scale = Vector2(-1.71705, 11.6992)
+text = "LOREm Name"
+
+[node name="Label2" type="Label" parent="VScrollBar/usersCOns/TextureRect5"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 363.559
+offset_top = 361.774
+offset_right = 470.559
+offset_bottom = 384.774
+scale = Vector2(-1.71705, 11.6992)
+text = "LOREm Number"
+
+[node name="TextureRect6" type="TextureRect" parent="VScrollBar/usersCOns"]
+layout_mode = 2
+texture = ExtResource("3_4wu0v")
+
+[node name="Label" type="Label" parent="VScrollBar/usersCOns/TextureRect6"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 360.681
+offset_top = 41.5832
+offset_right = 467.681
+offset_bottom = 64.5832
+scale = Vector2(-1.71705, 11.6992)
+text = "LOREm Name"
+
+[node name="Label2" type="Label" parent="VScrollBar/usersCOns/TextureRect6"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 363.559
+offset_top = 361.774
+offset_right = 470.559
+offset_bottom = 384.774
+scale = Vector2(-1.71705, 11.6992)
+text = "LOREm Number"
+
+[node name="TextureRect7" type="TextureRect" parent="VScrollBar/usersCOns"]
+layout_mode = 2
+texture = ExtResource("3_4wu0v")
+
+[node name="Label" type="Label" parent="VScrollBar/usersCOns/TextureRect7"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 360.681
+offset_top = 41.5832
+offset_right = 467.681
+offset_bottom = 64.5832
+scale = Vector2(-1.71705, 11.6992)
+text = "LOREm Name"
+
+[node name="Label2" type="Label" parent="VScrollBar/usersCOns/TextureRect7"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 363.559
+offset_top = 361.774
+offset_right = 470.559
+offset_bottom = 384.774
+scale = Vector2(-1.71705, 11.6992)
+text = "LOREm Number"
+
+[node name="TextureRect8" type="TextureRect" parent="VScrollBar/usersCOns"]
+layout_mode = 2
+texture = ExtResource("3_4wu0v")
+
+[node name="Label" type="Label" parent="VScrollBar/usersCOns/TextureRect8"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 360.681
+offset_top = 41.5832
+offset_right = 467.681
+offset_bottom = 64.5832
+scale = Vector2(-1.71705, 11.6992)
+text = "LOREm Name"
+
+[node name="Label2" type="Label" parent="VScrollBar/usersCOns/TextureRect8"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 363.559
+offset_top = 361.774
+offset_right = 470.559
+offset_bottom = 384.774
+scale = Vector2(-1.71705, 11.6992)
+text = "LOREm Number"
+
+[connection signal="pressed" from="WindowsBorder/SCAM" to="." method="_on_scam_pressed"]
+[connection signal="pressed" from="WindowsBorder/REAL" to="." method="_on_real_pressed"]
+[connection signal="pressed" from="RETURN" to="." method="_on_return_pressed"]
