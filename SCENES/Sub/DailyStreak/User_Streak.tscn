@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://dox0s2j4dqq4b"]
+
+[ext_resource type="Script" path="res://SCENES/Sub/DailyStreak/user_streak.gd" id="1_omsqa"]
+[ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="2_1jsxx"]
+[ext_resource type="FontFile" uid="uid://fevjyo7au507" path="res://FONTS/pixel-game-font/PixelGame-R9AZe.otf" id="3_ia8ha"]
+[ext_resource type="PackedScene" uid="uid://v0sbsaj1m0vy" path="res://SCENES/Sub/DailyStreak/DailyStreakUI.tscn" id="4_55wn5"]
+
+[node name="UserStreak" type="Node2D"]
+script = ExtResource("1_omsqa")
+
+[node name="WindowUI" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_1jsxx")
+
+[node name="Streak_Exit" type="Button" parent="WindowUI"]
+layout_mode = 0
+offset_left = 1795.0
+offset_right = 1920.0
+offset_bottom = 127.0
+
+[node name="StreakTitle" type="Label" parent="WindowUI"]
+layout_mode = 0
+offset_left = 520.0
+offset_top = 48.0
+offset_right = 1384.0
+offset_bottom = 232.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ia8ha")
+theme_override_font_sizes/font_size = 181
+text = "Daily Streak"
+
+[node name="ScrollContainer" parent="WindowUI" instance=ExtResource("4_55wn5")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = -8.0
+offset_top = 320.0
+offset_bottom = 328.0
+
+[connection signal="pressed" from="WindowUI/Streak_Exit" to="." method="_on_streak_exit_pressed"]
