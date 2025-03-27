@@ -78,4 +78,4 @@ func _on_task_2_pressed() -> void:
 	get_tree().change_scene_to_file("res://SCENES/Main/email.tscn")
 
 func _on_task_3_pressed() -> void:
-	get_tree().change_scene_to_file("res://SCENES/Sub/Profile_Finder.tscn")
+	get_tree().change_scene_to_file("res://SCENES/Sub/GAME_TASK 3/GAME_TASK_3.tscn")
