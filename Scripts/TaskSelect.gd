@@ -79,3 +79,6 @@ func _on_task_2_pressed() -> void:
 
 func _on_task_3_pressed() -> void:
 	get_tree().change_scene_to_file("res://SCENES/Sub/GAME_TASK 3/GAME_TASK_3.tscn")
+
+func _on_task_4_pressed() -> void:
+	get_tree().change_scene_to_file("res://SCENES/Sub/GAME_TASK 4/GAME_TASK_4.tscn")

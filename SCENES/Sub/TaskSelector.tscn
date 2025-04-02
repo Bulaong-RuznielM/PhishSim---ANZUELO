@@ -168,6 +168,50 @@ offset_bottom = 495.0
 scale = Vector2(3.05562, 3.55041)
 text = "ACCEPT"
 
+[node name="Task_4" type="PanelContainer" parent="CenterContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_swt3r")
+
+[node name="Task_Elements" type="Control" parent="CenterContainer/MarginContainer/HBoxContainer/Task_4"]
+layout_mode = 2
+
+[node name="Task_4_label" type="Label" parent="CenterContainer/MarginContainer/HBoxContainer/Task_4/Task_Elements"]
+layout_mode = 2
+offset_left = -911.0
+offset_top = -196.0
+offset_right = -476.0
+offset_bottom = -93.0
+theme = SubResource("Theme_onklx")
+theme_override_font_sizes/font_size = 91
+text = " TASK 4"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Tasl_4_title" type="Label" parent="CenterContainer/MarginContainer/HBoxContainer/Task_4/Task_Elements/Task_4_label"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 136.0
+offset_right = 1142.0
+offset_bottom = 529.0
+scale = Vector2(0.740587, 0.740587)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 106
+text = "Analyze the URL of the emails"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Task_4" type="Button" parent="CenterContainer/MarginContainer/HBoxContainer/Task_4/Task_Elements/Task_4_label"]
+layout_mode = 0
+offset_left = 344.0
+offset_top = 464.0
+offset_right = 411.0
+offset_bottom = 495.0
+scale = Vector2(3.05562, 3.55041)
+text = "ACCEPT"
+
 [node name="STORAGE" type="Control" parent="."]
 visible = false
 layout_mode = 2
@@ -212,3 +256,4 @@ texture = ExtResource("2_hala2")
 [connection signal="pressed" from="CenterContainer/MarginContainer/HBoxContainer/Task_1/Task_Elements/Task_1_label/Task_1" to="." method="_on_task_1_pressed"]
 [connection signal="pressed" from="CenterContainer/MarginContainer/HBoxContainer/Task_2/Task_Elements/Task_2_label/Task_2" to="." method="_on_task_2_pressed"]
 [connection signal="pressed" from="CenterContainer/MarginContainer/HBoxContainer/Task_3/Task_Elements/Task_3_label/Task_3" to="." method="_on_task_3_pressed"]
+[connection signal="pressed" from="CenterContainer/MarginContainer/HBoxContainer/Task_4/Task_Elements/Task_4_label/Task_4" to="." method="_on_task_4_pressed"]

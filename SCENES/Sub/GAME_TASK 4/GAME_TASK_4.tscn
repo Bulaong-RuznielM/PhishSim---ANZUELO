@@ -1,10 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://bsuwpokpxpq64"]
+[gd_scene load_steps=5 format=3 uid="uid://bsuwpokpxpq64"]
 
 [ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="1_c53nb"]
+[ext_resource type="Script" path="res://SCENES/Sub/GAME_TASK 4/game_task_4.gd" id="1_ul8ki"]
 [ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="2_c6tsc"]
 [ext_resource type="Texture2D" uid="uid://cwf5vxretcc0l" path="res://ASSETS/Task/windows_border - Copy - Copy - Copy - Copy.png" id="3_q4nul"]
 
-[node name="GameTask1" type="Node2D"]
+[node name="GameTask4" type="Node2D"]
+script = ExtResource("1_ul8ki")
 
 [node name="MAIN" type="Sprite2D" parent="."]
 position = Vector2(960, 539)
@@ -27,10 +29,10 @@ offset_bottom = 1086.0
 
 [node name="Exit Button" type="Button" parent="MAIN/Control/TextureRect"]
 layout_mode = 0
-offset_left = 1848.0
+offset_left = 1788.0
 offset_top = 8.0
 offset_right = 1909.0
-offset_bottom = 63.0
+offset_bottom = 115.0
 
 [node name="TextureRect" type="TextureRect" parent="MAIN/Control/TextureRect"]
 layout_mode = 0
@@ -41,10 +43,10 @@ offset_bottom = 1067.0
 
 [node name="Banner" type="TextureRect" parent="MAIN/Control/TextureRect/TextureRect"]
 layout_mode = 0
-offset_left = -7.0
-offset_top = -4.0
-offset_right = 1900.0
-offset_bottom = 149.0
+offset_left = -12.0
+offset_top = 22.0
+offset_right = 1895.0
+offset_bottom = 175.0
 texture = ExtResource("2_c6tsc")
 
 [node name="Label" type="Label" parent="MAIN/Control/TextureRect/TextureRect/Banner"]
@@ -74,11 +76,11 @@ vertical_scroll_mode = 2
 layout_mode = 2
 theme_override_constants/separation = 0
 
-[node name="!st URL" type="TextureRect" parent="MAIN/Control/TextureRect/TextureRect/Banner/ScrollContainer/VBoxContainer"]
+[node name="1st URL" type="TextureRect" parent="MAIN/Control/TextureRect/TextureRect/Banner/ScrollContainer/VBoxContainer"]
 layout_mode = 2
 texture = ExtResource("3_q4nul")
 
-[node name="Label" type="Label" parent="MAIN/Control/TextureRect/TextureRect/Banner/ScrollContainer/VBoxContainer/!st URL"]
+[node name="Label" type="Label" parent="MAIN/Control/TextureRect/TextureRect/Banner/ScrollContainer/VBoxContainer/1st URL"]
 modulate = Color(0, 0, 0, 1)
 layout_mode = 0
 offset_left = 217.0
@@ -91,7 +93,7 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
 text = "1ST URL"
 
-[node name="Button" type="Button" parent="MAIN/Control/TextureRect/TextureRect/Banner/ScrollContainer/VBoxContainer/!st URL"]
+[node name="1stURL" type="Button" parent="MAIN/Control/TextureRect/TextureRect/Banner/ScrollContainer/VBoxContainer/1st URL"]
 layout_mode = 0
 offset_left = 1415.0
 offset_top = 117.0
@@ -117,7 +119,7 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
 text = "2ND URL"
 
-[node name="Button" type="Button" parent="MAIN/Control/TextureRect/TextureRect/Banner/ScrollContainer/VBoxContainer/2nd URL"]
+[node name="2ndURL" type="Button" parent="MAIN/Control/TextureRect/TextureRect/Banner/ScrollContainer/VBoxContainer/2nd URL"]
 layout_mode = 0
 offset_left = 1415.0
 offset_top = 117.0
@@ -143,7 +145,7 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
 text = "3RD URL"
 
-[node name="Button" type="Button" parent="MAIN/Control/TextureRect/TextureRect/Banner/ScrollContainer/VBoxContainer/3rd URL"]
+[node name="3rdURL" type="Button" parent="MAIN/Control/TextureRect/TextureRect/Banner/ScrollContainer/VBoxContainer/3rd URL"]
 layout_mode = 0
 offset_left = 1415.0
 offset_top = 117.0
@@ -169,7 +171,7 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
 text = "4TH URL"
 
-[node name="Button" type="Button" parent="MAIN/Control/TextureRect/TextureRect/Banner/ScrollContainer/VBoxContainer/4th URL"]
+[node name="4thURL" type="Button" parent="MAIN/Control/TextureRect/TextureRect/Banner/ScrollContainer/VBoxContainer/4th URL"]
 layout_mode = 0
 offset_left = 1415.0
 offset_top = 117.0
@@ -195,7 +197,7 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
 text = "5TH URL"
 
-[node name="Button" type="Button" parent="MAIN/Control/TextureRect/TextureRect/Banner/ScrollContainer/VBoxContainer/5th URL"]
+[node name="FiveURL" type="Button" parent="MAIN/Control/TextureRect/TextureRect/Banner/ScrollContainer/VBoxContainer/5th URL"]
 layout_mode = 0
 offset_left = 1415.0
 offset_top = 117.0
@@ -203,3 +205,10 @@ offset_right = 1848.0
 offset_bottom = 223.0
 theme_override_font_sizes/font_size = 50
 text = "ENTER"
+
+[connection signal="pressed" from="MAIN/Control/TextureRect/Exit Button" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="MAIN/Control/TextureRect/TextureRect/Banner/ScrollContainer/VBoxContainer/1st URL/1stURL" to="." method="_on_st_url_pressed"]
+[connection signal="pressed" from="MAIN/Control/TextureRect/TextureRect/Banner/ScrollContainer/VBoxContainer/2nd URL/2ndURL" to="." method="_on_nd_url_pressed"]
+[connection signal="pressed" from="MAIN/Control/TextureRect/TextureRect/Banner/ScrollContainer/VBoxContainer/3rd URL/3rdURL" to="." method="_on_rd_url_pressed"]
+[connection signal="pressed" from="MAIN/Control/TextureRect/TextureRect/Banner/ScrollContainer/VBoxContainer/4th URL/4thURL" to="." method="_on_th_url_pressed"]
+[connection signal="pressed" from="MAIN/Control/TextureRect/TextureRect/Banner/ScrollContainer/VBoxContainer/5th URL/FiveURL" to="." method="_on_five_url_pressed"]
