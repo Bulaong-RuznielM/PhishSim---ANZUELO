@@ -1,0 +1,59 @@
+[gd_scene load_steps=3 format=3 uid="uid://dnhjno8a1xk2r"]
+
+[ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="1_10obt"]
+[ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="2_yjo26"]
+
+[node name="5ThUrl" type="Node2D"]
+
+[node name="MAIN" type="Sprite2D" parent="."]
+position = Vector2(946, 550)
+texture = ExtResource("1_10obt")
+
+[node name="Sprite2D" type="Sprite2D" parent="MAIN"]
+position = Vector2(-12, -321)
+scale = Vector2(3.97978, 1.82658)
+texture = ExtResource("2_yjo26")
+
+[node name="Label" type="Label" parent="MAIN/Sprite2D"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -158.3
+offset_top = -31.2059
+offset_right = 169.7
+offset_bottom = 55.7941
+scale = Vector2(1, 1.65)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "https://steamfree-skins.com/login"
+
+[node name="Sprite2D" type="Sprite2D" parent="MAIN/Sprite2D"]
+position = Vector2(-73.1354, 136.432)
+scale = Vector2(0.16382, 0.501079)
+texture = ExtResource("2_yjo26")
+
+[node name="Button" type="Button" parent="MAIN/Sprite2D/Sprite2D"]
+offset_left = -235.0
+offset_top = -54.0
+offset_right = 232.0
+offset_bottom = 65.0
+theme_override_font_sizes/font_size = 50
+text = "LEGIT URL"
+
+[node name="Sprite2D2" type="Sprite2D" parent="MAIN/Sprite2D"]
+position = Vector2(72.8684, 141.248)
+scale = Vector2(0.16382, 0.501079)
+texture = ExtResource("2_yjo26")
+
+[node name="Button" type="Button" parent="MAIN/Sprite2D/Sprite2D2"]
+offset_left = -222.0
+offset_top = -57.0
+offset_right = 223.0
+offset_bottom = 62.0
+theme_override_font_sizes/font_size = 50
+text = "Phishing URL"
+
+[node name="EXIT" type="Button" parent="MAIN/Sprite2D"]
+offset_left = 226.143
+offset_top = -117.706
+offset_right = 243.143
+offset_bottom = -82.7065
