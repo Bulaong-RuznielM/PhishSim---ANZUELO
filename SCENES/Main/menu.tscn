@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://36cck8vjhq2g"]
+[gd_scene load_steps=4 format=3 uid="uid://36cck8vjhq2g"]
 
 [ext_resource type="Script" path="res://Scripts/menu.gd" id="1_hv4x7"]
 [ext_resource type="FontFile" uid="uid://cgsxe0kffiqdb" path="res://ASSETS/NEW ASSETS/kenney_ui-pack/Font/Kenney Future.ttf" id="2_diewo"]
+[ext_resource type="Texture2D" uid="uid://dwkxnbs4io30w" path="res://ASSETS/PhishSimLogo.png" id="3_8h1cy"]
 
 [node name="MENU" type="Control"]
 layout_mode = 3
@@ -12,7 +13,7 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(2.79411, 2.38554)
+scale = Vector2(2.68634, 2.3718)
 script = ExtResource("1_hv4x7")
 
 [node name="MainMenuMusic" type="AudioStreamPlayer2D" parent="."]
@@ -53,6 +54,7 @@ theme_override_fonts/font = ExtResource("2_diewo")
 text = "PLAY"
 
 [node name="EXIT" type="Button" parent="Control"]
+light_mask = 3
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -70,6 +72,8 @@ theme_override_fonts/font = ExtResource("2_diewo")
 text = "QUIT"
 
 [node name="GameTitle2" type="Label" parent="."]
+light_mask = 3
+visibility_layer = 2
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -4.93896
@@ -89,14 +93,12 @@ theme_override_font_sizes/font_size = 91
 text = "PhishSim"
 metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="."]
-layout_mode = 0
-offset_left = -140.295
-offset_top = 172.707
-offset_right = 18.7049
-offset_bottom = 195.707
-scale = Vector2(1.82287, 1.82287)
-text = "Very early Prototype"
+[node name="PhishSimLogo" type="Sprite2D" parent="."]
+light_mask = 0
+visibility_layer = 0
+position = Vector2(4.83929, 24.8756)
+scale = Vector2(0.654263, 0.589089)
+texture = ExtResource("3_8h1cy")
 
 [connection signal="finished" from="MainMenuMusic" to="." method="_on_main_menu_music_finished"]
 [connection signal="pressed" from="Control/PLAY" to="." method="_on_play_pressed"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://w0n2r3u5w5mk"
-path="res://.godot/imported/scrollintro.png-b106f7da989b837baacb69c02358c12c.ctex"
+uid="uid://bnu6c215f35s5"
+path="res://.godot/imported/windows_border - Copy (5) - Copy - Copy.png-2b1a5b4783818b00da833ccba0e5c6d3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/icons/scrollintro.png"
-dest_files=["res://.godot/imported/scrollintro.png-b106f7da989b837baacb69c02358c12c.ctex"]
+source_file="res://ASSETS/CutScenes/icons/windows_border - Copy (5) - Copy - Copy.png"
+dest_files=["res://.godot/imported/windows_border - Copy (5) - Copy - Copy.png-2b1a5b4783818b00da833ccba0e5c6d3.ctex"]
 
 [params]
 

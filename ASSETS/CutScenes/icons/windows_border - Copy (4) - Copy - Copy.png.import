@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://uaide1why5oe"
-path="res://.godot/imported/windows_border - Copy (3) - Copy - Copy.png-1db86d2c38acfb6018e069e9c8e54eb0.ctex"
+uid="uid://cejuqdp0jpmsr"
+path="res://.godot/imported/windows_border - Copy (4) - Copy - Copy.png-ff3184d81f71ebb016184cd4352ba2a0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/icons/windows_border - Copy (3) - Copy - Copy.png"
-dest_files=["res://.godot/imported/windows_border - Copy (3) - Copy - Copy.png-1db86d2c38acfb6018e069e9c8e54eb0.ctex"]
+source_file="res://ASSETS/CutScenes/icons/windows_border - Copy (4) - Copy - Copy.png"
+dest_files=["res://.godot/imported/windows_border - Copy (4) - Copy - Copy.png-ff3184d81f71ebb016184cd4352ba2a0.ctex"]
 
 [params]
 
