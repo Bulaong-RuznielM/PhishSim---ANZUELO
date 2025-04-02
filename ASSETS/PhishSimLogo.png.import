@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkw4pdpedv6ry"
-path="res://.godot/imported/4.jpg-2c3bfb81c86eaad831dbde75ed086498.ctex"
+uid="uid://dwkxnbs4io30w"
+path="res://.godot/imported/PhishSimLogo.png-97421bfb9dec411e9a9b32b4b61d1116.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/CutScenes/4.jpg"
-dest_files=["res://.godot/imported/4.jpg-2c3bfb81c86eaad831dbde75ed086498.ctex"]
+source_file="res://ASSETS/PhishSimLogo.png"
+dest_files=["res://.godot/imported/PhishSimLogo.png-97421bfb9dec411e9a9b32b4b61d1116.ctex"]
 
 [params]
 
