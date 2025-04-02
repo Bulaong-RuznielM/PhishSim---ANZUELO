@@ -62,7 +62,7 @@ layout_mode = 0
 offset_left = 16.0
 offset_top = 219.0
 offset_right = 1944.0
-offset_bottom = 1228.0
+offset_bottom = 1222.0
 scale = Vector2(0.982891, 0.842745)
 horizontal_scroll_mode = 0
 vertical_scroll_mode = 2
@@ -78,16 +78,17 @@ texture = ExtResource("3_n0h42")
 [node name="Email1Label" type="Label" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email1Task"]
 modulate = Color(0, 0, 0, 1)
 layout_mode = 0
-offset_left = 150.275
-offset_top = 83.2283
-offset_right = 498.275
-offset_bottom = 188.228
+offset_left = 80.0
+offset_top = 9.0
+offset_right = 1564.0
+offset_bottom = 222.0
 scale = Vector2(1.00857, 1.43815)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 76
-text = "Phishing Email"
+text = "Customer Support
+Urgent: Potential Scam Activity Detected"
 
 [node name="Email1Button" type="Button" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email1Task"]
 layout_mode = 0
@@ -105,16 +106,17 @@ texture = ExtResource("3_n0h42")
 [node name="Email2Label" type="Label" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email2Task"]
 modulate = Color(0, 0, 0, 1)
 layout_mode = 0
-offset_left = 150.275
-offset_top = 83.2283
-offset_right = 498.275
-offset_bottom = 188.228
+offset_left = 44.2491
+offset_top = 22.3743
+offset_right = 2108.25
+offset_bottom = 235.374
 scale = Vector2(1.00857, 1.43815)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 76
-text = "Real Email"
+text = "Fraud Detection Team
+Suspicious Account Activity - Immediate Action Required"
 
 [node name="Email2Button" type="Button" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email2Task"]
 layout_mode = 0
@@ -132,16 +134,17 @@ texture = ExtResource("3_n0h42")
 [node name="Email1Label" type="Label" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email3Task"]
 modulate = Color(0, 0, 0, 1)
 layout_mode = 0
-offset_left = 150.275
-offset_top = 83.2283
-offset_right = 498.275
-offset_bottom = 188.228
+offset_left = 48.4234
+offset_top = 34.1215
+offset_right = 1672.42
+offset_bottom = 247.121
 scale = Vector2(1.00857, 1.43815)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 76
-text = "Phishing Email"
+text = "Security Department
+Important: Protect Your Account from Fraud"
 
 [node name="Email1Button" type="Button" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email3Task"]
 layout_mode = 0
@@ -159,16 +162,17 @@ texture = ExtResource("3_n0h42")
 [node name="Email2Label" type="Label" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email4Task"]
 modulate = Color(0, 0, 0, 1)
 layout_mode = 0
-offset_left = 150.275
-offset_top = 83.2283
-offset_right = 498.275
-offset_bottom = 188.228
+offset_left = 34.8568
+offset_top = 22.4605
+offset_right = 1833.86
+offset_bottom = 235.461
 scale = Vector2(1.00857, 1.43815)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 76
-text = "Real Email"
+text = "Compliance Officer
+Fraud Investigation - Please Review Your Account"
 
 [node name="Email2Button" type="Button" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email4Task"]
 layout_mode = 0

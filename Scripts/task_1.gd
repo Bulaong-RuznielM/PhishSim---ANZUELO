@@ -31,6 +31,7 @@ func _on_timer_ads_counter_timeout() -> void:
 
 func _on_timer_game_second_timeout() -> void:
 	second_game_time += 1
+	$TimerGameSecond.wait_time -= 0.081
 	if second_game_time >= second_finish:
 		if is_lose(20):
 			get_tree().change_scene_to_file("res://SCENES/Sub/scam_agree.tscn") # Lose condition
