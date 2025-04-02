@@ -71,14 +71,8 @@ scale = Vector2(1.48465, 1.82924)
 theme_override_fonts/font = ExtResource("2_diewo")
 text = "QUIT"
 
-[node name="Icons8-send-email-50" type="Sprite2D" parent="Control"]
-position = Vector2(246.232, -58.6869)
-rotation = -0.523598
-scale = Vector2(1.70253, 1.70727)
-texture = ExtResource("3_lerq2")
-
-[node name="Xbllydkc" type="Sprite2D" parent="."]
-position = Vector2(98.358, 1.67677)
+[node name="Xbllydkc" type="Sprite2D" parent="Control"]
+position = Vector2(98.3581, 1.67677)
 scale = Vector2(0.471711, 0.60151)
 texture = ExtResource("4_78kwk")
 
@@ -125,6 +119,12 @@ theme_override_constants/shadow_outline_size = 10
 theme_override_fonts/font = ExtResource("2_diewo")
 theme_override_font_sizes/font_size = 91
 text = "shSim"
+
+[node name="Icons8-send-email-50" type="Sprite2D" parent="."]
+position = Vector2(249.095, -145.879)
+rotation = -0.261799
+scale = Vector2(1.0428, 1.0457)
+texture = ExtResource("3_lerq2")
 
 [connection signal="finished" from="MainMenuMusic" to="." method="_on_main_menu_music_finished"]
 [connection signal="pressed" from="Control/PLAY" to="." method="_on_play_pressed"]
