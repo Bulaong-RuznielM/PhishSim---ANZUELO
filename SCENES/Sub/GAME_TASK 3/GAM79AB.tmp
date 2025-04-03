@@ -423,15 +423,6 @@ offset_bottom = 384.774
 scale = Vector2(-1.71705, 11.6992)
 text = "LOREm Number"
 
-[node name="correct" type="Label" parent="."]
-modulate = Color(0, 0, 0, 1)
-offset_left = 752.0
-offset_top = 8.0
-offset_right = 883.0
-offset_bottom = 55.0
-theme_override_font_sizes/font_size = 34
-text = "Correct:"
-
 [connection signal="pressed" from="WindowsBorder/SCAM" to="." method="_on_scam_pressed"]
 [connection signal="pressed" from="WindowsBorder/REAL" to="." method="_on_real_pressed"]
 [connection signal="pressed" from="RETURN" to="." method="_on_return_pressed"]

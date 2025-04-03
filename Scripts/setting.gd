@@ -19,15 +19,3 @@ func _on_music_volume_h_slider_mouse_exited() -> void:
 
 func _on_sound_effects_volume_h_slider_mouse_exited() -> void:
 	release_focus()
-
-
-#Fullscreen code
-func _on_fullscreen_mode_check_button_toggled(toggled_on: bool) -> void:
-	# Get the current window mode
-	var current_mode = DisplayServer.window_get_mode()
-
-	# Toggle fullscreen mode based on the button's state
-	if toggled_on:
-		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
-	else:
-		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)

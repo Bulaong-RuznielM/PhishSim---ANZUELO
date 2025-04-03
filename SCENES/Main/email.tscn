@@ -62,7 +62,7 @@ layout_mode = 0
 offset_left = 16.0
 offset_top = 219.0
 offset_right = 1944.0
-offset_bottom = 1222.0
+offset_bottom = 1206.0
 scale = Vector2(0.982891, 0.842745)
 horizontal_scroll_mode = 0
 vertical_scroll_mode = 2
@@ -78,17 +78,17 @@ texture = ExtResource("3_n0h42")
 [node name="Email1Label" type="Label" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email1Task"]
 modulate = Color(0, 0, 0, 1)
 layout_mode = 0
-offset_left = 80.0
-offset_top = 9.0
-offset_right = 1564.0
-offset_bottom = 222.0
+offset_left = 31.7261
+offset_top = 4.12493
+offset_right = 1515.73
+offset_bottom = 217.125
 scale = Vector2(1.00857, 1.43815)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 76
+theme_override_font_sizes/font_size = 53
 text = "Customer Support
-Urgent: Potential Scam Activity Detected"
+You Won A NEW IPHONE - CLAME NOW"
 
 [node name="Email1Button" type="Button" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email1Task"]
 layout_mode = 0
@@ -106,17 +106,18 @@ texture = ExtResource("3_n0h42")
 [node name="Email2Label" type="Label" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email2Task"]
 modulate = Color(0, 0, 0, 1)
 layout_mode = 0
-offset_left = 44.2491
-offset_top = 22.3743
-offset_right = 2108.25
-offset_bottom = 235.374
+offset_left = 55.0
+offset_top = 8.0
+offset_right = 1465.0
+offset_bottom = 233.0
 scale = Vector2(1.00857, 1.43815)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 76
+theme_override_font_sizes/font_size = 53
 text = "Fraud Detection Team
 Suspicious Account Activity - Immediate Action Required"
+autowrap_mode = 3
 
 [node name="Email2Button" type="Button" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email2Task"]
 layout_mode = 0
@@ -142,7 +143,7 @@ scale = Vector2(1.00857, 1.43815)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 76
+theme_override_font_sizes/font_size = 53
 text = "Security Department
 Important: Protect Your Account from Fraud"
 
@@ -170,7 +171,7 @@ scale = Vector2(1.00857, 1.43815)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 76
+theme_override_font_sizes/font_size = 53
 text = "Compliance Officer
 Fraud Investigation - Please Review Your Account"
 
