@@ -74,6 +74,7 @@ theme_override_font_sizes/font_size = 41
 text = "Time Left: "
 
 [node name="TimerGameSecond" type="Timer" parent="."]
+wait_time = 0.816
 autostart = true
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
