@@ -30,9 +30,20 @@ var messages = {
 	6: {"name": "Friend", "number": "33445", "content": "Your friend sent you a photo. View it here: <error>", "is_real": false},
 	7: {"name": "Subscription Service", "number": "55667", "content": "Your subscription has been renewed successfully. Thank you for your payment.", "is_real": true},
 	8: {"name": "Security Alert", "number": "99887", "content": "Urgent: Your account will be locked unless you verify your information now.", "is_real": false},
-	9: {"name": "Airline", "number": "66778", "content": "Your flight has been rescheduled. Check the new itinerary here", "is_real": true},
-	10:{"name": "Voicemail Service", "number": "22334", "content": "You've received a voicemail. Listen to it here <error>", "is_real": false}
+	9: {"name": "Airline", "number": "66778", "content": "Your flight has been rescheduled. Check the new itinerary here.", "is_real": true},
+	10: {"name": "Voicemail Service", "number": "22334", "content": "You've received a voicemail. Listen to it here: <error>", "is_real": false},
+	11: {"name": "Tech Support", "number": "90909", "content": "Your computer has a virus! Call this number immediately for assistance.", "is_real": false},
+	12: {"name": "Charity Donation", "number": "55678", "content": "Donate to help disaster victims. Send your credit card details to contribute.", "is_real": false},
+	13: {"name": "Electric Company", "number": "33489", "content": "Your electricity bill is overdue. Pay now to avoid disconnection.", "is_real": true},
+	14: {"name": "Lottery Winner", "number": "11229", "content": "You won the lottery! Claim your prize by sending your ID details.", "is_real": false},
+	15: {"name": "Streaming Service", "number": "77331", "content": "Your streaming subscription is about to expire. Renew it here: <error>", "is_real": false},
+	16: {"name": "Pharmacy Reminder", "number": "66255", "content": "Your prescription refill is ready for pickup at your local pharmacy.", "is_real": true},
+	17: {"name": "Job Offer", "number": "99882", "content": "Exciting job opportunity! Click the link to submit your personal information.", "is_real": false},
+	18: {"name": "Health Insurance", "number": "22566", "content": "Your health insurance policy has been updated. Review the new terms here.", "is_real": true},
+	19: {"name": "Government Alert", "number": "55612", "content": "You have unpaid taxes. Pay now to avoid legal consequences.", "is_real": false},
+	20: {"name": "Gym Membership", "number": "88199", "content": "Your gym membership has been renewed successfully.", "is_real": true}
 }
+
 
 func real_report_delete(verified: bool):
 	# Add current_question to answered_answers (this will happen regardless of whether it's right or wrong)
@@ -48,7 +59,7 @@ func real_report_delete(verified: bool):
 		print("Error: TextureRect not found.")
 
 	# If the verification matches the message's "is_real" value, increase the correct_answers count
-	if shuffled_messages[current_question].is_real == verified:
+	if current_question_real == verified:
 		correct_answers += 1  # Increment correct answers if verified correctly
 		$correct.text = "Correct Answer: " + str(correct_answers)
 		# If it's the last question, change scene based on correct answers
@@ -67,12 +78,6 @@ func real_report_delete(verified: bool):
 			get_tree().change_scene_to_file("res://SCENES/Sub/scam_agree.tscn")
 		else:
 			current_question += 1  # Proceed to the next question
-
-
-
-
-
-
 
 var shuffled_messages = []
 
@@ -115,7 +120,6 @@ func display_name_number():
 func display_message(index: int):
 	$WindowsBorder/QUESTION.text = ""
 	current_question = index
-	
 	if shuffled_messages.is_empty():
 		print("Error: shuffled_messages is empty")
 		return
@@ -131,8 +135,6 @@ func display_message(index: int):
 	# Display message
 	$WindowsBorder/QUESTION.text = shuffled_messages[adjusted_index].content
 	current_question_real = shuffled_messages[adjusted_index].is_real
-
-
 
 
 func _on_texture_rect_mouse_entered() -> void:

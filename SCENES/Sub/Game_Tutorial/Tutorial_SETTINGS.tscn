@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bs46kwkj5f3b6"]
 
-[ext_resource type="Script" path="res://SCENES/Sub/Game_Tutorial/tutorial_settings.gd" id="1_8kbuo"]
+[ext_resource type="Script" path="res://Scripts/tutorial_gd/tutorial_settings.gd" id="1_8kbuo"]
 [ext_resource type="Texture2D" uid="uid://b58oorto82ec" path="res://SCENES/Sub/Game_Tutorial/Tutorial_IMAGES/Tutorial_SETTINGS.png" id="1_spd1h"]
 
 [node name="TutorialInitial" type="Node2D"]
@@ -19,4 +19,13 @@ offset_bottom = 286.0
 theme_override_font_sizes/font_size = 71
 text = "Next --->"
 
+[node name="skip_button" type="Button" parent="."]
+offset_left = 1439.0
+offset_top = -3.0
+offset_right = 1918.0
+offset_bottom = 118.0
+theme_override_font_sizes/font_size = 71
+text = "SKIP Tutorials"
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="skip_button" to="." method="_on_skip_button_pressed"]
