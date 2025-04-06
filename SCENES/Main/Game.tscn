@@ -104,10 +104,10 @@ text = "SETTINGS
 [node name="quit" type="Button" parent="WindowsButtons"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -10.65
-anchor_top = 2.9
-anchor_right = -10.65
-anchor_bottom = 2.9
+anchor_left = -10.45
+anchor_top = 3.025
+anchor_right = -10.45
+anchor_bottom = 3.025
 offset_left = -530.0
 offset_top = 363.0
 offset_right = -393.0

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bmwy376186pr5"]
 
-[ext_resource type="Script" path="res://SCENES/Sub/5_scene.gd" id="1_24nce"]
-[ext_resource type="Texture2D" uid="uid://d2wjbshh0gyv6" path="res://ASSETS/CutScenes/5.jpg" id="1_sb7ym"]
+[ext_resource type="Script" path="res://Scripts/story_gd/5_scene.gd" id="1_24nce"]
+[ext_resource type="Texture2D" uid="uid://d2tcl3c1m1ned" path="res://ASSETS/CutScenes/5.jpg" id="1_sb7ym"]
 [ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="2_pqi8h"]
 
 [node name="Scene_5" type="Node2D"]
@@ -33,4 +33,12 @@ offset_bottom = -911.0
 theme_override_font_sizes/font_size = 35
 text = "5 / 7"
 
+[node name="skip_story" type="Button" parent="."]
+offset_left = 1488.0
+offset_right = 1921.0
+offset_bottom = 98.0
+theme_override_font_sizes/font_size = 40
+text = "SKIP Story"
+
 [connection signal="pressed" from="skip_5" to="." method="_on_skip_5_pressed"]
+[connection signal="pressed" from="skip_story" to="." method="_on_skip_story_pressed"]
