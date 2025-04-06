@@ -27,7 +27,7 @@ func _set_initial_positions()->void:
 	scroll_horizontal = card_x_positions[card_current_index]
 	scroll()
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	for _index in range(card_x_positions.size()):
 		var _card_pos_x: float = card_x_positions[_index]
 		var _swipe_length: float = (card_nodes[_index].size.x / 2) + (card_space / 2)

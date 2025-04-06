@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://yd1nhm0xsjhn"]
 
 [ext_resource type="Script" path="res://Scripts/story_gd/4_scene.gd" id="1_2mvay"]
-[ext_resource type="Texture2D" uid="uid://bkw4pdpedv6ry" path="res://ASSETS/CutScenes/4.jpg" id="1_f3spr"]
+[ext_resource type="Texture2D" uid="uid://bkw4pdpedv6ry" path="res://ASSETS/CutScenes/story/4.jpg" id="1_f3spr"]
 [ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="2_8adk3"]
 
 [node name="Scene_4" type="Node2D"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://trn8bi7jtslp"]
 
-[ext_resource type="Texture2D" uid="uid://dmgvud2bxd63" path="res://ASSETS/CutScenes/1.jpg" id="1_flfy5"]
+[ext_resource type="Texture2D" uid="uid://dmgvud2bxd63" path="res://ASSETS/CutScenes/story/1.jpg" id="1_flfy5"]
 [ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="2_5yaj4"]
 [ext_resource type="Script" path="res://Scripts/story_gd/1.gd" id="2_jmsv4"]
 

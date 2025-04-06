@@ -1,6 +1,5 @@
-[gd_scene load_steps=8 format=3 uid="uid://0r27r2r5msub"]
+[gd_scene load_steps=7 format=3 uid="uid://0r27r2r5msub"]
 
-[ext_resource type="Texture2D" uid="uid://dcmppo5daehm3" path="res://ASSETS/miscellaneous/BACKGROUND.jpg" id="1_q5ji8"]
 [ext_resource type="Texture2D" uid="uid://dwlryjo0w4vep" path="res://ASSETS/NEW ASSETS/MENU.png" id="2_gvhu3"]
 [ext_resource type="Script" path="res://Scripts/windows_buttons.gd" id="3_2lbkg"]
 [ext_resource type="Texture2D" uid="uid://bq2qd6mi1nnvx" path="res://ASSETS/NEW ASSETS/icons/ffffff/transparent/1x1/delapouite/open-folder.png" id="4_0l062"]
@@ -10,15 +9,6 @@
 
 [node name="MainScreen" type="Node2D"]
 position = Vector2(956, 508)
-
-[node name="Background" type="Sprite2D" parent="."]
-visible = false
-modulate = Color(1, 1, 1, 0.458824)
-show_behind_parent = true
-light_mask = 0
-position = Vector2(-3.99998, 102)
-scale = Vector2(0.965887, 0.861346)
-texture = ExtResource("1_q5ji8")
 
 [node name="MainWindow" type="Sprite2D" parent="."]
 position = Vector2(-74, 27)
