@@ -1,0 +1,223 @@
+[gd_scene load_steps=6 format=3 uid="uid://dir2jccxospiu"]
+
+[ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="1_iy1va"]
+[ext_resource type="Texture2D" uid="uid://b7n6ho66hk5jx" path="res://ASSETS/windows_border - Copy - Copy - Copy.png" id="2_up6up"]
+[ext_resource type="Script" path="res://SCENES/Sub/control.gd" id="3_7y3kb"]
+[ext_resource type="Texture2D" uid="uid://qfdp5lhuq2qv" path="res://ASSETS/Upgrade/items_border.png" id="4_a84kv"]
+[ext_resource type="Texture2D" uid="uid://dnrbgyxxk076v" path="res://ASSETS/NEW ASSETS/xbllydkc.png" id="5_otfnm"]
+
+[node name="Canvas" type="Node2D"]
+
+[node name="WindowsBorder-Copy" type="Sprite2D" parent="."]
+position = Vector2(961, 541)
+texture = ExtResource("1_iy1va")
+
+[node name="WindowsBorder-Copy-Copy-Copy" type="Sprite2D" parent="."]
+position = Vector2(960, 613.625)
+scale = Vector2(0.92526, 2.37903)
+texture = ExtResource("2_up6up")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_7y3kb")
+
+[node name="GOLOOGOLOO" type="Label" parent="Control"]
+modulate = Color(0.854902, 0.815686, 0.0980392, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 733.0
+offset_top = 88.0
+offset_right = 1139.0
+offset_bottom = 177.0
+theme_override_font_sizes/font_size = 75
+text = "GolooGoloo"
+horizontal_alignment = 1
+
+[node name="ExitCanvas" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 1856.0
+offset_top = 6.0
+offset_right = 1916.0
+offset_bottom = 63.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Control"]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 224.0
+offset_right = 1952.0
+offset_bottom = 1059.0
+scale = Vector2(0.940385, 0.997042)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/ScrollContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 23
+
+[node name="TextureRect" type="TextureRect" parent="Control/ScrollContainer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("4_a84kv")
+
+[node name="ItemsBorder" type="Sprite2D" parent="Control/ScrollContainer/HBoxContainer/TextureRect"]
+position = Vector2(225.44, 417.234)
+scale = Vector2(0.926334, 0.208191)
+texture = ExtResource("4_a84kv")
+
+[node name="ItemsBorder2" type="Sprite2D" parent="Control/ScrollContainer/HBoxContainer/TextureRect"]
+position = Vector2(229.693, 543.357)
+scale = Vector2(0.67112, 0.177039)
+texture = ExtResource("4_a84kv")
+
+[node name="Button" type="Button" parent="Control/ScrollContainer/HBoxContainer/TextureRect"]
+layout_mode = 0
+offset_top = 673.993
+offset_right = 449.0
+offset_bottom = 758.993
+theme_override_font_sizes/font_size = 55
+text = "BUY"
+
+[node name="Xbllydkc" type="Sprite2D" parent="Control/ScrollContainer/HBoxContainer/TextureRect"]
+position = Vector2(225.44, 200.593)
+scale = Vector2(0.407081, 0.396266)
+texture = ExtResource("5_otfnm")
+
+[node name="TextureRect2" type="TextureRect" parent="Control/ScrollContainer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("4_a84kv")
+
+[node name="ItemsBorder" type="Sprite2D" parent="Control/ScrollContainer/HBoxContainer/TextureRect2"]
+position = Vector2(225.44, 417.234)
+scale = Vector2(0.926334, 0.208191)
+texture = ExtResource("4_a84kv")
+
+[node name="ItemsBorder2" type="Sprite2D" parent="Control/ScrollContainer/HBoxContainer/TextureRect2"]
+position = Vector2(229.693, 543.357)
+scale = Vector2(0.67112, 0.177039)
+texture = ExtResource("4_a84kv")
+
+[node name="Button" type="Button" parent="Control/ScrollContainer/HBoxContainer/TextureRect2"]
+layout_mode = 0
+offset_top = 673.993
+offset_right = 449.0
+offset_bottom = 758.993
+theme_override_font_sizes/font_size = 55
+text = "BUY"
+
+[node name="Xbllydkc" type="Sprite2D" parent="Control/ScrollContainer/HBoxContainer/TextureRect2"]
+position = Vector2(225.44, 200.593)
+scale = Vector2(0.407081, 0.396266)
+texture = ExtResource("5_otfnm")
+
+[node name="TextureRect3" type="TextureRect" parent="Control/ScrollContainer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("4_a84kv")
+
+[node name="ItemsBorder" type="Sprite2D" parent="Control/ScrollContainer/HBoxContainer/TextureRect3"]
+position = Vector2(225.44, 417.234)
+scale = Vector2(0.926334, 0.208191)
+texture = ExtResource("4_a84kv")
+
+[node name="ItemsBorder2" type="Sprite2D" parent="Control/ScrollContainer/HBoxContainer/TextureRect3"]
+position = Vector2(229.693, 543.357)
+scale = Vector2(0.67112, 0.177039)
+texture = ExtResource("4_a84kv")
+
+[node name="Button" type="Button" parent="Control/ScrollContainer/HBoxContainer/TextureRect3"]
+layout_mode = 0
+offset_top = 673.993
+offset_right = 449.0
+offset_bottom = 758.993
+theme_override_font_sizes/font_size = 55
+text = "BUY"
+
+[node name="Xbllydkc" type="Sprite2D" parent="Control/ScrollContainer/HBoxContainer/TextureRect3"]
+position = Vector2(225.44, 200.593)
+scale = Vector2(0.407081, 0.396266)
+texture = ExtResource("5_otfnm")
+
+[node name="TextureRect4" type="TextureRect" parent="Control/ScrollContainer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("4_a84kv")
+
+[node name="ItemsBorder" type="Sprite2D" parent="Control/ScrollContainer/HBoxContainer/TextureRect4"]
+position = Vector2(225.44, 417.234)
+scale = Vector2(0.926334, 0.208191)
+texture = ExtResource("4_a84kv")
+
+[node name="ItemsBorder2" type="Sprite2D" parent="Control/ScrollContainer/HBoxContainer/TextureRect4"]
+position = Vector2(229.693, 543.357)
+scale = Vector2(0.67112, 0.177039)
+texture = ExtResource("4_a84kv")
+
+[node name="Button" type="Button" parent="Control/ScrollContainer/HBoxContainer/TextureRect4"]
+layout_mode = 0
+offset_top = 673.993
+offset_right = 449.0
+offset_bottom = 758.993
+theme_override_font_sizes/font_size = 55
+text = "BUY"
+
+[node name="Xbllydkc" type="Sprite2D" parent="Control/ScrollContainer/HBoxContainer/TextureRect4"]
+position = Vector2(225.44, 200.593)
+scale = Vector2(0.407081, 0.396266)
+texture = ExtResource("5_otfnm")
+
+[node name="TextureRect5" type="TextureRect" parent="Control/ScrollContainer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("4_a84kv")
+
+[node name="ItemsBorder" type="Sprite2D" parent="Control/ScrollContainer/HBoxContainer/TextureRect5"]
+position = Vector2(225.44, 417.234)
+scale = Vector2(0.926334, 0.208191)
+texture = ExtResource("4_a84kv")
+
+[node name="ItemsBorder2" type="Sprite2D" parent="Control/ScrollContainer/HBoxContainer/TextureRect5"]
+position = Vector2(229.693, 543.357)
+scale = Vector2(0.67112, 0.177039)
+texture = ExtResource("4_a84kv")
+
+[node name="Button" type="Button" parent="Control/ScrollContainer/HBoxContainer/TextureRect5"]
+layout_mode = 0
+offset_top = 673.993
+offset_right = 449.0
+offset_bottom = 758.993
+theme_override_font_sizes/font_size = 55
+text = "BUY"
+
+[node name="Xbllydkc" type="Sprite2D" parent="Control/ScrollContainer/HBoxContainer/TextureRect5"]
+position = Vector2(225.44, 200.593)
+scale = Vector2(0.407081, 0.396266)
+texture = ExtResource("5_otfnm")
+
+[node name="TextureRect6" type="TextureRect" parent="Control/ScrollContainer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("4_a84kv")
+
+[node name="ItemsBorder" type="Sprite2D" parent="Control/ScrollContainer/HBoxContainer/TextureRect6"]
+position = Vector2(225.44, 417.234)
+scale = Vector2(0.926334, 0.208191)
+texture = ExtResource("4_a84kv")
+
+[node name="ItemsBorder2" type="Sprite2D" parent="Control/ScrollContainer/HBoxContainer/TextureRect6"]
+position = Vector2(229.693, 543.357)
+scale = Vector2(0.67112, 0.177039)
+texture = ExtResource("4_a84kv")
+
+[node name="Button" type="Button" parent="Control/ScrollContainer/HBoxContainer/TextureRect6"]
+layout_mode = 0
+offset_top = 673.993
+offset_right = 449.0
+offset_bottom = 758.993
+theme_override_font_sizes/font_size = 55
+text = "BUY"
+
+[node name="Xbllydkc" type="Sprite2D" parent="Control/ScrollContainer/HBoxContainer/TextureRect6"]
+position = Vector2(225.44, 200.593)
+scale = Vector2(0.407081, 0.396266)
+texture = ExtResource("5_otfnm")
+
+[connection signal="pressed" from="Control/ExitCanvas" to="Control" method="_on_exit_canvas_pressed"]

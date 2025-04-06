@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://te8o6b5ichyu"]
 
-[ext_resource type="Texture2D" uid="uid://w0n2r3u5w5mk" path="res://ASSETS/CutScenes/icons/scrollintro.png" id="2_hala2"]
+[ext_resource type="Texture2D" uid="uid://w0n2r3u5w5mk" path="res://ASSETS/scrollintro.png" id="2_hala2"]
 [ext_resource type="Theme" uid="uid://dpw6rugitmvrc" path="res://THEMES/TaskTitleTheme.tres" id="2_swt3r"]
 [ext_resource type="FontFile" uid="uid://cgsxe0kffiqdb" path="res://ASSETS/NEW ASSETS/kenney_ui-pack/Font/Kenney Future.ttf" id="3_x8nxo"]
 [ext_resource type="Script" path="res://Scripts/TaskSelect.gd" id="5"]

@@ -72,13 +72,13 @@ func _on_ScrollContainer_gui_input(event: InputEvent) -> void:
 
 
 func _on_task_1_pressed() -> void:
-	get_tree().change_scene_to_file("res://SCENES/Sub/GAME_TASK 1/Task_1.tscn")
+	get_tree().change_scene_to_file("res://SCENES/Sub/game_task_list/GAME_TASK 1/Task_1.tscn")
 
 func _on_task_2_pressed() -> void:
-	get_tree().change_scene_to_file("res://SCENES/Sub/GAME_TASK 2/email.tscn")
+	get_tree().change_scene_to_file("res://SCENES/Sub/game_task_list/GAME_TASK 2/email.tscn")
 
 func _on_task_3_pressed() -> void:
-	get_tree().change_scene_to_file("res://SCENES/Sub/GAME_TASK 3/GAME_TASK_3.tscn")
+	get_tree().change_scene_to_file("res://SCENES/Sub/game_task_list/GAME_TASK 3/GAME_TASK_3.tscn")
 
 func _on_task_4_pressed() -> void:
-	get_tree().change_scene_to_file("res://SCENES/Sub/GAME_TASK 4/GAME_TASK_4.tscn")
+	get_tree().change_scene_to_file("res://SCENES/Sub/game_task_list/GAME_TASK 4/GAME_TASK_4.tscn")
