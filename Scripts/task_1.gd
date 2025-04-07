@@ -7,10 +7,28 @@ var ads_limit = 6
 func spawn_popup() -> void:
 	Global.ads += 1
 	$TimerGameSecond.wait_time -= 0.0081
-	var new_popup = preload("res://SCENES/Sub/game_task_list/GAME_TASK 1/task1_ads_list/ads1.tscn").instantiate()
+	
+	# List of available ads scenes
+	var ads_list = [
+		# preload("res://SCENES/Sub/game_task_list/GAME_TASK 1/task1_ads_list/ads1.tscn"),
+		preload("res://SCENES/Sub/game_task_list/GAME_TASK 1/task1_ads_list/ads2.tscn"),
+		preload("res://SCENES/Sub/game_task_list/GAME_TASK 1/task1_ads_list/ads3.tscn"),
+		preload("res://SCENES/Sub/game_task_list/GAME_TASK 1/task1_ads_list/ads4.tscn"),
+		preload("res://SCENES/Sub/game_task_list/GAME_TASK 1/task1_ads_list/ads5.tscn"),
+		preload("res://SCENES/Sub/game_task_list/GAME_TASK 1/task1_ads_list/ads6.tscn"),
+		preload("res://SCENES/Sub/game_task_list/GAME_TASK 1/task1_ads_list/ads7.tscn"),
+		preload("res://SCENES/Sub/game_task_list/GAME_TASK 1/task1_ads_list/ads8.tscn")
+	]
+	
+	# Randomly pick an ad scene from the list
+	var random_ad_scene = ads_list[randi() % ads_list.size()]
+	
+	# Instantiate and position the ad popup
+	var new_popup = random_ad_scene.instantiate()
 	%PopUpSpawnLocation.progress_ratio = randf()
 	new_popup.global_position = %PopUpSpawnLocation.global_position
 	add_child(new_popup)
+
 
 func _on_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://SCENES/Main/Task.tscn")

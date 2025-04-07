@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://cds2mkf1nmoaf"]
+
+[ext_resource type="Script" path="res://SCENES/Sub/game_task_list/GAME_TASK 1/task1_ads_list/ads_2.gd" id="1_1tric"]
+[ext_resource type="Texture2D" uid="uid://bgkha8i30345k" path="res://ASSETS/ads/2.jpg" id="2_31q4p"]
+
+[node name="Ads2" type="Node2D"]
+script = ExtResource("1_1tric")
+
+[node name="2" type="Sprite2D" parent="."]
+position = Vector2(1.52588e-05, 1.14441e-05)
+scale = Vector2(0.469308, 0.435606)
+texture = ExtResource("2_31q4p")
+
+[node name="Button" type="Button" parent="2"]
+offset_left = -150.218
+offset_top = 193.352
+offset_right = 354.782
+offset_bottom = 431.352
+
+[connection signal="pressed" from="2/Button" to="." method="_on_button_pressed"]
