@@ -1,0 +1,65 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6eh07erl36p1"]
+
+[ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="1_cam02"]
+[ext_resource type="Script" path="res://Scripts/task_gd/task4_gd/3_rd_url.gd" id="1_oryf0"]
+[ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="2_ohthw"]
+
+[node name="3RdUrl" type="Node2D"]
+script = ExtResource("1_oryf0")
+
+[node name="MAIN" type="Sprite2D" parent="."]
+position = Vector2(960, 539)
+texture = ExtResource("1_cam02")
+
+[node name="Sprite2D" type="Sprite2D" parent="MAIN"]
+position = Vector2(-12, -321)
+scale = Vector2(3.97978, 1.82658)
+texture = ExtResource("2_ohthw")
+
+[node name="Label" type="Label" parent="MAIN/Sprite2D"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -199.006
+offset_top = -28.4685
+offset_right = 338.994
+offset_bottom = 18.5315
+scale = Vector2(1, 1.65)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 15
+text = "https://google-account-verification.com/reset-password"
+
+[node name="Sprite2D" type="Sprite2D" parent="MAIN/Sprite2D"]
+position = Vector2(-73.1354, 136.432)
+scale = Vector2(0.16382, 0.501079)
+texture = ExtResource("2_ohthw")
+
+[node name="Legit" type="Button" parent="MAIN/Sprite2D/Sprite2D"]
+offset_left = -235.0
+offset_top = -54.0
+offset_right = 232.0
+offset_bottom = 65.0
+theme_override_font_sizes/font_size = 50
+text = "LEGIT URL"
+
+[node name="Sprite2D2" type="Sprite2D" parent="MAIN/Sprite2D"]
+position = Vector2(72.8684, 141.248)
+scale = Vector2(0.16382, 0.501079)
+texture = ExtResource("2_ohthw")
+
+[node name="Phishing" type="Button" parent="MAIN/Sprite2D/Sprite2D2"]
+offset_left = -222.0
+offset_top = -57.0
+offset_right = 221.0
+offset_bottom = 62.0
+theme_override_font_sizes/font_size = 50
+text = "Phishing URL"
+
+[node name="EXIT" type="Button" parent="MAIN/Sprite2D"]
+offset_left = 226.143
+offset_top = -117.706
+offset_right = 243.143
+offset_bottom = -82.7065
+
+[connection signal="pressed" from="MAIN/Sprite2D/Sprite2D/Legit" to="." method="_on_legit_pressed"]
+[connection signal="pressed" from="MAIN/Sprite2D/Sprite2D2/Phishing" to="." method="_on_phishing_pressed"]
+[connection signal="pressed" from="MAIN/Sprite2D/EXIT" to="." method="_on_exit_pressed"]

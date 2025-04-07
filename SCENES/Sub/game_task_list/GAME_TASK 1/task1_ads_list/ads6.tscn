@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://broob2kt2w0yp"]
+
+[ext_resource type="Script" path="res://SCENES/Sub/game_task_list/GAME_TASK 1/task1_ads_list/ads_6.gd" id="1_4207i"]
+[ext_resource type="Texture2D" uid="uid://1gwt63m643qs" path="res://ASSETS/ads/6.png" id="1_km6l1"]
+
+[node name="Ads6" type="Node2D"]
+script = ExtResource("1_4207i")
+
+[node name="6" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.580321)
+texture = ExtResource("1_km6l1")
+
+[node name="Button" type="Button" parent="6"]
+offset_left = 320.0
+offset_top = -248.0
+offset_right = 496.0
+offset_bottom = -138.0
+
+[connection signal="pressed" from="6/Button" to="." method="_on_button_pressed"]

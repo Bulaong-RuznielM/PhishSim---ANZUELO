@@ -1,6 +1,5 @@
 [gd_scene load_steps=7 format=3 uid="uid://te8o6b5ichyu"]
 
-[ext_resource type="Texture2D" uid="uid://w0n2r3u5w5mk" path="res://ASSETS/scrollintro.png" id="2_hala2"]
 [ext_resource type="Theme" uid="uid://dpw6rugitmvrc" path="res://THEMES/TaskTitleTheme.tres" id="2_swt3r"]
 [ext_resource type="FontFile" uid="uid://cgsxe0kffiqdb" path="res://ASSETS/NEW ASSETS/kenney_ui-pack/Font/Kenney Future.ttf" id="3_x8nxo"]
 [ext_resource type="Script" path="res://Scripts/TaskSelect.gd" id="5"]
@@ -10,6 +9,8 @@ Label/font_sizes/font_size = 64
 Label/fonts/font = ExtResource("3_x8nxo")
 
 [sub_resource type="Theme" id="Theme_rjt2s"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kgn3x"]
 
 [node name="ScrollContainer" type="ScrollContainer"]
 clip_contents = false
@@ -223,7 +224,7 @@ offset_left = 1920.0
 offset_top = 136.0
 offset_right = 2527.0
 offset_bottom = 936.0
-texture = ExtResource("2_hala2")
+texture = SubResource("CompressedTexture2D_kgn3x")
 
 [node name="CardMenu2" type="TextureRect" parent="STORAGE"]
 visible = false
@@ -232,7 +233,7 @@ offset_left = 2627.0
 offset_top = 136.0
 offset_right = 3234.0
 offset_bottom = 936.0
-texture = ExtResource("2_hala2")
+texture = SubResource("CompressedTexture2D_kgn3x")
 
 [node name="CardMenu3" type="TextureRect" parent="STORAGE"]
 visible = false
@@ -241,7 +242,7 @@ offset_left = 3334.0
 offset_top = 136.0
 offset_right = 3941.0
 offset_bottom = 936.0
-texture = ExtResource("2_hala2")
+texture = SubResource("CompressedTexture2D_kgn3x")
 
 [node name="CardMenu4" type="TextureRect" parent="STORAGE"]
 visible = false
@@ -250,7 +251,7 @@ offset_left = 4041.0
 offset_top = 136.0
 offset_right = 4648.0
 offset_bottom = 936.0
-texture = ExtResource("2_hala2")
+texture = SubResource("CompressedTexture2D_kgn3x")
 
 [connection signal="gui_input" from="." to="." method="_on_ScrollContainer_gui_input"]
 [connection signal="pressed" from="CenterContainer/MarginContainer/HBoxContainer/Task_1/Task_Elements/Task_1_label/Task_1" to="." method="_on_task_1_pressed"]
