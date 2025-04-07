@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://c300hi1j4grql"]
+
+[ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="1_8k7yf"]
+[ext_resource type="Theme" uid="uid://dpw6rugitmvrc" path="res://THEMES/TaskTitleTheme.tres" id="2_fb8mg"]
+
+[node name="Task5ExplanationBefore" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="WindowsBorder-Copy" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("1_8k7yf")
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 120.0
+offset_top = 168.0
+offset_right = 1848.0
+offset_bottom = 1056.0
+theme = ExtResource("2_fb8mg")
+theme_override_font_sizes/font_size = 112
+text = "If it looks too good to be true (like “YOU WON $10,000!”)… it probably is."
+autowrap_mode = 3
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1792.0
+offset_right = 1920.0
+offset_bottom = 128.0
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 664.0
+offset_top = 848.0
+offset_right = 1221.0
+offset_bottom = 959.0
+theme_override_font_sizes/font_size = 75
+text = "I UNDERSTAND"
+
+[node name="Timer" type="Timer" parent="."]

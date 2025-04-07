@@ -1,0 +1,54 @@
+[gd_scene load_steps=4 format=3 uid="uid://bws744frpa2ob"]
+
+[ext_resource type="Script" path="res://SCENES/Sub/game_task_list/GAME_TASK 2/task_2_explanation_before.gd" id="1_g7lox"]
+[ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="1_orr85"]
+[ext_resource type="Theme" uid="uid://dpw6rugitmvrc" path="res://THEMES/TaskTitleTheme.tres" id="2_57h4b"]
+
+[node name="Task2ExplanationBefore" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_g7lox")
+
+[node name="WindowsBorder-Copy" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("1_orr85")
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 120.0
+offset_top = 168.0
+offset_right = 1848.0
+offset_bottom = 1056.0
+theme = ExtResource("2_57h4b")
+theme_override_font_sizes/font_size = 112
+text = "Look for weird email addresses, poor grammar, urgent tones, and suspicious links. Stay alert, Agent!"
+autowrap_mode = 3
+
+[node name="exit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1792.0
+offset_right = 1920.0
+offset_bottom = 128.0
+
+[node name="understand" type="Button" parent="."]
+layout_mode = 0
+offset_left = 696.0
+offset_top = 928.0
+offset_right = 1253.0
+offset_bottom = 1039.0
+theme_override_font_sizes/font_size = 75
+text = "I UNDERSTAND"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 60.0
+one_shot = true
+autostart = true
+
+[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="understand" to="." method="_on_understand_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

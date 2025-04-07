@@ -7,7 +7,7 @@ var ads_limit = 6
 func spawn_popup() -> void:
 	Global.ads += 1
 	$TimerGameSecond.wait_time -= 0.0081
-	var new_popup = preload("res://SCENES/Sub/phishing_popup.tscn").instantiate()
+	var new_popup = preload("res://SCENES/Sub/game_task_list/GAME_TASK 1/task1_ads_list/ads1.tscn").instantiate()
 	%PopUpSpawnLocation.progress_ratio = randf()
 	new_popup.global_position = %PopUpSpawnLocation.global_position
 	add_child(new_popup)

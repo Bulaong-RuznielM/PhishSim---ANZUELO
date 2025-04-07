@@ -3,6 +3,13 @@ extends Control
 @onready var video_player = $intro_VideoStreamPlayer
 
 func _ready():
+	# Use load() instead of preload to handle dynamic paths
+	var video_path = "res://ASSETS/CutScenes/intro/intro2_compressed.ogv"
+	
+	# Load the video stream directly and assign it to the video stream player
+	var video_resource = load(video_path) as VideoStream
+	video_player.stream = video_resource
+	
 	# Wait for 1 second before playing the video
 	await _wait(1.0)
 	video_player.play()

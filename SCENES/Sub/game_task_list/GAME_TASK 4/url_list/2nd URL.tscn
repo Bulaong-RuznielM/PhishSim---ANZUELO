@@ -1,0 +1,65 @@
+[gd_scene load_steps=4 format=3 uid="uid://cysv2ceooxr4m"]
+
+[ext_resource type="Script" path="res://Scripts/task_gd/task4_gd/2_nd_url.gd" id="1_bx32o"]
+[ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="1_tj0al"]
+[ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="2_76jnq"]
+
+[node name="2NdUrl" type="Node2D"]
+script = ExtResource("1_bx32o")
+
+[node name="MAIN" type="Sprite2D" parent="."]
+position = Vector2(960, 539)
+texture = ExtResource("1_tj0al")
+
+[node name="Sprite2D" type="Sprite2D" parent="MAIN"]
+position = Vector2(-12, -321)
+scale = Vector2(3.97978, 1.82658)
+texture = ExtResource("2_76jnq")
+
+[node name="Label" type="Label" parent="MAIN/Sprite2D"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -148.25
+offset_top = -27.9211
+offset_right = 144.75
+offset_bottom = 59.0789
+scale = Vector2(1, 1.65)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "https://amazon-delivery-status.com"
+
+[node name="Sprite2D" type="Sprite2D" parent="MAIN/Sprite2D"]
+position = Vector2(-73.1354, 136.432)
+scale = Vector2(0.16382, 0.501079)
+texture = ExtResource("2_76jnq")
+
+[node name="Legit" type="Button" parent="MAIN/Sprite2D/Sprite2D"]
+offset_left = -235.0
+offset_top = -54.0
+offset_right = 232.0
+offset_bottom = 65.0
+theme_override_font_sizes/font_size = 50
+text = "LEGIT URL"
+
+[node name="Sprite2D2" type="Sprite2D" parent="MAIN/Sprite2D"]
+position = Vector2(72.8684, 141.248)
+scale = Vector2(0.16382, 0.501079)
+texture = ExtResource("2_76jnq")
+
+[node name="Phishing" type="Button" parent="MAIN/Sprite2D/Sprite2D2"]
+offset_left = -222.0
+offset_top = -57.0
+offset_right = 217.0
+offset_bottom = 62.0
+theme_override_font_sizes/font_size = 50
+text = "Phishing URL"
+
+[node name="EXIT" type="Button" parent="MAIN/Sprite2D"]
+offset_left = 226.143
+offset_top = -117.706
+offset_right = 243.143
+offset_bottom = -82.7065
+
+[connection signal="pressed" from="MAIN/Sprite2D/Sprite2D/Legit" to="." method="_on_legit_pressed"]
+[connection signal="pressed" from="MAIN/Sprite2D/Sprite2D2/Phishing" to="." method="_on_phishing_pressed"]
+[connection signal="pressed" from="MAIN/Sprite2D/EXIT" to="." method="_on_exit_pressed"]

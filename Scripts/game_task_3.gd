@@ -15,8 +15,6 @@ func _ready():
 	shuffle_messages()
 	display_name_number()
 	print(shuffled_messages)
-
-	call_deferred("display_question", current_question)
 	for child in $ScrollContainer/VBoxContainer.get_children():
 		if child is Control:
 			total_questions += 1
