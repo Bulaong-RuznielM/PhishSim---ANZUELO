@@ -1,7 +1,7 @@
 extends Node2D
 
 func _on_return_pressed() -> void:
-	get_tree().change_scene_to_file("res://SCENES/Main/Task.tscn")
+	get_tree().change_scene_to_file("res://SCENES/Main/task.tscn")
 
 var current_question = 1
 var current_question_real = true
@@ -63,9 +63,9 @@ func real_report_delete(verified: bool):
 		# If it's the last question, change scene based on correct answers
 		if current_question == shuffled_messages.size():
 			if correct_answers >= win_limit_needed:
-				get_tree().change_scene_to_file("res://SCENES/Sub/scam_report.tscn")
+				get_tree().change_scene_to_file("res://SCENES/Sub/game_task_list/GAME_TASK 3/Task3_Win.tscn")
 			else:
-				get_tree().change_scene_to_file("res://SCENES/Sub/scam_agree.tscn")
+				get_tree().change_scene_to_file("res://SCENES/Sub/game_task_list/GAME_TASK 3/Task3_Lose.tscn")
 		else:
 			current_question += 1  # Proceed to the next question
 	else:
@@ -73,7 +73,7 @@ func real_report_delete(verified: bool):
 		$correct.text = "Correct Answer: " + str(correct_answers)
 		# If it's the last question, change scene even if incorrect (if necessary)
 		if current_question == shuffled_messages.size():
-			get_tree().change_scene_to_file("res://SCENES/Sub/scam_agree.tscn")
+			get_tree().change_scene_to_file("res://SCENES/Sub/game_task_list/GAME_TASK 3/Task3_Lose.tscn")
 		else:
 			current_question += 1  # Proceed to the next question
 

@@ -31,7 +31,7 @@ func spawn_popup() -> void:
 
 
 func _on_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://SCENES/Main/Task.tscn")
+	get_tree().change_scene_to_file("res://SCENES/Main/task.tscn")
 	Global.ads = 0
 
 func if_ads_more_than(max_ads: int) -> void:
@@ -53,8 +53,8 @@ func _on_timer_game_second_timeout() -> void:
 	second_game_time += 1
 	if second_game_time >= second_finish:
 		if is_lose(ads_limit):
-			get_tree().change_scene_to_file("res://SCENES/Sub/scam_agree.tscn") # Lose condition
+			get_tree().change_scene_to_file("res://SCENES/Sub/game_task_list/GAME_TASK 1/task1_explanation_after.tscn") # Lose condition
 		else:
-			get_tree().change_scene_to_file("res://SCENES/Sub/scam_report.tscn") # Win condition
+			get_tree().change_scene_to_file("res://SCENES/Sub/game_task_list/GAME_TASK 1/task1_explanation_after.tscn") # Win condition
 			
 		Global.ads = 0

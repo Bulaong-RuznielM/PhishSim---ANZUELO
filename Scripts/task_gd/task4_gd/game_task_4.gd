@@ -2,7 +2,7 @@ extends Node2D
 
 
 func _on_exit_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://SCENES/Main/Task.tscn")
+	get_tree().change_scene_to_file("res://SCENES/Sub/game_task_list/GAME_TASK 4/task4_explanation_after.tscn")
 
 
 func _on_st_url_pressed() -> void:

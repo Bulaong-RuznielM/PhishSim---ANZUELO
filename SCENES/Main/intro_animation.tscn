@@ -18,12 +18,9 @@ scale = Vector2(8.82857, 9.31761)
 texture = ExtResource("3_dmvoa")
 
 [node name="intro_VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.001
-anchor_bottom = 1.0
-offset_right = 0.0799561
-offset_bottom = 8.0
+layout_mode = 0
+scale = Vector2(1.7, 1.7)
+pivot_offset = Vector2(0, 9.505)
 
 [node name="IntroTimer" type="Timer" parent="."]
 

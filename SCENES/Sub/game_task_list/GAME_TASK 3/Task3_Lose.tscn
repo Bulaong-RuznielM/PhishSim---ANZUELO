@@ -1,22 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://dm1jjiqeu2aqn"]
+[gd_scene load_steps=4 format=3 uid="uid://cyklsbnplicql"]
 
-[ext_resource type="Script" path="res://Scripts/scam_agree.gd" id="1_253gf"]
-[ext_resource type="Texture2D" uid="uid://qfdp5lhuq2qv" path="res://ASSETS/Upgrade/items_border.png" id="1_bq5o8"]
-[ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="2_oloph"]
+[ext_resource type="Script" path="res://SCENES/Sub/game_task_list/GAME_TASK 3/task_3_lose.gd" id="1_4pjjo"]
+[ext_resource type="Texture2D" uid="uid://qfdp5lhuq2qv" path="res://ASSETS/Upgrade/items_border.png" id="2_j7obd"]
+[ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="3_h331j"]
 
 [node name="ScamReport" type="Node2D"]
-script = ExtResource("1_253gf")
+script = ExtResource("1_4pjjo")
 
 [node name="ItemsBorder" type="Sprite2D" parent="."]
 position = Vector2(979, 243)
 rotation = -1.57113
 scale = Vector2(0.65959, 1.23011)
-texture = ExtResource("1_bq5o8")
+texture = ExtResource("2_j7obd")
 
 [node name="TaskButton" type="Sprite2D" parent="."]
 position = Vector2(1217, 338)
 scale = Vector2(0.520225, 0.445946)
-texture = ExtResource("2_oloph")
+texture = ExtResource("3_h331j")
 
 [node name="Label" type="Label" parent="TaskButton"]
 modulate = Color(0.611848, 0, 0.0231485, 1)
@@ -35,9 +35,11 @@ from your Bank account!"
 horizontal_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="continiueReport" type="Button" parent="TaskButton"]
+[node name="Task3_Lose" type="Button" parent="TaskButton"]
 offset_left = -219.0
 offset_top = -56.0
 offset_right = 223.0
 offset_bottom = 56.0
 text = "Continiue"
+
+[connection signal="pressed" from="TaskButton/Task3_Lose" to="." method="_on_task_3_lose_pressed"]

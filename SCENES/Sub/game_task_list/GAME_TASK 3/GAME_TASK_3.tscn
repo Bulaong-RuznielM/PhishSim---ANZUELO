@@ -24,7 +24,7 @@ offset_top = -517.677
 offset_right = -600.861
 offset_bottom = -288.677
 scale = Vector2(4.00411, 3.56386)
-text = "LOREm"
+text = "Pick a number"
 autowrap_mode = 3
 
 [node name="SCAM" type="Button" parent="WindowsBorder"]

@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://dd70yssox8mns"]
+[gd_scene load_steps=4 format=3 uid="uid://dd70yssox8mns"]
 
 [ext_resource type="Texture2D" uid="uid://lyui542c83ya" path="res://ASSETS/windows/windows_border - Copy.png" id="1_bo3aq"]
+[ext_resource type="Script" path="res://SCENES/Sub/game_task_list/GAME_TASK 3/task_3_explanation_after.gd" id="1_yl0ol"]
 [ext_resource type="Theme" uid="uid://dpw6rugitmvrc" path="res://THEMES/TaskTitleTheme.tres" id="2_xw3wm"]
 
 [node name="Task3ExplanationAfter" type="Control"]
@@ -10,6 +11,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_yl0ol")
 
 [node name="WindowsBorder-Copy" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
@@ -34,7 +36,7 @@ offset_left = 1792.0
 offset_right = 1920.0
 offset_bottom = 128.0
 
-[node name="Button2" type="Button" parent="."]
+[node name="Task3_Understand" type="Button" parent="."]
 layout_mode = 0
 offset_left = 664.0
 offset_top = 848.0
@@ -44,3 +46,5 @@ theme_override_font_sizes/font_size = 75
 text = "I UNDERSTAND"
 
 [node name="Timer" type="Timer" parent="."]
+
+[connection signal="pressed" from="Task3_Understand" to="." method="_on_task_3_understand_pressed"]

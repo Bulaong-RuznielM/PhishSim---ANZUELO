@@ -1,26 +1,26 @@
-[gd_scene load_steps=4 format=3 uid="uid://bmjgum7hyttl0"]
+[gd_scene load_steps=4 format=3 uid="uid://qgilhrojwujr"]
 
-[ext_resource type="Texture2D" uid="uid://qfdp5lhuq2qv" path="res://ASSETS/Upgrade/items_border.png" id="1_nhe8w"]
-[ext_resource type="Script" path="res://Scripts/scam_report.gd" id="1_ualdi"]
-[ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="2_5nbpw"]
+[ext_resource type="Script" path="res://SCENES/Sub/game_task_list/GAME_TASK 2/task_2_report.gd" id="1_crk7s"]
+[ext_resource type="Texture2D" uid="uid://qfdp5lhuq2qv" path="res://ASSETS/Upgrade/items_border.png" id="2_6f5v0"]
+[ext_resource type="Texture2D" uid="uid://dytgv17hkdxr8" path="res://ASSETS/Task/task_button.png" id="3_74fj1"]
 
 [node name="ScamReport" type="Node2D"]
-script = ExtResource("1_ualdi")
+script = ExtResource("1_crk7s")
 
 [node name="ItemsBorder" type="Sprite2D" parent="."]
 position = Vector2(979, 243)
 rotation = -1.57113
 scale = Vector2(0.65959, 1.23011)
-texture = ExtResource("1_nhe8w")
+texture = ExtResource("2_6f5v0")
 
 [node name="TaskButton" type="Sprite2D" parent="ItemsBorder"]
 position = Vector2(-144.149, 193.453)
 rotation = 1.57142
 scale = Vector2(0.422909, 0.676096)
 skew = -0.000443459
-texture = ExtResource("2_5nbpw")
+texture = ExtResource("3_74fj1")
 
-[node name="continiueReport" type="Button" parent="ItemsBorder/TaskButton"]
+[node name="Task2_Report" type="Button" parent="ItemsBorder/TaskButton"]
 offset_left = -222.0
 offset_top = -56.0
 offset_right = 222.0
@@ -43,3 +43,5 @@ text = "Congratulations
 You have earned 10 coins !
 "
 horizontal_alignment = 1
+
+[connection signal="pressed" from="ItemsBorder/TaskButton/Task2_Report" to="." method="_on_task_2_report_pressed"]
