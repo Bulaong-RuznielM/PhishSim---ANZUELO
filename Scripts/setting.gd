@@ -9,7 +9,7 @@ func _ready():
 	%SoundEffectsVolumeHSlider.value = db_to_linear(AudioServer.get_bus_volume_db(2))
 
 func _on_exit_setting_pressed() -> void:
-	get_tree().change_scene_to_file("res://SCENES/Main/game.tscn")
+	get_tree().change_scene_to_file("res://SCENES/Main/Game.tscn")
 
 func _on_master_volume_h_slider_mouse_exited() -> void:
 	release_focus()
