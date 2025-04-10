@@ -2,7 +2,7 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-uid="uid://brjatpxh7we7k"
+uid="uid://cj0t12xhhglr0"
 path="res://.godot/imported/phishing_g__Apr_8_2025_821_PM.mp3-d418106383d477fcc0be25e37e891cec.mp3str"
 
 [deps]
@@ -15,5 +15,5 @@ dest_files=["res://.godot/imported/phishing_g__Apr_8_2025_821_PM.mp3-d418106383d
 loop=true
 loop_offset=0.0
 bpm=0.0
-beat_count=0
+beat_count=0.0
 bar_beats=4

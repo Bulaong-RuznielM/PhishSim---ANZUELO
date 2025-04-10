@@ -2,6 +2,7 @@
 extends Node
 
 var ads = 0
+var task_4_remove_task = []
 
 var settings_file_path = "res://Scripts/Data/setting.json"
 
