@@ -31,7 +31,7 @@ func spawn_popup() -> void:
 
 
 func _on_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://SCENES/Main/task.tscn")
+	get_tree().change_scene_to_file("res://SCENES/Main/Task.tscn")
 	Global.ads = 0
 
 func if_ads_more_than(max_ads: int) -> void:
