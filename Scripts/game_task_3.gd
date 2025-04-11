@@ -9,26 +9,73 @@ var correct_answers = 0
 var answered_answers = []
 var total_questions = 0
 var win_limit_needed = 4
+var shyuJGSDF=0
 
 @onready var question_label = $WindowsBorder.get_node_or_null("QUESTION")
 
 func _ready():
-	for child in $ScrollContainer/VBoxContainer.get_children():
-		if child is Control:
-			total_questions += 1
+	shuffle_messages()  # shuffle first
 	randomize_and_delete()
-	
-	shuffle_messages()
+	delete_random_messages()  # delete from UI
 	display_name_number()
 	display_message(1)
 
-func randomize_and_delete() -> void:
-	var random_number = randi_range(1, total_questions)
+# Ensure shuffled messages are properly initialized
+var shuffled_messages = []
+
+func delete_random_messages():
 	var vbox = $ScrollContainer/VBoxContainer
-	for i in range(random_number, vbox.get_child_count()):
-		var texture_rect = vbox.get_child(i)
-		if texture_rect is TextureRect:
+	var visible_count = vbox.get_child_count()
+	
+	# Make sure we only keep as many messages as visible TextureRects
+	shuffled_messages = shuffled_messages.slice(0, visible_count)
+	print(shuffled_messages)
+
+func shuffle_messages():
+	var message_list = messages.keys()
+	message_list.shuffle()
+	shuffled_messages.clear()
+	for key in message_list:
+		shuffled_messages.append(messages[key])
+
+func randomize_and_delete() -> void:
+	total_questions = $ScrollContainer/VBoxContainer.get_child_count()
+	var random_number = randi_range(1, shuffled_messages.size())  # Ensure random number doesn't exceed available messages
+	print(random_number)
+	
+	# Clone shuffled messages and remove a certain number of entries based on random_number
+	var shuffled_messages_to_remove = []
+
+	var start_index = random_number  # Setting start index based on the random number
+
+	for i in range(start_index, total_questions):
+		var texture_rect_path = "ScrollContainer/VBoxContainer/TextureRect" + str(i + 1)  # Adding 1 to match the node numbering
+		var texture_rect = get_node(texture_rect_path)
+		if texture_rect:
+			# Perform action on the texture_rect (for example, queue_free to remove it)
 			texture_rect.queue_free()
+			print("Removed TextureRect at path: ", texture_rect_path)
+
+	# Remove TextureRect nodes from the UI based on the number of elements to delete
+	for i in range(shuffled_messages_to_remove.size()):
+		for child in $ScrollContainer/VBoxContainer.get_children():
+			if child is TextureRect:
+				var label = child.get_node("Label")
+				if label and label.text == shuffled_messages_to_remove[i]["name"]:  # Ensure the name matches
+					child.queue_free()  # Remove the TextureRect from the UI
+					break  # Exit after removing the relevant TextureRect
+
+	# Update the shuffled_messages list by erasing the deleted elements
+	for element in shuffled_messages_to_remove:
+		shuffled_messages.erase(element)
+
+	# Update the total number of questions to the random number selected
+	total_questions = random_number
+	shyuJGSDF = random_number
+	print(total_questions)
+
+
+
 
 var messages = {
 	1: {"uid": "1", "name": "Gift Card Offer", "number": "12345", "content": "You've won a free gift card! Click here to claim your prize.", "is_real": false},
@@ -56,27 +103,31 @@ var messages = {
 var answered_questions = []
 
 func real_report_delete(verified: bool):
-	answered_answers.append(current_question)
-	if current_question <= 0 or current_question > shuffled_messages.size():
+	answered_answers.append(current_question)  # Track answered questions
+	if current_question <= 0:
 		return
-	delete_texturerect_by_uid(shuffled_messages[current_question - 1].uid)
+	
+	# Delete TextureRect by UID
+	delete_texturerect_by_uid(shuffled_messages[current_question - 1]["uid"])
+	
+	# Update correct answer count
+	$correct.text = "Correct Answer: " + str(correct_answers)
+	
+	# Check if the answer is correct
 	if current_question_real == verified:
 		correct_answers += 1
 		$correct.text = "Correct Answer: " + str(correct_answers)
 		answered_questions.append(current_question)
-		if all_questions_answered():
-			if correct_answers >= win_limit_needed:
-				get_tree().change_scene_to_file("res://SCENES/Sub/game_task_list/GAME_TASK 3/Task3_Win.tscn")
-			else:
-				get_tree().change_scene_to_file("res://SCENES/Sub/game_task_list/GAME_TASK 3/Task3_Lose.tscn")
+	
+	# Check if all questions have been answered
+	if answered_answers.size() == shyuJGSDF && current_question >= shyuJGSDF:
+		if correct_answers >= win_limit_needed:
+			get_tree().change_scene_to_file("res://SCENES/Sub/game_task_list/GAME_TASK 3/Task3_Win.tscn")
 		else:
-			move_to_next_unanswered_question()
-	else:
-		$correct.text = "Correct Answer: " + str(correct_answers)
-		if all_questions_answered():
 			get_tree().change_scene_to_file("res://SCENES/Sub/game_task_list/GAME_TASK 3/Task3_Lose.tscn")
-		else:
-			move_to_next_unanswered_question()
+	else:
+		move_to_next_unanswered_question()
+
 
 func delete_texturerect_by_uid(target_uid: String) -> void:
 	var vbox = $ScrollContainer/VBoxContainer
@@ -101,15 +152,6 @@ func move_to_next_unanswered_question() -> void:
 			display_message(current_question)
 			return
 
-var shuffled_messages = []
-
-func shuffle_messages():
-	var message_list = messages.keys()
-	message_list.shuffle()
-	shuffled_messages.clear()
-	for key in message_list:
-		shuffled_messages.append(messages[key])
-
 func display_name_number():
 	var vbox = $ScrollContainer/VBoxContainer
 	for index in range(vbox.get_child_count()):
@@ -118,11 +160,11 @@ func display_name_number():
 			var label = texture_rect.get_node("Label")
 			var label2 = texture_rect.get_node("Label2")
 			var uid = texture_rect.get_node("uid")
-			if label and label2:
+			if label and label2 and uid:
 				if index < shuffled_messages.size():
-					label.text = shuffled_messages[index].name
-					label2.text = shuffled_messages[index].number
-					uid.text = shuffled_messages[index].uid
+					label.text = shuffled_messages[index]["name"]
+					label2.text = shuffled_messages[index]["number"]
+					uid.text = shuffled_messages[index]["uid"]
 				else:
 					pass
 			else:
@@ -136,8 +178,8 @@ func display_message(index: int):
 	var adjusted_index = index - 1
 	if adjusted_index < 0 or adjusted_index >= shuffled_messages.size():
 		return
-	$WindowsBorder/QUESTION.text = shuffled_messages[adjusted_index].content
-	current_question_real = shuffled_messages[adjusted_index].is_real
+	$WindowsBorder/QUESTION.text = shuffled_messages[adjusted_index]["content"]
+	current_question_real = shuffled_messages[adjusted_index]["is_real"]
 
 func _on_texture_rect_mouse_entered() -> void:
 	display_message(1)

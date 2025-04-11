@@ -90,7 +90,7 @@ theme_override_font_sizes/font_size = 53
 text = "Customer Support
 You Won A NEW IPHONE - CLAME NOW"
 
-[node name="Email1Button" type="Button" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email1Task"]
+[node name="EmailButton1" type="Button" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email1Task"]
 layout_mode = 0
 offset_left = 1435.96
 offset_top = 145.65
@@ -119,7 +119,7 @@ text = "Fraud Detection Team
 Suspicious Account Activity - Immediate Action Required"
 autowrap_mode = 3
 
-[node name="Email2Button" type="Button" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email2Task"]
+[node name="EmailButton2" type="Button" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email2Task"]
 layout_mode = 0
 offset_left = 1435.96
 offset_top = 145.65
@@ -147,7 +147,7 @@ theme_override_font_sizes/font_size = 53
 text = "Security Department
 Important: Protect Your Account from Fraud"
 
-[node name="Email1Button" type="Button" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email3Task"]
+[node name="EmailButton3" type="Button" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email3Task"]
 layout_mode = 0
 offset_left = 1435.96
 offset_top = 145.65
@@ -175,7 +175,7 @@ theme_override_font_sizes/font_size = 53
 text = "Compliance Officer
 Fraud Investigation - Please Review Your Account"
 
-[node name="Email2Button" type="Button" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email4Task"]
+[node name="Email4Button" type="Button" parent="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email4Task"]
 layout_mode = 0
 offset_left = 1435.96
 offset_top = 145.65
@@ -185,7 +185,7 @@ theme_override_font_sizes/font_size = 53
 text = "Open"
 
 [connection signal="pressed" from="Control/TextureRect/EmailExitButton" to="Control" method="_on_email_exit_button_pressed"]
-[connection signal="pressed" from="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email1Task/Email1Button" to="Control/TextureRect/EmailContaner" method="_on_email_1_button_pressed"]
-[connection signal="pressed" from="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email2Task/Email2Button" to="Control/TextureRect/EmailContaner" method="_on_email_2_button_pressed"]
-[connection signal="pressed" from="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email3Task/Email1Button" to="Control/TextureRect/EmailContaner" method="_on_email_1_button_pressed"]
-[connection signal="pressed" from="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email4Task/Email2Button" to="Control/TextureRect/EmailContaner" method="_on_email_2_button_pressed"]
+[connection signal="pressed" from="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email1Task/EmailButton1" to="Control/TextureRect/EmailContaner" method="_on_email_button_1_pressed"]
+[connection signal="pressed" from="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email2Task/EmailButton2" to="Control/TextureRect/EmailContaner" method="_on_email_button_2_pressed"]
+[connection signal="pressed" from="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email3Task/EmailButton3" to="Control/TextureRect/EmailContaner" method="_on_email_button_3_pressed"]
+[connection signal="pressed" from="Control/TextureRect/EmailContaner/ScrollContainer/VBoxContainer/Email4Task/Email4Button" to="Control/TextureRect/EmailContaner" method="_on_email_4_button_pressed"]

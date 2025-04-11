@@ -119,6 +119,7 @@ scale = Vector2(-1.71705, 11.6992)
 text = "LOREm Number"
 
 [node name="uid" type="Label" parent="ScrollContainer/VBoxContainer/TextureRect2"]
+layout_mode = 0
 offset_left = 716.292
 offset_top = 99.8626
 offset_right = 756.292
@@ -149,6 +150,7 @@ scale = Vector2(-1.71705, 11.6992)
 text = "LOREm Number"
 
 [node name="uid" type="Label" parent="ScrollContainer/VBoxContainer/TextureRect3"]
+layout_mode = 0
 offset_left = 716.292
 offset_top = 99.8626
 offset_right = 756.292
@@ -179,6 +181,7 @@ scale = Vector2(-1.71705, 11.6992)
 text = "LOREm Number"
 
 [node name="uid" type="Label" parent="ScrollContainer/VBoxContainer/TextureRect4"]
+layout_mode = 0
 offset_left = 716.292
 offset_top = 99.8626
 offset_right = 756.292
@@ -209,6 +212,7 @@ scale = Vector2(-1.71705, 11.6992)
 text = "LOREm Number"
 
 [node name="uid" type="Label" parent="ScrollContainer/VBoxContainer/TextureRect5"]
+layout_mode = 0
 offset_left = 716.292
 offset_top = 99.8626
 offset_right = 756.292
@@ -239,6 +243,7 @@ scale = Vector2(-1.71705, 11.6992)
 text = "LOREm Number"
 
 [node name="uid" type="Label" parent="ScrollContainer/VBoxContainer/TextureRect6"]
+layout_mode = 0
 offset_left = 716.292
 offset_top = 99.8626
 offset_right = 756.292
@@ -269,6 +274,7 @@ scale = Vector2(-1.71705, 11.6992)
 text = "LOREm Number"
 
 [node name="uid" type="Label" parent="ScrollContainer/VBoxContainer/TextureRect7"]
+layout_mode = 0
 offset_left = 716.292
 offset_top = 99.8626
 offset_right = 756.292
@@ -299,6 +305,7 @@ scale = Vector2(-1.71705, 11.6992)
 text = "LOREm Number"
 
 [node name="uid" type="Label" parent="ScrollContainer/VBoxContainer/TextureRect8"]
+layout_mode = 0
 offset_left = 716.292
 offset_top = 99.8626
 offset_right = 756.292
@@ -329,6 +336,7 @@ scale = Vector2(-1.71705, 11.6992)
 text = "LOREm Number"
 
 [node name="uid" type="Label" parent="ScrollContainer/VBoxContainer/TextureRect9"]
+layout_mode = 0
 offset_left = 716.292
 offset_top = 99.8626
 offset_right = 756.292
@@ -359,6 +367,7 @@ scale = Vector2(-1.71705, 11.6992)
 text = "LOREm Number"
 
 [node name="uid" type="Label" parent="ScrollContainer/VBoxContainer/TextureRect10"]
+layout_mode = 0
 offset_left = 716.292
 offset_top = 99.8626
 offset_right = 756.292
@@ -389,6 +398,7 @@ scale = Vector2(-1.71705, 11.6992)
 text = "LOREm Number"
 
 [node name="uid" type="Label" parent="ScrollContainer/VBoxContainer/TextureRect11"]
+layout_mode = 0
 offset_left = 716.292
 offset_top = 99.8626
 offset_right = 756.292
@@ -419,6 +429,7 @@ scale = Vector2(-1.71705, 11.6992)
 text = "LOREm Number"
 
 [node name="uid" type="Label" parent="ScrollContainer/VBoxContainer/TextureRect12"]
+layout_mode = 0
 offset_left = 716.292
 offset_top = 99.8626
 offset_right = 756.292
@@ -449,6 +460,7 @@ scale = Vector2(-1.71705, 11.6992)
 text = "LOREm Number"
 
 [node name="uid" type="Label" parent="ScrollContainer/VBoxContainer/TextureRect13"]
+layout_mode = 0
 offset_left = 716.292
 offset_top = 99.8626
 offset_right = 756.292
@@ -479,6 +491,7 @@ scale = Vector2(-1.71705, 11.6992)
 text = "LOREm Number"
 
 [node name="uid" type="Label" parent="ScrollContainer/VBoxContainer/TextureRect14"]
+layout_mode = 0
 offset_left = 716.292
 offset_top = 99.8626
 offset_right = 756.292
@@ -509,6 +522,7 @@ scale = Vector2(-1.71705, 11.6992)
 text = "LOREm Number"
 
 [node name="uid" type="Label" parent="ScrollContainer/VBoxContainer/TextureRect15"]
+layout_mode = 0
 offset_left = 716.292
 offset_top = 99.8626
 offset_right = 756.292
@@ -539,6 +553,7 @@ scale = Vector2(-1.71705, 11.6992)
 text = "LOREm Number"
 
 [node name="uid" type="Label" parent="ScrollContainer/VBoxContainer/TextureRect16"]
+layout_mode = 0
 offset_left = 716.292
 offset_top = 99.8626
 offset_right = 756.292
@@ -569,6 +584,7 @@ scale = Vector2(-1.71705, 11.6992)
 text = "LOREm Number"
 
 [node name="uid" type="Label" parent="ScrollContainer/VBoxContainer/TextureRect17"]
+layout_mode = 0
 offset_left = 716.292
 offset_top = 99.8626
 offset_right = 756.292
@@ -599,6 +615,7 @@ scale = Vector2(-1.71705, 11.6992)
 text = "LOREm Number"
 
 [node name="uid" type="Label" parent="ScrollContainer/VBoxContainer/TextureRect18"]
+layout_mode = 0
 offset_left = 716.292
 offset_top = 99.8626
 offset_right = 756.292
@@ -629,6 +646,7 @@ scale = Vector2(-1.71705, 11.6992)
 text = "LOREm Number"
 
 [node name="uid" type="Label" parent="ScrollContainer/VBoxContainer/TextureRect19"]
+layout_mode = 0
 offset_left = 716.292
 offset_top = 99.8626
 offset_right = 756.292
@@ -659,6 +677,7 @@ scale = Vector2(-1.71705, 11.6992)
 text = "LOREm Number"
 
 [node name="uid" type="Label" parent="ScrollContainer/VBoxContainer/TextureRect20"]
+layout_mode = 0
 offset_left = 716.292
 offset_top = 99.8626
 offset_right = 756.292

@@ -2,7 +2,23 @@
 extends Node
 
 var ads = 0
-var task_4_remove_task = []
+var task_4_remove_task = Dictionary()
+var task_4_interact = Dictionary()
+var task_4_interact_email_button = ""
+var task_2_remove_task = Dictionary()
+var task_2_interact = Dictionary()
+var task_2_interact_email_button = ""
+
+func turn_task_2_interact():
+	task_2_interact = true
+func turn_task_4_interact():
+	task_4_interact = true
+func reset_var():
+	ads = 0
+	task_4_remove_task = []
+	task_2_remove_task = Dictionary()
+	task_2_interact = Dictionary()
+	task_2_interact_email_button = ""
 
 var settings_file_path = "res://Scripts/Data/setting.json"
 
