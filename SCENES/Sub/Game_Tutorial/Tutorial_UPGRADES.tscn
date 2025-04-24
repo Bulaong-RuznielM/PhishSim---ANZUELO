@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://djg1ocy4tmfmo"]
 
 [ext_resource type="Script" path="res://Scripts/tutorial_gd/tutorial_upgrades.gd" id="1_6wisr"]
-[ext_resource type="Texture2D" uid="uid://u8ifn0s22as7" path="res://SCENES/Sub/Game_Tutorial/Tutorial_IMAGES/Tutorial_UPGRADES.png" id="1_tooeh"]
+[ext_resource type="Texture2D" uid="uid://cn67bk74ky470" path="res://SCENES/Sub/Game_Tutorial/Tutorial_IMAGES/2.png" id="1_tooeh"]
 
 [node name="TutorialInitial" type="Node2D"]
 script = ExtResource("1_6wisr")
