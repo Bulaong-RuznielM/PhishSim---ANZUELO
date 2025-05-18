@@ -96,7 +96,7 @@ theme_override_constants/outline_size = 25
 theme_override_constants/shadow_outline_size = -45
 theme_override_fonts/font = ExtResource("2_diewo")
 theme_override_font_sizes/font_size = 91
-text = "Phi"
+text = "Phish"
 
 [node name="GameTitle3" type="Label" parent="."]
 layout_mode = 1
@@ -105,10 +105,10 @@ anchor_left = -4.93896
 anchor_top = -3.73081
 anchor_right = 5.16104
 anchor_bottom = -0.605812
-offset_left = -134.569
-offset_top = -199.536
-offset_right = 403.431
-offset_bottom = -74.5355
+offset_left = 13.0
+offset_top = -200.0
+offset_right = 404.0
+offset_bottom = -75.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -118,7 +118,7 @@ theme_override_constants/outline_size = 5
 theme_override_constants/shadow_outline_size = 10
 theme_override_fonts/font = ExtResource("2_diewo")
 theme_override_font_sizes/font_size = 91
-text = "shSim"
+text = "Sim"
 
 [node name="Icons8-send-email-50" type="Sprite2D" parent="."]
 position = Vector2(249.095, -145.879)

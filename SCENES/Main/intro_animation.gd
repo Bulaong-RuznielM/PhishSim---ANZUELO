@@ -4,7 +4,7 @@ extends Control
 
 func _ready():
 	# Use load() instead of preload to handle dynamic paths
-	var video_path = "res://ASSETS/CutScenes/intro/intro2_compressed.ogv"
+	var video_path = "res://ASSETS/CutScenes/intro/0406-copy.ogv"
 	
 	# Load the video stream directly and assign it to the video stream player
 	var video_resource = load(video_path) as VideoStream
