@@ -16,6 +16,9 @@ func turn_task_4_interact():
 func reset_var():
 	ads = 0
 	task_4_remove_task = []
+	task_4_remove_task = Dictionary()
+	task_4_interact = Dictionary()
+	task_4_interact_email_button = ""
 	task_2_remove_task = Dictionary()
 	task_2_interact = Dictionary()
 	task_2_interact_email_button = ""
@@ -267,9 +270,6 @@ var users = {
 				"like": "520"
 			}
 		}
-	}
-}
-
 # Dictionary containing power-up data
 var power_ups = {
 	0: {
